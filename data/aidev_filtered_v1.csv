@@ -1,0 +1,202 @@
+slug,url,stars,forks,license,language,is_archived,has_release,size_kb,open_issues,contributors,agent_pr_count,human_pr_count,total_pr_count,code_ratio,loc
+dagster-io/dagster,https://github.com/dagster-io/dagster,14719,1924,Apache License 2.0,Python,False,True,1414695,2772,6,10,4,14,0.9429546206200282,1896013
+bentoml/bentoml,https://github.com/bentoml/BentoML,8353,899,Apache License 2.0,Python,False,True,103312,137,5,11,11,22,0.7980512787818899,75107
+567-labs/instructor,https://github.com/567-labs/instructor,12115,915,MIT License,Python,False,True,76005,74,7,51,18,69,0.8781865799311467,83159
+langchain-ai/langgraph,https://github.com/langchain-ai/langgraph,23093,4062,MIT License,Python,False,True,506305,292,8,8,7,15,0.7573181798995399,143533
+kanaries/pygwalker,https://github.com/Kanaries/pygwalker,15559,855,Apache License 2.0,Python,False,True,75217,75,2,3,3,6,0.8462447556579803,14321
+whitphx/streamlit-webrtc,https://github.com/whitphx/streamlit-webrtc,1684,226,MIT License,Python,False,True,38968,98,3,2,2,4,0.9651903114186852,13947
+willccbb/verifiers,https://github.com/PrimeIntellect-ai/verifiers,3719,468,MIT License,Python,False,True,157555,133,3,10,1,11,0.8966631155709818,26092
+unclecode/crawl4ai,https://github.com/unclecode/crawl4ai,58273,5922,Apache License 2.0,Python,False,True,148159,278,9,7,7,14,0.843765790356018,178675
+ray-project/ray,https://github.com/ray-project/ray,40679,7084,Apache License 2.0,Python,False,True,676224,3265,3,2,1,3,0.7707677467323016,1115452
+bespokelabsai/curator,https://github.com/bespokelabsai/curator,1595,128,Apache License 2.0,Python,False,True,65651,67,9,13,13,26,0.9251357244245431,63221
+uberi/speech_recognition,https://github.com/Uberi/speech_recognition,8922,2443,"BSD 3-Clause ""New"" or ""Revised"" License",Python,False,True,111226,326,2,2,2,4,0.8736020257438278,4140
+skypilot-org/skypilot,https://github.com/skypilot-org/skypilot,9179,897,Apache License 2.0,Python,False,True,221391,401,4,8,3,11,0.8146200670268792,297764
+jlowin/fastmcp,https://github.com/jlowin/fastmcp,21786,1631,Apache License 2.0,Python,False,True,21076,227,4,7,5,12,0.846693354683747,105752
+skyvern-ai/skyvern,https://github.com/Skyvern-AI/skyvern,20052,1757,GNU Affero General Public License v3.0,Python,False,True,362420,147,6,23,20,43,0.9237248824052197,213071
+saturday06/vrm-addon-for-blender,https://github.com/saturday06/VRM-Addon-for-Blender,1570,158,MIT License,Python,False,True,108717,90,4,22,19,41,0.9610736148171402,67353
+crewaiinc/crewai,https://github.com/crewAIInc/crewAI,42425,5689,MIT License,Python,False,True,202649,188,112,327,293,620,0.9487237560301678,377001
+awslabs/mcp,https://github.com/awslabs/mcp,7821,1193,Apache License 2.0,Python,False,True,48812,190,22,20,20,40,0.8110362138729211,527957
+langchain-ai/langsmith-sdk,https://github.com/langchain-ai/langsmith-sdk,725,177,MIT License,Python,False,True,14191,115,5,6,6,12,0.8767823802817406,244667
+getsentry/sentry-python,https://github.com/getsentry/sentry-python,2122,571,MIT License,Python,False,True,75687,251,5,4,4,8,0.9003246362871228,89856
+openpipe/art,https://github.com/OpenPipe/ART,8127,645,Apache License 2.0,Python,False,True,65606,94,4,10,5,15,0.9951469678311565,1478049
+wandb/weave,https://github.com/wandb/weave,1039,141,Apache License 2.0,Python,False,True,1584835,338,8,8,8,16,0.9156813979111229,284233
+wizarrrr/wizarr,https://github.com/wizarrrr/wizarr,2594,160,MIT License,Python,False,True,162134,85,5,8,7,15,0.789702808467837,150744
+azure/azure-sdk-for-python,https://github.com/Azure/azure-sdk-for-python,5428,3207,MIT License,Python,False,True,827957,985,18,57,29,86,0.7142058269962597,8224955
+tobikodata/sqlmesh,https://github.com/TobikoData/sqlmesh,2839,325,Apache License 2.0,Python,False,True,87732,220,3,8,6,14,0.8829952753774891,248006
+reflex-dev/reflex,https://github.com/reflex-dev/reflex,27905,1673,Apache License 2.0,Python,False,True,28986,258,2,7,3,10,0.755185745503446,67389
+cartography-cncf/cartography,https://github.com/cartography-cncf/cartography,3669,466,Apache License 2.0,Python,False,True,18930,209,7,18,10,28,0.8758999767747929,169710
+zenml-io/zenml,https://github.com/zenml-io/zenml,5133,568,Apache License 2.0,Python,False,True,800488,97,7,11,11,22,0.7402805631753788,289027
+microsoft/graphrag,https://github.com/microsoft/graphrag,30217,3184,MIT License,Python,False,True,219474,94,4,5,3,8,0.7689667390052703,34725
+onnx/onnx,https://github.com/onnx/onnx,20126,3855,Apache License 2.0,Python,False,True,65770,275,4,13,5,18,0.9366460427945347,232528
+commaai/openpilot,https://github.com/commaai/openpilot,59581,10548,MIT License,Python,False,True,853118,237,5,5,5,10,0.8204370968380229,165853
+comet-ml/opik,https://github.com/comet-ml/opik,17198,1278,Apache License 2.0,Python,False,True,424800,109,2,2,1,3,0.918249031004659,863054
+spcl/dace,https://github.com/spcl/dace,570,149,"BSD 3-Clause ""New"" or ""Revised"" License",Python,False,True,163565,276,4,9,8,17,0.8124476471330709,212412
+mlflow/mlflow,https://github.com/mlflow/mlflow,23603,5141,Apache License 2.0,Python,False,True,1260675,2100,19,91,62,153,0.8320103544143842,1194370
+blaizzy/mlx-vlm,https://github.com/Blaizzy/mlx-vlm,1986,230,MIT License,Python,False,True,31970,73,5,9,9,18,0.8811867964128983,46183
+huggingface/huggingface_hub,https://github.com/huggingface/huggingface_hub,3234,898,Apache License 2.0,Python,False,True,36022,149,4,5,4,9,0.7579215733883695,68673
+openadaptai/openadapt,https://github.com/OpenAdaptAI/OpenAdapt,1463,212,MIT License,Python,False,True,30304,418,2,2,2,4,0.8210452571108309,29299
+prefecthq/prefect,https://github.com/PrefectHQ/prefect,21277,2064,Apache License 2.0,Python,False,True,198137,1081,4,5,3,8,0.9140857255731113,828339
+mervinpraison/praisonai,https://github.com/MervinPraison/PraisonAI,5545,753,MIT License,Python,False,True,34262,58,4,6,4,10,0.6800155528298449,362026
+tinygrad/tinygrad,https://github.com/tinygrad/tinygrad,31098,3829,MIT License,Python,False,True,96325,219,6,10,9,19,0.9033013854689362,378215
+weecology/deepforest,https://github.com/weecology/DeepForest,686,227,MIT License,Python,False,True,1062161,103,3,2,1,3,0.8567679160131869,26768
+dlt-hub/dlt,https://github.com/dlt-hub/dlt,4774,422,Apache License 2.0,Python,False,True,105696,316,3,2,2,4,0.8749048194776875,320573
+openai/openai-agents-python,https://github.com/openai/openai-agents-python,18243,3047,MIT License,Python,False,True,14374,170,10,17,11,28,0.8832007464152426,71942
+uxlfoundation/scikit-learn-intelex,https://github.com/uxlfoundation/scikit-learn-intelex,1325,183,Apache License 2.0,Python,False,True,44327,75,3,2,2,4,0.941355680546671,440000
+ag2ai/ag2,https://github.com/ag2ai/ag2,4021,516,Apache License 2.0,Python,False,True,2183137,268,4,3,3,6,0.7245674238578196,189820
+mem0ai/mem0,https://github.com/mem0ai/mem0,45235,4931,Apache License 2.0,Python,False,True,44468,590,3,2,1,3,0.8965769399094792,161842
+vllm-project/vllm,https://github.com/vllm-project/vllm,67126,12457,Apache License 2.0,Python,False,True,138346,3113,7,6,4,10,0.8806469703763604,689359
+microsoft/magentic-ui,https://github.com/microsoft/magentic-ui,9555,965,MIT License,Python,False,True,51560,75,5,6,5,11,0.8310965414063187,37775
+agentops-ai/agentops,https://github.com/AgentOps-AI/agentops,5194,508,MIT License,Python,False,True,177586,106,12,51,33,84,0.8450389933055741,146932
+dotnet/orleans,https://github.com/dotnet/orleans,10664,2114,MIT License,C#,False,True,71110,713,3,4,4,8,0.8556921325365654,299132
+microsoft/perfview,https://github.com/microsoft/perfview,4605,752,MIT License,C#,False,True,290453,159,12,30,24,54,0.9541018105778821,713609
+getsentry/sentry-dotnet,https://github.com/getsentry/sentry-dotnet,735,226,MIT License,C#,False,True,132401,351,2,2,1,3,0.8741596786695793,124052
+nethermindeth/nethermind,https://github.com/NethermindEth/nethermind,1499,623,GNU General Public License v3.0,C#,False,True,533842,496,5,12,5,17,0.9437892590786934,468480
+dotnet/winforms,https://github.com/dotnet/winforms,4734,1077,MIT License,C#,False,True,269359,757,4,3,3,6,0.9075261596646241,1146044
+dotnet/sqlclient,https://github.com/dotnet/SqlClient,956,319,MIT License,C#,False,True,42506,288,4,3,3,6,0.8803540789670292,341720
+elsa-workflows/elsa-core,https://github.com/elsa-workflows/elsa-core,7554,1454,MIT License,C#,False,True,97143,765,12,31,27,58,0.8260528472056764,142148
+dotnet/machinelearning,https://github.com/dotnet/machinelearning,9311,1940,MIT License,C#,False,True,101603,986,3,2,2,4,0.9750688611753324,3261384
+microsoft/testfx,https://github.com/microsoft/testfx,974,291,MIT License,C#,False,True,53203,244,9,60,32,92,0.9623122099609683,793386
+dotnet/msbuild,https://github.com/dotnet/msbuild,5474,1398,MIT License,C#,False,True,329552,1508,12,25,18,43,0.8240290679447675,583523
+riganti/dotvvm,https://github.com/riganti/dotvvm,793,96,Apache License 2.0,C#,False,True,64109,171,2,2,2,4,0.9257345565749235,189197
+dotnet/docfx,https://github.com/dotnet/docfx,4381,881,MIT License,C#,False,True,159642,429,3,7,7,14,0.9854944709671225,451660
+azure/azure-functions-host,https://github.com/Azure/azure-functions-host,2005,476,MIT License,C#,False,True,127219,1473,3,2,2,4,0.9149453504003741,156538
+dotnet/maui,https://github.com/dotnet/maui,23121,1904,MIT License,C#,False,True,918151,4376,14,80,22,102,0.9470203362186795,1150839
+microsoft/powertoys,https://github.com/microsoft/PowerToys,127736,7587,MIT License,C#,False,True,477503,7835,6,7,5,12,0.8790155613957742,564248
+azure/azure-sdk-for-rust,https://github.com/Azure/azure-sdk-for-rust,862,323,MIT License,Rust,False,True,315060,164,4,6,5,11,0.831003093016823,132186
+huggingface/tokenizers,https://github.com/huggingface/tokenizers,10374,1017,Apache License 2.0,Rust,False,True,14291,134,4,3,3,6,0.8305545458855508,52555
+boundaryml/baml,https://github.com/BoundaryML/baml,7294,355,Apache License 2.0,Rust,False,True,290623,212,4,5,4,9,0.9076595349615426,889667
+web-infra-dev/rspack,https://github.com/web-infra-dev/rspack,12370,754,MIT License,Rust,False,True,83088,214,3,5,1,6,0.9694688593247033,659265
+neondatabase/neon,https://github.com/neondatabase/neon,20640,866,Apache License 2.0,Rust,False,True,83740,511,12,14,13,27,0.8579374014861517,381010
+glaredb/glaredb,https://github.com/GlareDB/glaredb,987,55,MIT License,Rust,False,True,19181,129,3,97,95,192,0.925391761979778,212060
+near/nearcore,https://github.com/near/nearcore,2547,758,GNU General Public License v3.0,Rust,False,True,229952,387,21,45,45,90,0.9224392941390582,658903
+risingwavelabs/risingwave,https://github.com/risingwavelabs/risingwave,8691,721,Apache License 2.0,Rust,False,True,199549,1419,7,13,5,18,0.884583110592733,819093
+ericlbuehler/mistral.rs,https://github.com/EricLBuehler/mistral.rs,6333,506,MIT License,Rust,False,True,176809,256,6,26,25,51,0.9343140608963394,199363
+microsoft/qsharp,https://github.com/microsoft/qdk,822,161,MIT License,Rust,False,True,26364,158,5,5,5,10,0.9244636270590735,382972
+whitphx/stlite,https://github.com/whitphx/stlite,1574,84,Apache License 2.0,TypeScript,False,True,1469502,81,3,10,10,20,0.9220967274833478,35024
+kiwicom/orbit,https://github.com/kiwicom/orbit,1432,166,MIT License,TypeScript,False,True,1568855,50,5,4,4,8,0.8983661710396567,232313
+estruyf/vscode-front-matter,https://github.com/estruyf/vscode-front-matter,2413,103,MIT License,TypeScript,False,True,44140,118,3,3,3,6,0.9270962000770344,69802
+pdfme/pdfme,https://github.com/pdfme/pdfme,3933,405,MIT License,TypeScript,False,True,386944,90,6,65,60,125,0.9460127168637015,119471
+assistant-ui/assistant-ui,https://github.com/assistant-ui/assistant-ui,7942,851,MIT License,TypeScript,False,True,63916,108,4,13,12,25,0.9589686338680817,125412
+xtermjs/xterm.js,https://github.com/xtermjs/xterm.js,19693,1793,MIT License,TypeScript,False,True,31397,122,5,6,6,12,0.8344350748610591,82428
+wix/react-native-ui-lib,https://github.com/wix/react-native-ui-lib,7059,747,MIT License,TypeScript,False,True,221298,75,7,30,30,60,0.9275754788163185,89742
+microsoft/applicationinsights-js,https://github.com/microsoft/ApplicationInsights-JS,674,255,MIT License,TypeScript,False,True,39396,100,5,24,16,40,0.8246558584956989,231899
+livestorejs/livestore,https://github.com/livestorejs/livestore,3404,115,Apache License 2.0,TypeScript,False,True,73575,228,4,4,1,5,0.9392147368204156,273489
+labring/laf,https://github.com/labring/laf,7616,690,Apache License 2.0,TypeScript,False,True,85782,45,3,2,2,4,0.9281691093640163,315571
+colinhacks/zod,https://github.com/colinhacks/zod,41378,1763,MIT License,TypeScript,False,True,23552,236,3,13,1,14,0.9290783243852033,84967
+microsoft/vscode-python,https://github.com/microsoft/vscode-python,4537,1288,MIT License,TypeScript,False,True,170545,335,6,9,5,14,0.898950389285999,169151
+liveblocks/liveblocks,https://github.com/liveblocks/liveblocks,4324,400,Apache License 2.0,TypeScript,False,True,417313,58,4,16,3,19,0.9687175643763168,685048
+textlint/textlint,https://github.com/textlint/textlint,3060,156,MIT License,TypeScript,False,True,44855,47,2,2,1,3,0.9790004178514283,192121
+amantus-ai/vibetunnel,https://github.com/amantus-ai/vibetunnel,2855,183,MIT License,TypeScript,False,True,1010493,72,5,15,2,17,0.895473452603387,226690
+elizaos/eliza,https://github.com/elizaOS/eliza,17311,5411,MIT License,TypeScript,False,True,1113232,116,27,58,39,97,0.8682050881238031,222165
+afadil/wealthfolio,https://github.com/afadil/wealthfolio,6794,386,GNU Affero General Public License v3.0,TypeScript,False,True,124618,178,3,7,4,11,0.9604561516222294,119596
+ohif/viewers,https://github.com/OHIF/Viewers,3982,4086,MIT License,TypeScript,False,True,404516,423,9,9,9,18,0.9310152847480248,235788
+cornerstonejs/cornerstone3d,https://github.com/cornerstonejs/cornerstone3D,985,453,MIT License,TypeScript,False,True,277753,439,7,7,7,14,0.8542184276701149,226918
+jmberesford/retrom,https://github.com/JMBeresford/retrom,1633,33,GNU General Public License v3.0,TypeScript,False,True,44343,65,3,4,3,7,0.9913434903047091,85890
+latitude-dev/latitude-llm,https://github.com/latitude-dev/latitude-llm,3744,275,GNU Lesser General Public License v3.0,TypeScript,False,True,83157,137,3,2,2,4,0.9937497701248978,1675162
+gitbookio/gitbook,https://github.com/GitbookIO/gitbook,28539,4018,GNU General Public License v3.0,TypeScript,False,True,365194,70,3,3,1,4,0.952767914405043,121819
+cline/cline,https://github.com/cline/cline,56769,5581,Apache License 2.0,TypeScript,False,True,306132,825,3,2,1,3,0.9000647744881562,251506
+owncast/owncast,https://github.com/owncast/owncast,10800,1165,MIT License,TypeScript,False,True,979994,199,4,8,3,11,0.9700912671497757,163051
+markuplint/markuplint,https://github.com/markuplint/markuplint,597,62,MIT License,TypeScript,False,True,44397,120,3,4,4,8,0.9428232872121415,157542
+tact-lang/tact,https://github.com/tact-lang/tact,692,215,MIT License,TypeScript,False,True,50138,831,3,2,2,4,0.9663311084886504,202256
+kittycad/modeling-app,https://github.com/KittyCAD/modeling-app,1052,98,MIT License,TypeScript,False,True,603700,857,4,5,5,10,0.9856258077004545,1242404
+jina-ai/node-deepresearch,https://github.com/jina-ai/node-DeepResearch,5049,463,Apache License 2.0,TypeScript,False,True,31162,52,14,28,28,56,0.9666993143976493,22701
+huggingface/huggingface.js,https://github.com/huggingface/huggingface.js,2316,586,MIT License,TypeScript,False,True,19473,198,4,4,4,8,0.9399327090680611,115936
+onlook-dev/onlook,https://github.com/onlook-dev/onlook,23729,1758,Apache License 2.0,TypeScript,False,True,80311,349,22,175,157,332,0.9723892772504793,163305
+composiohq/composio,https://github.com/ComposioHQ/composio,26330,4402,MIT License,TypeScript,False,True,226335,42,12,21,21,42,0.9552500557330758,385644
+microsoft/vscode-pull-request-github,https://github.com/microsoft/vscode-pull-request-github,2521,703,MIT License,TypeScript,False,True,90558,241,2,53,1,54,0.9243745184704595,68388
+acacode/swagger-typescript-api,https://github.com/acacode/swagger-typescript-api,4028,425,MIT License,TypeScript,False,True,19569,232,3,5,5,10,0.9981741028622723,195710
+tinyplex/tinybase,https://github.com/tinyplex/tinybase,4855,121,MIT License,TypeScript,False,True,382101,49,2,4,4,8,0.8249402163798341,234924
+danny-avila/librechat,https://github.com/danny-avila/LibreChat,32928,6555,MIT License,TypeScript,False,True,134382,361,3,2,1,3,0.9287171194100796,369270
+humansignal/label-studio,https://github.com/HumanSignal/label-studio,26093,3301,Apache License 2.0,TypeScript,False,True,2950742,981,3,4,1,5,0.9357189848687227,469366
+primer/react,https://github.com/primer/react,3773,648,MIT License,TypeScript,False,True,426076,62,12,30,20,50,0.9537186810700752,168627
+medplum/medplum,https://github.com/medplum/medplum,2079,660,Apache License 2.0,TypeScript,False,True,334985,556,3,2,2,4,0.9640310645339921,2416367
+lingodotdev/lingo.dev,https://github.com/lingodotdev/lingo.dev,5108,666,Apache License 2.0,TypeScript,False,True,32099,136,11,61,54,115,0.9456249885901017,103597
+tokens-studio/figma-plugin,https://github.com/tokens-studio/figma-plugin,1529,216,MIT License,TypeScript,False,True,58441,304,7,45,34,79,0.9020989079350011,250871
+hotovo/aider-desk,https://github.com/hotovo/aider-desk,1004,77,Apache License 2.0,TypeScript,False,True,71253,89,5,4,4,8,0.9819364837602041,146990
+dust-tt/dust,https://github.com/dust-tt/dust,1265,194,MIT License,TypeScript,False,True,596539,102,11,10,10,20,0.9536773206808273,896656
+datopian/portaljs,https://github.com/datopian/portaljs,2261,333,MIT License,TypeScript,False,True,180313,77,3,3,3,6,0.9987342412676382,1381609
+katspaugh/wavesurfer.js,https://github.com/katspaugh/wavesurfer.js,10033,1750,"BSD 3-Clause ""New"" or ""Revised"" License",TypeScript,False,True,53353,45,6,20,7,27,0.8599683544303798,16305
+dotnet/diagnostics,https://github.com/dotnet/diagnostics,1300,387,MIT License,C++,False,True,103231,322,4,4,4,8,0.8285741659392365,389173
+ggml-org/llama.cpp,https://github.com/ggml-org/llama.cpp,92644,14399,MIT License,C++,False,True,282407,992,3,3,1,4,0.9238785998441488,767077
+microsoft/onnxruntime,https://github.com/microsoft/onnxruntime,18903,3636,MIT License,C++,False,True,1404230,1223,16,17,17,34,0.9461683972559914,3991963
+microsoft/onnxruntime-genai,https://github.com/microsoft/onnxruntime-genai,923,249,MIT License,C++,False,True,88768,166,3,2,2,4,0.9919868019768672,1259110
+fastled/fastled,https://github.com/FastLED/FastLED,7228,1731,MIT License,C++,False,True,248483,315,2,5,1,6,0.7826738900099345,378948
+effekseer/effekseer,https://github.com/effekseer/Effekseer,1628,245,MIT License,C++,False,True,203064,100,2,12,7,19,0.9433893166635366,703259
+bitcoin/bitcoin,https://github.com/bitcoin/bitcoin,87584,38725,MIT License,C++,False,True,301392,747,5,3,2,5,0.9037717433416449,727811
+opencv/opencv,https://github.com/opencv/opencv,85640,56471,Apache License 2.0,C++,False,True,552828,2724,3,2,2,4,0.8729234183556384,2495290
+f/mcptools,https://github.com/f/mcptools,1430,107,MIT License,Go,False,True,25884,35,4,3,3,6,0.9052437007491001,9305
+github/github-mcp-server,https://github.com/github/github-mcp-server,25730,3342,MIT License,Go,False,True,41592,236,4,7,3,10,0.9378628736776836,49914
+open-lambda/open-lambda,https://github.com/open-lambda/open-lambda,1007,145,Apache License 2.0,Go,False,True,125835,59,2,2,1,3,0.9058721434770032,15658
+rqlite/rqlite,https://github.com/rqlite/rqlite,17225,760,MIT License,Go,False,True,52678,81,2,14,8,22,0.9341621773957531,86183
+openfga/openfga,https://github.com/openfga/openfga,4619,339,Apache License 2.0,Go,False,True,59131,156,3,3,1,4,0.9575362242159923,126683
+celestiaorg/celestia-core,https://github.com/celestiaorg/celestia-core,545,359,Apache License 2.0,Go,False,True,310086,260,9,55,28,83,0.9131967946898404,250941
+schemahero/schemahero,https://github.com/schemahero/schemahero,1081,89,Apache License 2.0,Go,False,True,39182,127,4,5,5,10,0.9269960227459488,56404
+ethereum-optimism/optimism,https://github.com/ethereum-optimism/optimism,6341,3874,MIT License,Go,False,True,1075678,669,3,4,3,7,0.8861882266396836,585470
+pomerium/pomerium,https://github.com/pomerium/pomerium,4624,317,Apache License 2.0,Go,False,True,78905,118,3,3,3,6,0.9447846884560559,167687
+microsoft/retina,https://github.com/microsoft/retina,3083,270,MIT License,Go,False,True,53587,168,5,8,5,13,0.9413522346845089,402943
+kanisterio/kanister,https://github.com/kanisterio/kanister,857,176,Apache License 2.0,Go,False,True,84316,87,4,7,6,13,0.874488094993106,84988
+odigos-io/odigos,https://github.com/odigos-io/odigos,3605,238,Apache License 2.0,Go,False,True,112792,56,4,7,3,10,0.9261515691285679,215258
+go-vikunja/vikunja,https://github.com/go-vikunja/vikunja,3019,281,GNU Affero General Public License v3.0,Go,False,True,73982,220,6,66,29,95,0.9304322284733049,205900
+gofiber/fiber,https://github.com/gofiber/fiber,38927,1936,MIT License,Go,False,True,234993,73,19,51,33,84,0.8830032103701012,87465
+pterm/pterm,https://github.com/pterm/pterm,5332,218,MIT License,Go,False,True,23899,67,4,5,5,10,0.9369934820843535,27170
+pulumi/pulumi,https://github.com/pulumi/pulumi,24475,1282,Apache License 2.0,Go,False,True,182843,2458,3,2,2,4,0.9739612819501013,6745575
+cloudposse/atmos,https://github.com/cloudposse/atmos,1227,138,Apache License 2.0,Go,False,True,163263,166,3,11,6,17,0.9218783171817606,603586
+navidrome/navidrome,https://github.com/navidrome/navidrome,18400,1315,GNU General Public License v3.0,Go,False,True,50216,187,3,7,7,14,0.9658789304713669,166674
+mvisonneau/gitlab-ci-pipelines-exporter,https://github.com/mvisonneau/gitlab-ci-pipelines-exporter,1475,272,Apache License 2.0,Go,False,True,21600,201,4,4,4,8,0.9559683344543902,18476
+lollipopkit/flutter_server_box,https://github.com/lollipopkit/flutter_server_box,7305,471,GNU Affero General Public License v3.0,Dart,False,True,20946,94,2,4,4,8,0.905585668027594,51459
+btwld/mix,https://github.com/btwld/mix,751,46,"BSD 3-Clause ""New"" or ""Revised"" License",Dart,False,True,67982,43,2,3,3,6,0.9059024713150927,82111
+microsoft/microsoft365dsc,https://github.com/microsoft/Microsoft365DSC,2140,618,MIT License,PowerShell,False,True,236948,174,2,11,1,12,0.9720132548050244,616583
+azure/enterprise-scale,https://github.com/Azure/Enterprise-Scale,1904,1054,MIT License,PowerShell,False,True,102259,10,2,1,1,2,0.9914874583283828,141865
+dotnet/core,https://github.com/dotnet/core,21834,4950,MIT License,PowerShell,False,True,55073,327,2,2,1,3,0.996447175376625,584772
+microsoft/azurelinux,https://github.com/microsoft/azurelinux,4526,602,MIT License,RPM Spec,False,True,513128,645,5,6,6,12,0.870798773691838,1379010
+elixir-lsp/elixir-ls,https://github.com/elixir-lsp/elixir-ls,1720,223,Apache License 2.0,Elixir,False,True,9434,57,5,31,6,37,0.8725539387857502,88689
+sequinstream/sequin,https://github.com/sequinstream/sequin,1877,105,MIT License,Elixir,False,True,137539,31,4,12,7,19,0.9351086565922115,148326
+microsoft/typespec,https://github.com/microsoft/typespec,5522,329,MIT License,Java,False,True,85170,1037,17,47,27,74,0.7707256171206014,1022292
+apache/pulsar,https://github.com/apache/pulsar,15038,3697,Apache License 2.0,Java,False,True,253914,1630,3,2,1,3,0.8119786748821866,755888
+datadog/dd-trace-java,https://github.com/DataDog/dd-trace-java,684,323,Apache License 2.0,Java,False,True,283364,290,4,2,2,4,0.9628382217152489,872783
+akto-api-security/akto,https://github.com/akto-api-security/akto,1425,272,MIT License,Java,False,True,343841,242,3,3,3,6,0.9697812758743051,393545
+traccar/traccar,https://github.com/traccar/traccar,6825,3068,Apache License 2.0,Java,False,True,24844,493,5,4,4,8,0.8573250882795208,101485
+objectionary/eo,https://github.com/objectionary/eo,1322,176,MIT License,Java,False,True,689114,108,4,6,4,10,0.74851047801671,43719
+microsoft/hydralab,https://github.com/microsoft/HydraLab,1012,98,MIT License,Java,False,True,146177,56,3,2,2,4,0.9711247364062163,139538
+dkrivoruchko/screenstream,https://github.com/dkrivoruchko/ScreenStream,2277,433,MIT License,Kotlin,False,True,94128,17,2,2,2,4,0.897851191816515,55823
+ktorio/ktor,https://github.com/ktorio/ktor,14212,1215,Apache License 2.0,Kotlin,False,True,90921,193,3,2,2,4,0.7924480275255529,180568
+kube-hetzner/terraform-hcloud-kube-hetzner,https://github.com/mysticaltech/terraform-hcloud-kube-hetzner,3594,519,MIT License,HCL,False,True,2989,59,2,1,1,2,0.9658073562722468,8954
+azure/terraform,https://github.com/Azure/terraform,876,906,MIT License,HCL,False,True,17496,66,2,1,1,2,0.9971913235932405,277996
+wolfssl/wolfssl,https://github.com/wolfSSL/wolfssl,2695,915,GNU General Public License v3.0,C,False,True,801290,57,12,17,17,34,0.868687510945868,2336223
+fluent/fluent-bit,https://github.com/fluent/fluent-bit,7550,1854,Apache License 2.0,C,False,True,140135,710,5,4,4,8,0.8471855462225565,2589354
+microsoft/documentdb,https://github.com/documentdb/documentdb,3112,197,MIT License,C,False,True,57925,62,3,3,2,5,0.8263452619169498,266360
+basedhardware/omi,https://github.com/BasedHardware/omi,7458,1310,MIT License,C,False,True,891778,313,7,6,6,12,0.8888127253605769,662585
+espresense/espresense,https://github.com/ESPresense/ESPresense,1329,162,GNU Affero General Public License v3.0,C,False,True,8384,91,3,8,6,14,0.9238998211091234,25823
+rsyslog/rsyslog,https://github.com/rsyslog/rsyslog,2240,706,GNU Lesser General Public License v3.0,C,False,True,83666,720,6,61,21,82,0.7999454900879677,255349
+microsoft/ebpf-for-windows,https://github.com/microsoft/ebpf-for-windows,3390,271,MIT License,C,False,True,40680,287,3,13,3,16,0.8528168887450325,237130
+microsoft/msquic,https://github.com/microsoft/msquic,4584,633,MIT License,C,False,True,319514,283,5,8,5,13,0.8256852717171346,224413
+microsoft/teams-ai,https://github.com/microsoft/teams-sdk,663,263,MIT License,MDX,False,True,49691,134,2,1,1,2,0.9656433127625369,37241
+rainbow-me/rainbowkit,https://github.com/rainbow-me/rainbowkit,2749,776,MIT License,MDX,False,True,31026,54,15,37,36,73,0.9233589564939293,242523
+barryclark/jekyll-now,https://github.com/barryclark/jekyll-now,8390,35233,MIT License,CSS,False,True,8406,381,2,1,1,2,0.9005602240896359,643
+thedevdojo/wave,https://github.com/thedevdojo/wave,6403,906,MIT License,CSS,False,True,44040,5,3,2,2,4,0.9662775659764788,286911
+traccar/traccar-web,https://github.com/traccar/traccar-web,1045,1342,Apache License 2.0,JavaScript,False,True,12609,123,4,3,3,6,0.9996882145084182,67333
+dotenvx/dotenvx,https://github.com/dotenvx/dotenvx,4836,115,"BSD 3-Clause ""New"" or ""Revised"" License",JavaScript,False,True,19653,42,3,3,2,5,0.9735759909003412,33381
+hackmdio/codimd,https://github.com/hackmdio/codimd,9936,1116,GNU Affero General Public License v3.0,JavaScript,False,True,28828,346,3,3,3,6,0.975505127424104,76862
+clusterzx/paperless-ai,https://github.com/clusterzx/paperless-ai,4917,230,MIT License,JavaScript,False,True,15039,33,3,2,1,3,0.8695714655246745,30255
+dense-analysis/neural,https://github.com/dense-analysis/neural,509,21,MIT License,Vim Script,False,True,304,19,3,2,2,4,0.895634576467187,3098
+hyperf/hyperf,https://github.com/hyperf/hyperf,6741,1288,MIT License,PHP,False,True,31476,461,2,2,2,4,0.8147974369455206,283059
+devaslanphp/project-management,https://github.com/devaslanphp/project-management,1029,326,MIT License,PHP,False,True,16733,36,2,2,2,4,0.8602109631679059,49746
+easycorp/easyadminbundle,https://github.com/EasyCorp/EasyAdminBundle,4233,1088,MIT License,PHP,False,True,46682,449,3,3,3,6,0.8763951624653942,60147
+propelorm/propel2,https://github.com/propelorm/Propel2,1271,402,MIT License,PHP,False,True,31001,267,3,3,3,6,0.6663818118044705,104492
+sylius/sylius,https://github.com/Sylius/Sylius,8389,2156,MIT License,PHP,False,True,358730,249,2,2,2,4,0.869923349518,466907
+metacraft-labs/codetracer,https://github.com/metacraft-labs/codetracer,1260,26,GNU Affero General Public License v3.0,Nim,False,True,16898,83,9,43,41,84,0.9116187744534224,189428
+microsoft/botframework-webchat,https://github.com/microsoft/BotFramework-WebChat,1762,1607,MIT License,HTML,False,True,532642,444,2,2,2,4,0.9637780641787141,206395
+candlefinance/faster-image,https://github.com/candlefinance/faster-image,678,32,MIT License,Swift,False,True,2764,22,2,1,1,2,0.7891194226632433,11372
+stephendev0/stikdebug,https://github.com/StephenDev0/StikDebug,963,130,GNU Affero General Public License v3.0,Swift,False,True,239811,0,6,25,7,32,0.8006259127894847,19187
+wvlet/airframe,https://github.com/wvlet/airframe,665,69,Apache License 2.0,Scala,False,True,161559,104,4,22,22,44,0.8245417108060137,117531
+buefy/buefy,https://github.com/buefy/buefy,9557,1105,MIT License,Vue,False,True,34912,81,2,1,1,2,0.9664053075995175,80115
+lyqht/mini-qr,https://github.com/lyqht/mini-qr,1653,215,GNU General Public License v3.0,Vue,False,True,23720,19,3,8,7,15,0.9760078219013237,25954
+dotnet/fsharp,https://github.com/dotnet/fsharp,4227,841,MIT License,F#,False,True,417589,1344,10,27,17,44,0.892876557209661,1107058
+primer/view_components,https://github.com/primer/view_components,566,129,MIT License,Ruby,False,True,283147,27,4,9,9,18,0.9338073018475314,118474
+julialang/julia,https://github.com/JuliaLang/julia,48207,5704,MIT License,Julia,False,True,354008,4924,5,5,3,8,0.8181311205872879,510531
+azure/autorest,https://github.com/Azure/autorest,4795,739,MIT License,TypeSpec,False,True,79888,158,3,2,2,4,0.9657826487074375,380952
+syntaxfm/website,https://github.com/syntaxfm/website,1175,518,MIT License,Svelte,False,True,226251,45,2,1,1,2,0.9846844232100199,88210
+facebook/idb,https://github.com/facebook/idb,4862,472,MIT License,Objective-C,False,True,99072,198,3,2,2,4,0.8282841943918492,73492
+jenkinsci/helm-charts,https://github.com/jenkinsci/helm-charts,638,922,Apache License 2.0,Mustache,False,True,11499,158,2,1,1,2,0.9193801149225144,10560
+microsoft/vcpkg,https://github.com/microsoft/vcpkg,26408,7280,MIT License,CMake,False,True,97632,1345,11,10,10,20,0.8915619905520974,502594
+folke/snacks.nvim,https://github.com/folke/snacks.nvim,6819,390,Apache License 2.0,Lua,False,True,15460,81,2,1,1,2,0.913533459658921,54960

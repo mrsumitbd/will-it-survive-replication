@@ -1,0 +1,814 @@
+slug,url,stars,forks,license,is_archived,is_fork,size_kb,open_issues,language,has_release,created_at,updated_at
+vgmtrans/vgmtrans,https://github.com/vgmtrans/vgmtrans,1131,97,zlib License,False,False,27905,108,C++,True,2013-07-15T05:07:36Z,2026-01-08T21:07:42Z
+dagster-io/dagster,https://github.com/dagster-io/dagster,14719,1924,Apache License 2.0,False,False,1414695,2772,Python,True,2018-04-30T16:30:04Z,2026-01-08T21:44:07Z
+box/box-ui-elements,https://github.com/box/box-ui-elements,550,344,Other,False,False,103944,110,JavaScript,True,2017-06-29T05:49:51Z,2026-01-08T19:41:46Z
+agentops-ai/tokencost,https://github.com/AgentOps-AI/tokencost,1901,101,MIT License,False,False,2264,24,Python,True,2023-12-03T04:56:44Z,2026-01-08T17:50:01Z
+pardeike/harmony,https://github.com/pardeike/Harmony,6272,564,MIT License,False,False,18422,10,C#,True,2017-01-04T09:43:16Z,2026-01-08T22:54:16Z
+mitsuhiko/insta,https://github.com/mitsuhiko/insta,2687,139,Apache License 2.0,False,False,11230,66,Rust,True,2019-01-13T22:25:41Z,2026-01-08T19:27:03Z
+fireproof-storage/fireproof,https://github.com/fireproof-storage/fireproof,939,54,Apache License 2.0,False,False,26325,92,TypeScript,True,2023-08-17T21:13:44Z,2026-01-05T14:47:34Z
+dotnet/diagnostics,https://github.com/dotnet/diagnostics,1300,387,MIT License,False,False,103231,322,C++,True,2018-03-22T00:39:48Z,2026-01-08T07:00:58Z
+maplibre/maplibre-native,https://github.com/maplibre/maplibre-native,1683,447,"BSD 2-Clause ""Simplified"" License",False,False,3242359,475,C++,True,2020-11-20T12:53:50Z,2026-01-08T18:19:40Z
+comfy-org/comfyui_frontend,https://github.com/Comfy-Org/ComfyUI_frontend,1581,460,GNU General Public License v3.0,False,False,410571,916,TypeScript,True,2024-06-13T00:22:24Z,2026-01-08T22:53:05Z
+microsoft/debugpy,https://github.com/microsoft/debugpy,2307,182,Other,False,False,59103,218,Python,True,2020-01-15T22:38:20Z,2026-01-08T14:56:35Z
+alexanderjeurissen/ranger_devicons,https://github.com/alexanderjeurissen/ranger_devicons,999,78,GNU General Public License v3.0,False,False,240,0,Python,False,2017-03-09T20:01:32Z,2026-01-02T17:52:02Z
+kubetail-org/kubetail,https://github.com/kubetail-org/kubetail,1567,109,Apache License 2.0,False,False,4496,37,Go,True,2024-02-12T11:32:32Z,2026-01-08T19:56:36Z
+codehagen/badget,https://github.com/Codehagen/Badget,2661,297,GNU Affero General Public License v3.0,False,False,6928,3,TypeScript,False,2023-12-31T13:38:51Z,2026-01-08T07:35:03Z
+jina-ai/reader,https://github.com/jina-ai/reader,9648,742,Apache License 2.0,False,False,1467,122,TypeScript,False,2024-04-10T04:05:06Z,2026-01-08T17:50:50Z
+bentoml/bentoml,https://github.com/bentoml/BentoML,8353,899,Apache License 2.0,False,False,103312,137,Python,True,2019-04-02T01:39:27Z,2026-01-08T20:55:54Z
+daohoangson/flutter_widget_from_html,https://github.com/daohoangson/flutter_widget_from_html,751,284,MIT License,False,False,97055,141,Dart,True,2018-10-17T18:05:01Z,2025-12-31T01:42:21Z
+microsoft/typescript-go,https://github.com/microsoft/typescript-go,23684,783,Apache License 2.0,False,False,182541,262,Go,False,2024-09-19T20:25:12Z,2026-01-08T23:07:54Z
+wandb/openui,https://github.com/wandb/openui,21963,2042,Apache License 2.0,False,False,26416,84,TypeScript,False,2024-03-17T23:46:16Z,2026-01-08T19:16:27Z
+different-ai/note-companion,https://github.com/Nexus-JPF/note-companion,774,125,MIT License,False,False,169724,0,TypeScript,True,2023-09-10T20:33:20Z,2026-01-08T11:54:28Z
+stanfordnlp/dspy,https://github.com/stanfordnlp/dspy,31311,2536,MIT License,False,False,176585,425,Python,True,2023-01-09T21:01:51Z,2026-01-08T23:00:19Z
+joamag/boytacean,https://github.com/joamag/boytacean,661,36,Apache License 2.0,False,False,23805,9,Rust,True,2022-11-14T08:52:10Z,2026-01-07T15:27:00Z
+modelcontextprotocol/python-sdk,https://github.com/modelcontextprotocol/python-sdk,21008,2975,MIT License,False,False,4297,316,Python,True,2024-09-24T21:01:35Z,2026-01-08T17:34:29Z
+yamadashy/repomix,https://github.com/yamadashy/repomix,21076,974,MIT License,False,False,13869,137,TypeScript,True,2024-07-13T07:11:32Z,2026-01-08T23:17:19Z
+microsoft/vscode-vsce,https://github.com/microsoft/vscode-vsce,965,238,Other,False,False,3160,44,TypeScript,True,2015-09-22T10:04:25Z,2026-01-05T09:03:19Z
+pixijs/pixijs,https://github.com/pixijs/pixijs,46369,4935,MIT License,False,False,119539,326,TypeScript,True,2013-01-21T22:40:50Z,2026-01-08T22:02:35Z
+azure/azure-sdk-for-rust,https://github.com/Azure/azure-sdk-for-rust,862,323,MIT License,False,False,315060,164,Rust,True,2020-09-15T18:05:06Z,2026-01-08T17:45:38Z
+567-labs/instructor,https://github.com/567-labs/instructor,12115,915,MIT License,False,False,76005,74,Python,True,2023-06-14T10:42:23Z,2026-01-08T22:50:27Z
+traceloop/openllmetry,https://github.com/traceloop/openllmetry,6750,861,Apache License 2.0,False,False,46132,328,Python,True,2023-09-02T14:42:59Z,2026-01-08T19:43:36Z
+mendableai/firecrawl,https://github.com/firecrawl/firecrawl,73811,5695,GNU Affero General Public License v3.0,False,False,80797,138,TypeScript,True,2024-04-15T21:02:29Z,2026-01-08T23:17:02Z
+microsoft/microsoft365dsc,https://github.com/microsoft/Microsoft365DSC,2140,618,MIT License,False,False,236948,174,PowerShell,True,2018-11-21T16:54:50Z,2026-01-08T18:26:12Z
+openai/codex,https://github.com/openai/codex,55509,7138,Apache License 2.0,False,False,84797,971,Rust,True,2025-04-13T05:37:54Z,2026-01-08T23:06:50Z
+doggy8088/github-copilot-configs,https://github.com/doggy8088/github-copilot-configs,1025,139,None,False,False,5301,13,Unknown,False,2025-03-27T15:19:00Z,2026-01-08T10:58:36Z
+leoafarias/fvm,https://github.com/leoafarias/fvm,5295,272,MIT License,False,False,14038,61,Dart,True,2019-02-22T06:57:07Z,2026-01-08T23:07:15Z
+huggingface/tokenizers,https://github.com/huggingface/tokenizers,10374,1017,Apache License 2.0,False,False,14291,134,Rust,True,2019-11-01T17:52:20Z,2026-01-08T13:50:08Z
+whitphx/stlite,https://github.com/whitphx/stlite,1574,84,Apache License 2.0,False,False,1469502,81,TypeScript,True,2022-05-14T06:10:07Z,2026-01-08T15:24:35Z
+microsoft/azurelinux,https://github.com/microsoft/azurelinux,4526,602,MIT License,False,False,513128,645,RPM Spec,True,2020-07-22T19:27:14Z,2026-01-08T18:03:58Z
+humanlogio/humanlog,https://github.com/humanlogio/humanlog,902,54,Apache License 2.0,False,False,35621,36,Go,True,2014-10-14T16:39:06Z,2026-01-07T03:34:03Z
+microsoft/playwright,https://github.com/microsoft/playwright,80949,4985,Apache License 2.0,False,False,222719,567,TypeScript,True,2019-11-15T18:32:42Z,2026-01-08T22:37:57Z
+bennycode/trading-signals,https://github.com/bennycode/trading-signals,841,118,None,False,False,7284,3,TypeScript,True,2020-05-28T10:44:05Z,2026-01-07T06:04:02Z
+ggml-org/llama.cpp,https://github.com/ggml-org/llama.cpp,92644,14399,MIT License,False,False,282407,992,C++,True,2023-03-10T18:58:00Z,2026-01-08T23:19:46Z
+dartsim/dart,https://github.com/dartsim/dart,1040,291,"BSD 2-Clause ""Simplified"" License",False,False,836967,4,C++,True,2011-09-19T21:53:51Z,2026-01-08T04:17:28Z
+metalbear-co/mirrord,https://github.com/metalbear-co/mirrord,4828,171,MIT License,False,False,32334,203,Rust,True,2022-02-01T16:42:30Z,2026-01-08T13:43:21Z
+mediar-ai/terminator,https://github.com/mediar-ai/terminator,1240,187,MIT License,False,False,53764,9,Rust,True,2025-04-11T02:48:04Z,2026-01-08T21:42:42Z
+microsoft/git,https://github.com/microsoft/git,867,106,Other,False,True,384195,22,C,True,2017-01-23T22:54:33Z,2026-01-08T16:16:27Z
+elie222/inbox-zero,https://github.com/elie222/inbox-zero,9758,1147,Other,False,False,76505,95,TypeScript,True,2023-07-12T15:34:57Z,2026-01-08T19:58:37Z
+elixir-lsp/elixir-ls,https://github.com/elixir-lsp/elixir-ls,1720,223,Apache License 2.0,False,False,9434,57,Elixir,True,2018-03-25T22:45:34Z,2026-01-07T02:33:29Z
+kiwicom/orbit,https://github.com/kiwicom/orbit,1432,166,MIT License,False,False,1568855,50,TypeScript,True,2018-02-14T14:51:56Z,2026-01-08T17:10:33Z
+anyproto/anytype-ts,https://github.com/anyproto/anytype-ts,6804,415,Other,False,False,950261,133,TypeScript,True,2023-05-22T10:39:33Z,2026-01-08T22:35:12Z
+calcom/cal.com,https://github.com/calcom/cal.com,39592,11507,Other,False,False,1098117,1350,TypeScript,True,2021-03-22T13:47:42Z,2026-01-08T23:15:50Z
+openai/openai-realtime-agents,https://github.com/openai/openai-realtime-agents,6705,1064,MIT License,False,False,2432,25,TypeScript,False,2025-01-16T01:29:28Z,2026-01-08T13:44:40Z
+estruyf/vscode-front-matter,https://github.com/estruyf/vscode-front-matter,2413,103,MIT License,False,False,44140,118,TypeScript,True,2019-08-23T15:44:41Z,2026-01-08T13:57:20Z
+potpie-ai/potpie,https://github.com/potpie-ai/potpie,5111,516,Apache License 2.0,False,False,5948,98,Python,True,2024-08-12T09:18:25Z,2026-01-08T21:07:33Z
+apache/pinot,https://github.com/apache/pinot,6007,1440,Apache License 2.0,False,False,344573,1847,Java,True,2014-05-19T23:27:48Z,2026-01-08T19:31:17Z
+astronomer/dag-factory,https://github.com/astronomer/dag-factory,1408,221,Apache License 2.0,False,False,12297,100,Python,True,2018-11-21T00:20:36Z,2026-01-08T03:00:37Z
+rangi42/polishedcrystal,https://github.com/Rangi42/polishedcrystal,1407,275,None,False,False,86182,81,Assembly,True,2017-05-24T11:54:53Z,2026-01-08T01:08:01Z
+supabase/supabase,https://github.com/supabase/supabase,95864,11212,Apache License 2.0,False,False,2228225,782,TypeScript,True,2019-10-12T05:56:49Z,2026-01-08T22:56:03Z
+langfuse/langfuse,https://github.com/langfuse/langfuse,20303,1991,Other,False,False,67199,472,TypeScript,True,2023-05-18T17:47:09Z,2026-01-08T21:18:34Z
+herbie-fp/herbie,https://github.com/herbie-fp/herbie,834,43,Other,False,False,85322,13,HTML,True,2013-10-18T17:02:08Z,2026-01-02T04:59:18Z
+humansignal/label-studio-ml-backend,https://github.com/HumanSignal/label-studio-ml-backend,932,426,Apache License 2.0,False,False,49324,176,Python,True,2020-04-02T16:18:08Z,2026-01-08T14:09:00Z
+strawberry-graphql/strawberry,https://github.com/strawberry-graphql/strawberry,4579,609,MIT License,False,False,16987,472,Python,True,2018-12-21T08:56:55Z,2026-01-08T17:21:03Z
+lordmauve/pgzero,https://github.com/lordmauve/pgzero,590,207,GNU Lesser General Public License v3.0,False,False,3775,134,Python,True,2018-02-25T13:16:02Z,2026-01-02T19:13:18Z
+openai/openai-assistants-quickstart,https://github.com/openai/openai-assistants-quickstart,1967,594,MIT License,False,False,37,23,TypeScript,False,2024-05-01T19:48:19Z,2026-01-08T20:40:14Z
+uxlfoundation/onedal,https://github.com/uxlfoundation/oneDAL,647,225,Apache License 2.0,False,False,92672,62,C++,True,2016-03-28T22:39:32Z,2026-01-07T09:16:35Z
+stanford-crfm/levanter,https://github.com/marin-community/levanter,688,119,Apache License 2.0,False,False,15061,22,Python,True,2022-05-24T22:26:27Z,2026-01-06T20:01:40Z
+wei/socialify,https://github.com/wei/socialify,2148,120,MIT License,False,False,24165,8,TypeScript,True,2020-09-23T00:08:19Z,2026-01-08T04:58:28Z
+goniszewski/grimoire,https://github.com/goniszewski/grimoire,2691,81,MIT License,False,False,6118,33,TypeScript,True,2023-06-22T14:41:17Z,2026-01-08T09:36:53Z
+microsoft/playwright-mcp,https://github.com/microsoft/playwright-mcp,25239,2054,Apache License 2.0,False,False,1509,39,TypeScript,True,2025-03-21T17:48:36Z,2026-01-08T23:08:01Z
+evilbeaver/onescript,https://github.com/EvilBeaver/OneScript,542,114,Mozilla Public License 2.0,False,False,32302,98,C#,True,2016-04-08T12:04:21Z,2026-01-06T11:52:31Z
+thealgorithms/python,https://github.com/TheAlgorithms/Python,216650,49902,MIT License,False,False,15661,838,Python,False,2016-07-16T09:44:01Z,2026-01-08T22:22:03Z
+heyverse/hey,https://github.com/bigint/hey,29519,1801,GNU General Public License v3.0,False,False,59439,0,TypeScript,False,2022-03-19T15:01:46Z,2026-01-08T22:19:42Z
+dkrivoruchko/screenstream,https://github.com/dkrivoruchko/ScreenStream,2277,433,MIT License,False,False,94128,17,Kotlin,True,2016-07-18T08:07:33Z,2026-01-08T08:16:04Z
+kube-hetzner/terraform-hcloud-kube-hetzner,https://github.com/mysticaltech/terraform-hcloud-kube-hetzner,3594,519,MIT License,False,False,2989,59,HCL,True,2021-07-30T08:14:22Z,2026-01-08T13:07:55Z
+microsoft/azuredatastudio,https://github.com/microsoft/azuredatastudio,7715,961,MIT License,False,False,757204,2597,TypeScript,True,2017-11-02T01:00:13Z,2026-01-07T22:51:01Z
+voideditor/void,https://github.com/voideditor/void,28013,2240,Apache License 2.0,False,False,49088,312,TypeScript,True,2024-09-11T02:37:00Z,2026-01-08T22:27:27Z
+triggerdotdev/trigger.dev,https://github.com/triggerdotdev/trigger.dev,13243,947,Apache License 2.0,False,False,152207,165,TypeScript,True,2022-11-30T14:59:07Z,2026-01-08T23:07:22Z
+featureform/enrichmcp,https://github.com/featureform/enrichmcp,640,29,Apache License 2.0,False,False,460,9,Python,True,2025-03-31T14:20:04Z,2026-01-05T05:51:00Z
+jomjol/ai-on-the-edge-device,https://github.com/jomjol/AI-on-the-edge-device,7930,829,Other,False,False,164556,148,C++,True,2020-07-28T17:20:33Z,2026-01-08T23:09:59Z
+microsoft/promptflow,https://github.com/microsoft/promptflow,10975,1051,MIT License,False,False,173451,67,Python,True,2023-06-30T06:03:06Z,2026-01-08T21:59:16Z
+microsoft/vscode-docs,https://github.com/microsoft/vscode-docs,6330,5507,Other,False,False,257872,105,Markdown,False,2015-08-26T18:45:33Z,2026-01-08T22:03:02Z
+busser/tfautomv,https://github.com/busser/tfautomv,875,25,Apache License 2.0,False,False,25583,16,Go,True,2022-04-16T10:38:07Z,2026-01-01T23:05:22Z
+adaline/gateway,https://github.com/adaline/gateway,570,24,MIT License,False,False,1440,2,TypeScript,True,2024-10-15T02:20:50Z,2026-01-08T19:16:35Z
+microsoft/sbom-tool,https://github.com/microsoft/sbom-tool,1961,188,MIT License,False,False,3045,84,C#,True,2022-06-01T16:58:49Z,2026-01-08T08:57:38Z
+px4/px4-autopilot,https://github.com/PX4/PX4-Autopilot,10825,14899,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,528634,1899,C++,True,2012-08-04T21:19:36Z,2026-01-08T19:24:34Z
+kiln-ai/kiln,https://github.com/Kiln-AI/Kiln,4527,334,Other,False,False,29127,33,Python,True,2024-07-23T23:10:13Z,2026-01-08T19:43:22Z
+keephq/keep,https://github.com/keephq/keep,11103,1140,Other,False,False,85818,436,Python,True,2023-02-04T18:43:27Z,2026-01-08T16:22:06Z
+microsoft/kiota,https://github.com/microsoft/kiota,3606,294,MIT License,False,False,42070,171,C#,True,2020-12-22T15:35:49Z,2026-01-08T07:26:41Z
+astral-sh/ruff,https://github.com/astral-sh/ruff,45025,1690,MIT License,False,False,115135,1893,Rust,True,2022-08-09T17:17:44Z,2026-01-08T22:34:26Z
+roboflow/inference,https://github.com/roboflow/inference,2149,243,Other,False,False,193612,97,Python,True,2023-07-31T17:00:40Z,2026-01-08T21:02:45Z
+microsoft/roosterjs,https://github.com/microsoft/roosterjs,1288,183,Other,False,False,1102865,59,TypeScript,True,2017-07-13T16:39:51Z,2026-01-08T20:07:56Z
+vercel/turborepo,https://github.com/vercel/turborepo,29460,2212,MIT License,False,False,787757,127,Rust,True,2021-10-05T17:37:11Z,2026-01-08T23:07:28Z
+fishaudio/fish-speech,https://github.com/fishaudio/fish-speech,24517,2024,Apache License 2.0,False,False,19744,18,Python,True,2023-10-10T03:16:51Z,2026-01-08T23:07:44Z
+huggingface/blog,https://github.com/huggingface/blog,3280,960,None,False,False,696400,217,Jupyter Notebook,False,2020-02-14T15:39:05Z,2026-01-07T04:02:31Z
+br-g/openf1,https://github.com/br-g/openf1,1090,85,Other,False,False,559,25,Python,True,2023-09-27T15:16:14Z,2026-01-08T11:10:07Z
+netket/netket,https://github.com/netket/netket,649,207,Apache License 2.0,False,False,69380,105,Python,True,2018-04-23T18:48:08Z,2026-01-08T08:21:03Z
+f/mcptools,https://github.com/f/mcptools,1430,107,MIT License,False,False,25884,35,Go,True,2025-03-25T18:14:37Z,2026-01-08T00:58:09Z
+beyond-all-reason/beyond-all-reason,https://github.com/beyond-all-reason/Beyond-All-Reason,2697,517,Other,False,False,4109660,634,Lua,False,2019-02-24T17:57:39Z,2026-01-08T22:39:50Z
+pdfme/pdfme,https://github.com/pdfme/pdfme,3933,405,MIT License,False,False,386944,90,TypeScript,True,2021-08-22T08:45:56Z,2026-01-08T05:19:54Z
+softfever/orcaslicer,https://github.com/OrcaSlicer/OrcaSlicer,12104,1625,GNU Affero General Public License v3.0,False,False,992859,1587,C++,True,2022-07-16T11:01:21Z,2026-01-08T21:35:13Z
+langchain-ai/langgraph,https://github.com/langchain-ai/langgraph,23093,4062,MIT License,False,False,506305,292,Python,True,2023-08-09T18:33:12Z,2026-01-08T22:49:50Z
+assistant-ui/assistant-ui,https://github.com/assistant-ui/assistant-ui,7942,851,MIT License,False,False,63916,108,TypeScript,True,2023-11-22T16:01:17Z,2026-01-08T21:17:16Z
+xtermjs/xterm.js,https://github.com/xtermjs/xterm.js,19693,1793,MIT License,False,False,31397,122,TypeScript,True,2014-03-24T16:04:04Z,2026-01-08T22:02:43Z
+wolfssl/wolfssl,https://github.com/wolfSSL/wolfssl,2695,915,GNU General Public License v3.0,False,False,801290,57,C,True,2015-01-07T18:50:58Z,2026-01-08T21:03:48Z
+sourcebot-dev/sourcebot,https://github.com/sourcebot-dev/sourcebot,2964,203,Other,False,False,41329,116,TypeScript,True,2024-08-23T20:40:37Z,2026-01-08T19:20:27Z
+yytypescript/book,https://github.com/yytypescript/book,1090,112,Creative Commons Attribution Share Alike 4.0 International,False,False,45632,112,TypeScript,True,2019-12-17T05:17:10Z,2026-01-08T20:42:15Z
+goat-sdk/goat,https://github.com/goat-sdk/goat,938,284,MIT License,False,False,7986,26,TypeScript,False,2024-11-26T18:46:09Z,2026-01-04T22:08:56Z
+opal/opal,https://github.com/opal/opal,4908,336,MIT License,False,False,21109,150,Ruby,True,2009-04-24T08:53:34Z,2026-01-07T17:17:10Z
+wix/react-native-ui-lib,https://github.com/wix/react-native-ui-lib,7059,747,MIT License,False,False,221298,75,TypeScript,True,2017-02-08T09:55:18Z,2026-01-08T16:35:07Z
+blokadaorg/blokada,https://github.com/blokadaorg/blokada,3182,230,Mozilla Public License 2.0,False,False,143889,209,Dart,True,2016-11-19T14:52:07Z,2026-01-08T13:32:07Z
+strapi/documentation,https://github.com/strapi/documentation,1230,1243,Other,False,False,695573,50,JavaScript,True,2020-10-21T16:57:55Z,2026-01-07T14:04:42Z
+microsoft/teams-ai,https://github.com/microsoft/teams-sdk,663,263,MIT License,False,False,49691,134,MDX,True,2023-02-06T18:03:17Z,2026-01-06T12:14:57Z
+microsoft/fluentui-blazor,https://github.com/microsoft/fluentui-blazor,4643,459,MIT License,False,False,201031,33,C#,True,2021-03-15T21:48:18Z,2026-01-05T21:51:46Z
+dotnet/orleans,https://github.com/dotnet/orleans,10664,2114,MIT License,False,False,71110,713,C#,True,2014-12-19T14:32:50Z,2026-01-08T14:50:37Z
+barryclark/jekyll-now,https://github.com/barryclark/jekyll-now,8390,35233,MIT License,False,False,8406,381,CSS,True,2014-02-07T00:14:55Z,2026-01-06T23:57:18Z
+hashintel/hash,https://github.com/hashintel/hash,1397,110,Other,False,False,382243,55,TypeScript,True,2019-07-15T16:19:36Z,2026-01-08T14:46:20Z
+fluent/fluent-bit,https://github.com/fluent/fluent-bit,7550,1854,Apache License 2.0,False,False,140135,710,C,True,2015-01-27T20:41:52Z,2026-01-08T09:17:24Z
+dotnet/open-xml-sdk,https://github.com/dotnet/Open-XML-SDK,4395,576,MIT License,False,False,88127,101,C#,True,2014-06-05T16:11:17Z,2026-01-07T21:07:19Z
+azure/azure-sdk-for-js,https://github.com/Azure/azure-sdk-for-js,2262,1321,MIT License,False,False,594507,714,TypeScript,True,2017-10-25T18:44:09Z,2026-01-08T22:38:09Z
+artsy/force,https://github.com/artsy/force,625,149,MIT License,False,False,272108,67,TypeScript,True,2014-08-12T18:14:34Z,2026-01-08T14:35:38Z
+scale3-labs/langtrace,https://github.com/Scale3-Labs/langtrace,1090,103,GNU Affero General Public License v3.0,False,False,3869,1,TypeScript,True,2024-03-30T23:49:41Z,2026-01-08T20:44:08Z
+paloaltonetworks/docusaurus-openapi-docs,https://github.com/PaloAltoNetworks/docusaurus-openapi-docs,1025,300,MIT License,False,False,9315,120,TypeScript,True,2022-02-16T16:06:40Z,2026-01-08T22:50:13Z
+microsoft/react-native-windows,https://github.com/microsoft/react-native-windows,17128,1186,Other,False,False,335725,758,C++,True,2015-12-15T00:16:54Z,2026-01-08T16:35:05Z
+okteto/okteto,https://github.com/okteto/okteto,3479,315,Apache License 2.0,False,False,27201,38,Go,True,2018-08-07T08:57:27Z,2026-01-08T10:51:06Z
+azure/azure-cosmos-dotnet-v3,https://github.com/Azure/azure-cosmos-dotnet-v3,780,523,MIT License,False,False,166220,477,C#,True,2018-11-05T18:03:16Z,2026-01-08T19:33:25Z
+blorm-network/zerepy,https://github.com/blorm-network/ZerePy,586,253,MIT License,False,False,1494,38,Python,True,2024-11-21T16:10:18Z,2025-12-30T13:59:29Z
+alexpfau/calendar-card-pro,https://github.com/alexpfau/calendar-card-pro,1009,77,Other,False,False,19912,88,TypeScript,True,2025-02-26T10:42:41Z,2026-01-08T00:37:53Z
+fatih/dotfiles,https://github.com/fatih/dotfiles,866,137,None,False,False,505,1,Lua,False,2014-05-01T21:15:12Z,2026-01-03T06:24:50Z
+acesuit/mace,https://github.com/ACEsuit/mace,996,362,Other,False,False,173373,114,Python,True,2022-06-21T18:44:34Z,2026-01-08T08:01:01Z
+dotnet/arcade,https://github.com/dotnet/arcade,701,376,MIT License,False,False,58401,495,C#,True,2018-02-13T22:29:54Z,2026-01-06T10:50:12Z
+traccar/traccar-web,https://github.com/traccar/traccar-web,1045,1342,Apache License 2.0,False,False,12609,123,JavaScript,True,2012-11-02T21:31:50Z,2026-01-08T01:36:16Z
+vercel/ai-chatbot,https://github.com/vercel/ai-chatbot,19176,6180,Other,False,False,15568,52,TypeScript,True,2023-05-19T16:36:23Z,2026-01-08T23:17:17Z
+bionic-gpt/bionic-gpt,https://github.com/bionic-gpt/bionic-gpt,2281,236,Other,False,False,160970,18,Rust,True,2023-07-07T07:45:24Z,2026-01-06T14:21:33Z
+aipotheosis-labs/aci,https://github.com/aipotheosis-labs/aci,4695,455,Apache License 2.0,False,False,20483,49,Python,True,2024-09-19T15:06:53Z,2026-01-08T15:35:47Z
+helicone/helicone,https://github.com/Helicone/helicone,4918,466,Apache License 2.0,False,False,765447,30,TypeScript,True,2023-01-31T22:34:44Z,2026-01-08T22:47:44Z
+kanaries/pygwalker,https://github.com/Kanaries/pygwalker,15559,855,Apache License 2.0,False,False,75217,75,Python,True,2023-02-16T05:17:24Z,2026-01-08T13:39:51Z
+pulumi/examples,https://github.com/pulumi/examples,2551,890,Apache License 2.0,False,False,155475,145,TypeScript,False,2017-10-27T19:50:31Z,2026-01-07T07:57:45Z
+huggingface/smolagents,https://github.com/huggingface/smolagents,24810,2244,Apache License 2.0,False,False,6846,344,Python,True,2024-12-05T11:28:04Z,2026-01-08T23:02:45Z
+mtrojnar/osslsigncode,https://github.com/mtrojnar/osslsigncode,997,144,Other,False,False,2806,0,C,True,2018-11-22T06:43:20Z,2026-01-07T12:36:47Z
+ray-project/kuberay,https://github.com/ray-project/kuberay,2247,681,Apache License 2.0,False,False,161279,504,Go,True,2020-10-29T20:42:00Z,2026-01-08T12:16:34Z
+dense-analysis/neural,https://github.com/dense-analysis/neural,509,21,MIT License,False,False,304,19,Vim Script,True,2022-12-21T23:51:53Z,2025-12-17T22:27:02Z
+boundaryml/baml,https://github.com/BoundaryML/baml,7294,355,Apache License 2.0,False,False,290623,212,Rust,True,2023-10-06T18:57:41Z,2026-01-08T23:19:18Z
+instantdb/instant,https://github.com/instantdb/instant,9606,320,Apache License 2.0,False,False,68200,11,Clojure,False,2024-08-19T21:53:42Z,2026-01-08T20:19:58Z
+simonw/llm,https://github.com/simonw/llm,10758,720,Apache License 2.0,False,False,1307,538,Python,True,2023-04-01T21:16:57Z,2026-01-08T22:30:57Z
+ibelick/zola,https://github.com/ibelick/zola,1343,269,Apache License 2.0,False,False,1655,27,TypeScript,False,2025-04-02T07:57:31Z,2026-01-07T22:17:41Z
+commaai/panda,https://github.com/commaai/panda,1640,881,MIT License,False,False,11811,79,C,False,2017-04-07T01:11:08Z,2026-01-08T05:54:21Z
+allenai/open-instruct,https://github.com/allenai/open-instruct,3515,482,Apache License 2.0,False,False,151023,53,Python,False,2023-06-09T16:50:38Z,2026-01-08T07:16:18Z
+whitphx/streamlit-webrtc,https://github.com/whitphx/streamlit-webrtc,1684,226,MIT License,False,False,38968,98,Python,True,2021-01-04T14:13:24Z,2026-01-08T16:34:28Z
+oapi-codegen/oapi-codegen,https://github.com/oapi-codegen/oapi-codegen,7954,1004,Apache License 2.0,False,False,16025,755,Go,True,2019-02-27T23:59:59Z,2026-01-08T20:58:00Z
+willccbb/verifiers,https://github.com/PrimeIntellect-ai/verifiers,3719,468,MIT License,False,False,157555,133,Python,True,2025-01-22T12:58:34Z,2026-01-08T22:01:06Z
+milkshakesoftware/premailer.net,https://github.com/milkshakesoftware/PreMailer.Net,679,117,MIT License,False,False,2135,19,C#,True,2011-04-13T11:37:03Z,2025-12-20T16:40:24Z
+rcaloras/bashhub-client,https://github.com/rcaloras/bashhub-client,1295,86,Apache License 2.0,False,False,347,34,Python,True,2013-09-16T04:54:15Z,2025-12-31T04:38:34Z
+alexei-led/pumba,https://github.com/alexei-led/pumba,2961,199,Apache License 2.0,False,False,15790,36,Go,True,2016-03-22T14:20:27Z,2026-01-03T12:34:26Z
+opengisch/qfield,https://github.com/opengisch/QField,1081,288,GNU General Public License v2.0,False,False,132932,210,C++,True,2014-11-26T16:20:45Z,2026-01-08T14:44:11Z
+hypothesis/client,https://github.com/hypothesis/client,684,215,Other,False,False,59219,177,Mustache,True,2016-06-29T15:02:29Z,2026-01-06T21:05:20Z
+github/github-mcp-server,https://github.com/github/github-mcp-server,25730,3342,MIT License,False,False,41592,236,Go,True,2025-03-04T16:42:04Z,2026-01-08T23:17:21Z
+miurla/morphic,https://github.com/miurla/morphic,8469,2310,Apache License 2.0,False,False,8131,55,TypeScript,True,2024-04-05T13:55:29Z,2026-01-08T20:38:42Z
+gofr-dev/gofr,https://github.com/gofr-dev/gofr,15397,1744,Apache License 2.0,False,False,18225,85,Go,True,2023-10-24T10:14:48Z,2026-01-08T22:20:16Z
+arthursonzogni/ftxui,https://github.com/ArthurSonzogni/FTXUI,9427,536,MIT License,False,False,101777,92,C++,True,2019-01-27T16:06:20Z,2026-01-08T21:28:49Z
+openhft/chronicle-wire,https://github.com/OpenHFT/Chronicle-Wire,571,136,Apache License 2.0,False,False,20737,39,Java,True,2015-01-15T14:47:29Z,2026-01-05T08:20:19Z
+boinc/boinc,https://github.com/BOINC/boinc,2292,504,GNU Lesser General Public License v3.0,False,False,286073,477,PHP,True,2015-02-03T19:28:28Z,2026-01-08T21:22:30Z
+lumen-notes/lumen,https://github.com/lumen-notes/lumen,624,37,MIT License,False,False,17657,46,TypeScript,False,2022-07-23T17:50:01Z,2026-01-06T08:19:52Z
+grafana/loki,https://github.com/grafana/loki,27336,3891,GNU Affero General Public License v3.0,False,False,446400,2195,Go,True,2018-04-16T09:22:48Z,2026-01-08T21:44:11Z
+microsoft/windows-classic-samples,https://github.com/microsoft/Windows-classic-samples,5530,3326,Other,False,False,39054,165,Unknown,True,2015-09-08T15:45:22Z,2026-01-08T12:07:18Z
+ragen-ai/ragen,https://github.com/mll-lab-nu/RAGEN,2470,197,MIT License,False,False,26822,28,Python,False,2025-01-25T19:31:40Z,2026-01-08T17:08:38Z
+toeverything/affine,https://github.com/toeverything/AFFiNE,61567,4248,Other,False,False,561137,560,TypeScript,True,2022-07-31T18:45:21Z,2026-01-08T23:14:39Z
+unclecode/crawl4ai,https://github.com/unclecode/crawl4ai,58273,5922,Apache License 2.0,False,False,148159,278,Python,True,2024-05-09T09:48:50Z,2026-01-08T23:07:51Z
+nuget/nugetgallery,https://github.com/NuGet/NuGetGallery,1616,656,Apache License 2.0,False,False,105955,833,C#,True,2011-08-09T17:57:32Z,2026-01-08T19:40:01Z
+dotnet/docs,https://github.com/dotnet/docs,4619,6072,Creative Commons Attribution 4.0 International,False,False,990115,1163,Unknown,True,2015-05-19T15:13:32Z,2026-01-08T21:51:32Z
+rssnext/folo,https://github.com/RSSNext/Folo,36580,1898,GNU Affero General Public License v3.0,False,False,68521,366,TypeScript,True,2024-04-08T03:23:35Z,2026-01-08T18:08:39Z
+ray-project/ray,https://github.com/ray-project/ray,40679,7084,Apache License 2.0,False,False,676224,3265,Python,True,2016-10-25T19:38:30Z,2026-01-08T21:50:01Z
+open-lambda/open-lambda,https://github.com/open-lambda/open-lambda,1007,145,Apache License 2.0,False,False,125835,59,Go,True,2016-06-17T18:01:08Z,2026-01-07T09:18:40Z
+terkelg/awesome-creative-coding,https://github.com/terkelg/awesome-creative-coding,14300,922,None,False,False,573,6,HTML,False,2016-11-01T23:50:27Z,2026-01-08T19:48:33Z
+bespokelabsai/curator,https://github.com/bespokelabsai/curator,1595,128,Apache License 2.0,False,False,65651,67,Python,True,2024-10-28T01:11:41Z,2026-01-08T14:01:51Z
+qltysh/qlty,https://github.com/qltysh/qlty,2906,260,Other,False,False,5386,55,Rust,True,2015-06-19T13:54:41Z,2026-01-08T22:47:00Z
+rainbow-me/rainbowkit,https://github.com/rainbow-me/rainbowkit,2749,776,MIT License,False,False,31026,54,MDX,True,2021-08-04T08:32:05Z,2026-01-02T20:54:54Z
+jhumanj/opnform,https://github.com/OpnForm/OpnForm,3083,441,Other,False,False,35265,20,PHP,True,2022-09-20T19:54:26Z,2026-01-08T13:41:15Z
+metacraft-labs/codetracer,https://github.com/metacraft-labs/codetracer,1260,26,GNU Affero General Public License v3.0,False,False,16898,83,Nim,True,2025-01-24T11:48:35Z,2026-01-06T23:13:59Z
+uberi/speech_recognition,https://github.com/Uberi/speech_recognition,8922,2443,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,111226,326,Python,True,2014-04-23T04:53:54Z,2026-01-06T16:07:19Z
+tldraw/tldraw,https://github.com/tldraw/tldraw,44492,2922,Other,False,False,997506,329,TypeScript,True,2021-05-09T11:48:37Z,2026-01-08T23:07:26Z
+reacherhq/check-if-email-exists,https://github.com/reacherhq/check-if-email-exists,7300,518,Other,False,False,4484,86,Rust,True,2017-04-25T12:47:51Z,2026-01-08T20:45:35Z
+microsoft/typespec,https://github.com/microsoft/typespec,5522,329,MIT License,False,False,85170,1037,Java,True,2021-06-30T23:29:49Z,2026-01-08T16:40:43Z
+microsoft/openvmm,https://github.com/microsoft/openvmm,1783,162,MIT License,False,False,19711,231,Rust,True,2024-03-01T23:12:38Z,2026-01-08T20:39:39Z
+beeradmoore/dlss-swapper,https://github.com/beeradmoore/dlss-swapper,5833,171,GNU General Public License v3.0,False,False,13391,115,C#,True,2021-08-07T00:33:57Z,2026-01-08T22:16:16Z
+ikarus23/mifareclassictool,https://github.com/ikarus23/MifareClassicTool,5578,971,GNU General Public License v3.0,False,False,7112,33,Java,True,2013-02-12T15:39:03Z,2026-01-08T17:24:01Z
+open-ani/animeko,https://github.com/open-ani/animeko,14088,352,GNU Affero General Public License v3.0,False,False,300043,466,Kotlin,True,2022-07-31T17:38:49Z,2026-01-08T23:11:23Z
+oven-sh/bun,https://github.com/oven-sh/bun,86089,3900,Other,False,False,430105,5600,Zig,True,2021-04-14T00:48:17Z,2026-01-08T23:08:35Z
+unisonweb/unison,https://github.com/unisonweb/unison,6464,291,Other,False,False,143836,1237,Haskell,True,2015-05-06T14:53:49Z,2026-01-08T20:38:13Z
+hyperf/hyperf,https://github.com/hyperf/hyperf,6741,1288,MIT License,False,False,31476,461,PHP,True,2018-11-29T04:17:39Z,2026-01-08T13:29:23Z
+electricitymaps/electricitymaps-contrib,https://github.com/electricitymaps/electricitymaps-contrib,3931,1026,GNU Affero General Public License v3.0,False,False,206392,200,Python,True,2016-05-21T16:36:17Z,2026-01-08T17:37:01Z
+zurawiki/gptcommit,https://github.com/zurawiki/gptcommit,2424,84,MIT License,False,False,401,22,Rust,True,2023-01-13T21:15:58Z,2026-01-08T02:24:21Z
+dotnet/dotnet-api-docs,https://github.com/dotnet/dotnet-api-docs,885,1662,Other,False,False,1162592,1584,C#,True,2017-11-21T06:52:13Z,2026-01-08T23:16:46Z
+remotion-dev/remotion,https://github.com/remotion-dev/remotion,25214,1426,Other,False,False,3670685,94,TypeScript,True,2020-06-23T19:49:10Z,2026-01-08T19:18:56Z
+posthog/posthog.com,https://github.com/PostHog/posthog.com,887,718,Other,False,False,2173906,811,TypeScript,False,2020-05-01T20:17:52Z,2026-01-08T22:28:14Z
+wait4x/wait4x,https://github.com/wait4x/wait4x,1287,50,Apache License 2.0,False,False,1839,24,Go,True,2019-11-01T19:01:28Z,2026-01-08T21:48:18Z
+web-infra-dev/rspack,https://github.com/web-infra-dev/rspack,12370,754,MIT License,False,False,83088,214,Rust,True,2022-04-01T08:45:30Z,2026-01-08T23:07:31Z
+getsentry/sentry-php,https://github.com/getsentry/sentry-php,1892,462,MIT License,False,False,4368,32,PHP,True,2012-01-23T07:34:48Z,2026-01-05T01:46:04Z
+raycast/extensions,https://github.com/raycast/extensions,7008,5109,MIT License,False,False,13896868,956,TypeScript,False,2021-09-21T14:43:50Z,2026-01-08T22:01:33Z
+microsoft/applicationinsights-js,https://github.com/microsoft/ApplicationInsights-JS,674,255,MIT License,False,False,39396,100,TypeScript,True,2015-04-03T17:01:17Z,2025-12-24T00:49:21Z
+microsoft/documentdb,https://github.com/documentdb/documentdb,3112,197,MIT License,False,False,57925,62,C,True,2025-01-22T19:59:22Z,2026-01-08T23:07:58Z
+anthropics/claude-code-action,https://github.com/anthropics/claude-code-action,4972,1356,MIT License,False,False,1480,250,TypeScript,True,2025-05-19T15:26:50Z,2026-01-08T21:44:29Z
+nunocoracao/blowfish,https://github.com/nunocoracao/blowfish,2520,651,MIT License,False,False,529027,27,HTML,True,2022-09-09T20:38:52Z,2026-01-08T21:00:48Z
+devaslanphp/project-management,https://github.com/devaslanphp/project-management,1029,326,MIT License,False,False,16733,36,PHP,True,2022-11-02T11:03:27Z,2026-01-04T06:27:11Z
+mattermost/mattermost,https://github.com/mattermost/mattermost,34856,8251,Other,False,False,898013,975,TypeScript,True,2015-06-15T06:50:02Z,2026-01-08T23:20:52Z
+portkey-ai/gateway,https://github.com/Portkey-AI/gateway,10226,846,MIT License,False,False,66596,71,TypeScript,True,2023-08-23T11:52:47Z,2026-01-08T20:56:08Z
+layerzero-labs/layerzero-v2,https://github.com/LayerZero-Labs/LayerZero-v2,734,459,Other,False,False,8411,80,Move,True,2023-12-08T09:32:58Z,2026-01-08T03:06:23Z
+obi1kenobi/cargo-semver-checks,https://github.com/obi1kenobi/cargo-semver-checks,1550,117,Apache License 2.0,False,False,4802,173,Rust,True,2022-07-13T00:19:33Z,2026-01-07T19:33:10Z
+basedhardware/omi,https://github.com/BasedHardware/omi,7458,1310,MIT License,False,False,891778,313,C,True,2024-03-22T18:12:25Z,2026-01-08T22:47:26Z
+microsoft/onnxruntime,https://github.com/microsoft/onnxruntime,18903,3636,MIT License,False,False,1404230,1223,C++,True,2018-11-10T02:22:53Z,2026-01-08T23:07:14Z
+espresense/espresense,https://github.com/ESPresense/ESPresense,1329,162,GNU Affero General Public License v3.0,False,False,8384,91,C,True,2021-08-18T12:15:13Z,2026-01-08T20:09:18Z
+liam-hq/liam,https://github.com/liam-hq/liam,4599,189,Apache License 2.0,False,False,150762,24,TypeScript,True,2024-08-07T07:11:45Z,2026-01-08T19:22:26Z
+netz98/n98-magerun2,https://github.com/netz98/n98-magerun2,920,228,Other,False,False,9812,28,PHP,True,2014-10-27T10:38:12Z,2026-01-07T15:28:30Z
+ikamensh/flynt,https://github.com/ikamensh/flynt,727,37,MIT License,False,False,645,5,Python,True,2019-03-09T18:26:38Z,2025-12-11T13:21:07Z
+apache/ozone,https://github.com/apache/ozone,1127,588,Apache License 2.0,False,False,121645,80,Java,True,2019-10-02T15:56:19Z,2026-01-08T16:32:28Z
+asgeirtj/system_prompts_leaks,https://github.com/asgeirtj/system_prompts_leaks,24904,3825,None,False,False,497,25,Roff,False,2025-05-03T02:43:56Z,2026-01-08T23:07:06Z
+skypilot-org/skypilot,https://github.com/skypilot-org/skypilot,9179,897,Apache License 2.0,False,False,221391,401,Python,True,2021-08-11T23:32:15Z,2026-01-08T22:38:03Z
+wechaty/wechaty,https://github.com/wechaty/wechaty,22299,2772,Apache License 2.0,False,False,9027,190,TypeScript,True,2016-05-01T14:36:45Z,2026-01-08T16:42:24Z
+thirdweb-dev/js,https://github.com/thirdweb-dev/js,611,635,Apache License 2.0,False,False,1097706,11,TypeScript,True,2022-08-28T00:50:21Z,2026-01-08T15:32:34Z
+meshtastic/firmware,https://github.com/meshtastic/firmware,6481,1865,GNU General Public License v3.0,False,False,65121,393,C++,True,2020-02-01T17:00:35Z,2026-01-08T22:44:11Z
+blaizzy/mlx-audio,https://github.com/Blaizzy/mlx-audio,3219,274,MIT License,False,False,97014,82,Python,True,2024-11-27T21:14:34Z,2026-01-08T22:30:29Z
+livestorejs/livestore,https://github.com/livestorejs/livestore,3404,115,Apache License 2.0,False,False,73575,228,TypeScript,True,2023-09-21T14:34:08Z,2026-01-08T23:16:13Z
+formancehq/ledger,https://github.com/formancehq/ledger,1112,137,MIT License,False,False,62328,6,Go,True,2021-05-28T09:13:03Z,2026-01-07T14:20:26Z
+tszhong0411/nelsonlai.me,https://github.com/nelsonlaidev/nelsonlai.dev,802,126,MIT License,False,False,168439,0,TypeScript,False,2022-01-31T19:55:20Z,2026-01-08T21:17:15Z
+oraios/serena,https://github.com/oraios/serena,18332,1251,MIT License,False,False,5388,87,Python,True,2025-03-23T22:35:24Z,2026-01-08T23:11:15Z
+jlowin/fastmcp,https://github.com/jlowin/fastmcp,21786,1631,Apache License 2.0,False,False,21076,227,Python,True,2024-11-30T01:47:40Z,2026-01-08T23:17:20Z
+joshuafuller/atak-maps,https://github.com/joshuafuller/ATAK-Maps,988,128,MIT License,False,False,4969,8,Unknown,True,2020-07-17T01:28:47Z,2026-01-08T05:45:49Z
+labring/laf,https://github.com/labring/laf,7616,690,Apache License 2.0,False,False,85782,45,TypeScript,True,2021-03-07T11:13:42Z,2026-01-08T01:22:17Z
+lollipopkit/flutter_server_box,https://github.com/lollipopkit/flutter_server_box,7305,471,GNU Affero General Public License v3.0,False,False,20946,94,Dart,True,2021-09-13T06:23:19Z,2026-01-08T20:47:01Z
+skyvern-ai/skyvern,https://github.com/Skyvern-AI/skyvern,20052,1757,GNU Affero General Public License v3.0,False,False,362420,147,Python,True,2024-02-28T15:45:19Z,2026-01-08T22:36:02Z
+ktorio/ktor,https://github.com/ktorio/ktor,14212,1215,Apache License 2.0,False,False,90921,193,Kotlin,True,2015-08-03T16:49:36Z,2026-01-08T20:20:53Z
+serverpod/serverpod,https://github.com/serverpod/serverpod,3053,312,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,21979,568,Dart,True,2021-05-22T12:01:45Z,2026-01-08T20:54:31Z
+basetenlabs/truss,https://github.com/basetenlabs/truss,1103,92,MIT License,False,False,22426,45,Python,True,2022-07-06T05:39:37Z,2026-01-08T20:09:22Z
+samuelmaddock/metastream,https://github.com/samuelmaddock/metastream,2632,214,None,False,False,71304,212,TypeScript,True,2018-08-11T02:31:39Z,2026-01-07T09:54:40Z
+ckan/ckan,https://github.com/ckan/ckan,4928,2074,Other,False,False,225438,838,Python,True,2011-11-10T18:42:17Z,2026-01-08T16:24:34Z
+ryoppippi/ccusage,https://github.com/ryoppippi/ccusage,9656,312,Other,False,False,9310,62,TypeScript,True,2025-05-29T16:56:50Z,2026-01-08T22:53:10Z
+a16z/halmos,https://github.com/a16z/halmos,955,94,GNU Affero General Public License v3.0,False,False,1520,68,Python,True,2022-12-12T21:28:33Z,2026-01-06T09:07:35Z
+sam-goodwin/alchemy,https://github.com/alchemy-run/alchemy,1736,108,Apache License 2.0,False,False,899665,153,TypeScript,True,2025-01-17T02:06:40Z,2026-01-08T18:04:47Z
+cameroncooke/xcodebuildmcp,https://github.com/cameroncooke/XcodeBuildMCP,3524,161,MIT License,False,False,8931,39,TypeScript,True,2025-03-09T17:31:18Z,2026-01-08T23:17:24Z
+optiscaler/optiscaler,https://github.com/optiscaler/OptiScaler,6384,192,GNU General Public License v3.0,False,False,135710,15,C++,True,2023-12-07T10:47:17Z,2026-01-08T22:24:46Z
+mark3labs/mcp-go,https://github.com/mark3labs/mcp-go,7945,753,MIT License,False,False,97794,10,Go,True,2024-11-27T12:38:33Z,2026-01-08T20:25:19Z
+candlefinance/faster-image,https://github.com/candlefinance/faster-image,678,32,MIT License,False,False,2764,22,Swift,True,2023-03-25T21:09:34Z,2026-01-05T16:00:33Z
+dotnet/roslyn,https://github.com/dotnet/roslyn,20130,4215,MIT License,False,False,2443563,5987,C#,True,2015-01-11T02:39:03Z,2026-01-08T22:50:17Z
+getsentry/sentry-laravel,https://github.com/getsentry/sentry-laravel,1321,201,MIT License,False,False,1483,22,PHP,True,2016-04-26T06:48:39Z,2026-01-08T16:50:50Z
+saturday06/vrm-addon-for-blender,https://github.com/saturday06/VRM-Addon-for-Blender,1570,158,MIT License,False,False,108717,90,Python,True,2019-01-07T03:41:57Z,2026-01-08T14:03:10Z
+commaai/opendbc,https://github.com/commaai/opendbc,2869,1719,MIT License,False,False,8864,327,Python,True,2017-05-31T06:30:34Z,2026-01-08T16:32:17Z
+microsoft/react-native-macos,https://github.com/microsoft/react-native-macos,4238,159,MIT License,False,True,436454,97,C++,True,2018-07-12T20:06:39Z,2026-01-08T21:42:10Z
+crewaiinc/crewai,https://github.com/crewAIInc/crewAI,42425,5689,MIT License,False,False,202649,188,Python,True,2023-10-27T03:26:59Z,2026-01-08T23:07:50Z
+colinhacks/zod,https://github.com/colinhacks/zod,41378,1763,MIT License,False,False,23552,236,TypeScript,True,2020-03-07T20:59:08Z,2026-01-08T22:52:30Z
+panchovix/stable-diffusion-webui-reforge,https://github.com/Panchovix/stable-diffusion-webui-reForge,932,102,GNU Affero General Public License v3.0,False,True,111883,114,Python,True,2024-06-30T05:48:50Z,2026-01-08T19:44:09Z
+awslabs/mcp,https://github.com/awslabs/mcp,7821,1193,Apache License 2.0,False,False,48812,190,Python,True,2025-03-21T00:39:00Z,2026-01-08T22:20:28Z
+seasonedcc/composable-functions,https://github.com/seasonedcc/composable-functions,737,16,MIT License,False,False,11646,3,TypeScript,True,2022-03-14T19:48:57Z,2026-01-01T16:33:12Z
+osmosis-labs/osmosis,https://github.com/osmosis-labs/osmosis,958,694,Apache License 2.0,False,False,202064,173,Go,True,2020-10-17T09:24:41Z,2026-01-08T22:11:09Z
+wundergraph/graphql-go-tools,https://github.com/wundergraph/graphql-go-tools,814,157,MIT License,False,False,25300,31,Go,True,2018-11-10T10:46:56Z,2025-12-19T11:07:06Z
+dondebonair/slack-machine,https://github.com/DonDebonair/slack-machine,770,56,MIT License,False,False,3790,25,Python,True,2017-09-01T10:26:33Z,2025-12-17T16:09:45Z
+microsoft/powerapps-samples,https://github.com/microsoft/PowerApps-Samples,1850,1801,MIT License,False,False,507850,29,C#,True,2018-03-26T22:41:09Z,2026-01-07T22:05:11Z
+mastra-ai/mastra,https://github.com/mastra-ai/mastra,19201,1393,Other,False,False,947153,328,TypeScript,True,2024-08-06T20:44:31Z,2026-01-08T23:07:53Z
+microsoft/fluentui,https://github.com/microsoft/fluentui,19786,2859,Other,False,False,814667,655,TypeScript,True,2016-06-06T15:03:44Z,2026-01-08T22:04:27Z
+datadog/dd-trace-go,https://github.com/DataDog/dd-trace-go,826,497,Other,False,False,78564,185,Go,True,2016-09-08T07:47:44Z,2026-01-08T15:38:34Z
+codemod-com/codemod,https://github.com/codemod/codemod,923,61,Apache License 2.0,False,False,205599,17,Rust,True,2024-01-26T11:30:00Z,2026-01-07T09:59:00Z
+rqlite/rqlite,https://github.com/rqlite/rqlite,17225,760,MIT License,False,False,52678,81,Go,True,2014-08-23T04:31:18Z,2026-01-08T23:06:59Z
+pydata/pandas-datareader,https://github.com/pydata/pandas-datareader,3144,685,Other,False,False,12914,147,Python,True,2015-01-15T00:34:19Z,2026-01-07T16:03:42Z
+mooncake-labs/pg_mooncake,https://github.com/Mooncake-Labs/pg_mooncake,1898,60,MIT License,False,False,633,13,Rust,True,2024-09-05T04:45:58Z,2026-01-08T10:13:33Z
+linkerd/linkerd2,https://github.com/linkerd/linkerd2,11239,1326,Apache License 2.0,False,False,55810,209,Go,True,2017-12-04T23:16:56Z,2026-01-08T08:35:57Z
+open-webui/open-webui,https://github.com/open-webui/open-webui,120035,16918,Other,False,False,312081,199,Svelte,True,2023-10-06T22:08:27Z,2026-01-08T23:17:17Z
+z3prover/z3,https://github.com/Z3Prover/z3,11793,1595,Other,False,False,143487,165,C++,True,2015-03-26T18:16:07Z,2026-01-08T23:17:00Z
+microsoft/vscode-python,https://github.com/microsoft/vscode-python,4537,1288,MIT License,False,True,170545,335,TypeScript,True,2017-10-10T19:37:29Z,2026-01-08T18:22:03Z
+clemlesne/scrape-it-now,https://github.com/clemlesne/scrape-it-now,540,22,Apache License 2.0,False,False,41725,16,Python,True,2024-08-15T11:04:34Z,2025-12-12T13:19:45Z
+nousresearch/atropos,https://github.com/NousResearch/atropos,800,187,MIT License,False,False,154400,13,Python,True,2025-04-29T19:02:06Z,2026-01-08T20:23:44Z
+apache/pulsar,https://github.com/apache/pulsar,15038,3697,Apache License 2.0,False,False,253914,1630,Java,True,2016-06-28T07:00:03Z,2026-01-08T03:28:32Z
+coturn/coturn,https://github.com/coturn/coturn,13430,2201,Other,False,False,6033,374,C,True,2015-07-17T08:15:16Z,2026-01-08T15:54:05Z
+kiwix/kiwix-android,https://github.com/kiwix/kiwix-android,1189,509,GNU General Public License v3.0,False,False,336948,86,Kotlin,True,2017-01-18T19:48:46Z,2026-01-08T16:06:27Z
+morphik-org/morphik-core,https://github.com/morphik-org/morphik-core,3442,288,Other,False,False,130012,16,Python,False,2024-11-11T23:47:06Z,2026-01-08T19:55:43Z
+irsyadadl/intentui,https://github.com/intentui/intentui,1855,80,MIT License,False,False,28590,10,TypeScript,True,2024-07-05T06:07:10Z,2026-01-08T23:07:52Z
+easycorp/easyadminbundle,https://github.com/EasyCorp/EasyAdminBundle,4233,1088,MIT License,False,False,46682,449,PHP,True,2015-01-12T08:43:02Z,2026-01-08T21:50:37Z
+block/goose,https://github.com/block/goose,25643,2324,Apache License 2.0,False,False,993290,258,Rust,True,2024-08-23T19:03:36Z,2026-01-08T22:36:56Z
+liveblocks/liveblocks,https://github.com/liveblocks/liveblocks,4324,400,Apache License 2.0,False,False,417313,58,TypeScript,True,2021-05-25T15:25:51Z,2026-01-08T13:57:35Z
+godsscion/auto_job_applier_linkedin,https://github.com/GodsScion/Auto_job_applier_linkedIn,1328,364,GNU Affero General Public License v3.0,False,False,6295,29,Python,False,2023-06-17T18:59:25Z,2026-01-08T16:49:43Z
+microsoft/vs-threading,https://github.com/microsoft/vs-threading,1022,152,Other,False,False,13042,115,C#,True,2016-10-05T14:27:26Z,2025-12-18T06:31:02Z
+intelligent-internet/ii-agent,https://github.com/Intelligent-Internet/ii-agent,3080,470,Apache License 2.0,False,False,8180,10,Python,True,2025-04-07T17:45:48Z,2026-01-07T22:25:19Z
+0x4d31/galah,https://github.com/0x4D31/galah,629,66,Apache License 2.0,False,False,3143,5,Go,True,2023-12-31T22:51:12Z,2026-01-08T02:18:21Z
+microsoft/azure-pipelines-agent,https://github.com/microsoft/azure-pipelines-agent,1863,913,MIT License,False,False,58110,205,C#,True,2016-03-03T13:36:48Z,2026-01-07T07:16:17Z
+seasonedcc/remix-forms,https://github.com/seasonedcc/remix-forms,518,27,MIT License,False,False,5547,31,TypeScript,True,2022-02-24T11:08:10Z,2025-12-11T18:07:55Z
+textlint/textlint,https://github.com/textlint/textlint,3060,156,MIT License,False,False,44855,47,TypeScript,True,2014-12-25T10:34:46Z,2026-01-08T03:14:59Z
+tommyxchow/frosty,https://github.com/tommyxchow/frosty,942,57,GNU Affero General Public License v3.0,False,False,26300,146,Dart,True,2021-08-18T13:31:20Z,2026-01-08T22:38:50Z
+openfga/openfga,https://github.com/openfga/openfga,4619,339,Apache License 2.0,False,False,59131,156,Go,True,2022-06-08T18:47:15Z,2026-01-08T20:11:38Z
+microsoft/perfview,https://github.com/microsoft/perfview,4605,752,MIT License,False,False,290453,159,C#,True,2015-03-27T21:48:45Z,2026-01-07T00:22:12Z
+microsoft/vscode-data-wrangler,https://github.com/microsoft/vscode-data-wrangler,564,35,Other,False,False,2663,179,Unknown,False,2023-01-10T23:21:24Z,2026-01-08T15:04:35Z
+azure/terraform,https://github.com/Azure/terraform,876,906,MIT License,False,False,17496,66,HCL,True,2018-01-12T00:12:13Z,2026-01-08T20:25:08Z
+netflix/metaflow,https://github.com/Netflix/metaflow,9702,935,Apache License 2.0,False,False,46686,374,Python,True,2019-09-17T17:48:25Z,2026-01-08T10:46:32Z
+wvlet/airframe,https://github.com/wvlet/airframe,665,69,Apache License 2.0,False,False,161559,104,Scala,True,2016-08-14T07:00:12Z,2026-01-08T19:47:48Z
+langchain-ai/langsmith-sdk,https://github.com/langchain-ai/langsmith-sdk,725,177,MIT License,False,False,14191,115,Python,True,2023-05-30T19:03:00Z,2026-01-08T22:39:12Z
+blefnk/relivator-nextjs-template,https://github.com/reliverse/relivator,1531,273,MIT License,False,False,17912,1,TypeScript,True,2023-08-12T20:07:56Z,2026-01-08T13:22:53Z
+shoelace-style/shoelace,https://github.com/shoelace-style/shoelace,13799,911,MIT License,False,False,18870,102,TypeScript,True,2017-07-25T18:49:44Z,2026-01-08T07:57:57Z
+tradingview/lightweight-charts,https://github.com/tradingview/lightweight-charts,13389,2111,Apache License 2.0,False,False,132092,119,TypeScript,True,2019-05-24T14:41:49Z,2026-01-08T21:45:14Z
+celestiaorg/celestia-core,https://github.com/celestiaorg/celestia-core,545,359,Apache License 2.0,False,False,310086,260,Go,True,2019-11-15T13:37:18Z,2026-01-06T22:42:02Z
+amantus-ai/vibetunnel,https://github.com/amantus-ai/vibetunnel,2855,183,MIT License,False,False,1010493,72,TypeScript,True,2025-06-15T17:56:11Z,2026-01-08T22:14:02Z
+haydenbleasel/kibo,https://github.com/shadcnblocks/kibo,3545,159,MIT License,False,False,3562,39,TypeScript,True,2024-08-25T03:39:07Z,2026-01-08T23:07:53Z
+openai/openai-agents-js,https://github.com/openai/openai-agents-js,2131,561,MIT License,False,False,4499,55,TypeScript,True,2025-05-31T00:08:49Z,2026-01-08T18:42:21Z
+jafioti/luminal,https://github.com/luminal-ai/luminal,2673,181,Apache License 2.0,False,False,81459,38,Rust,True,2023-07-18T22:02:51Z,2026-01-08T05:51:47Z
+midudev/preguntas-entrevista-react,https://github.com/midudev/preguntas-entrevista-react,7638,739,MIT License,False,False,1328,16,JavaScript,False,2022-08-28T11:07:28Z,2026-01-08T16:42:31Z
+azure/azure-storage-fuse,https://github.com/Azure/azure-storage-fuse,788,241,Other,False,False,89755,18,Go,True,2017-09-12T18:31:50Z,2026-01-07T05:19:05Z
+powershell/vscode-powershell,https://github.com/PowerShell/vscode-powershell,1841,526,MIT License,False,False,10100,385,TypeScript,True,2015-09-08T18:29:04Z,2026-01-08T07:13:49Z
+konvajs/react-konva,https://github.com/konvajs/react-konva,6227,288,MIT License,False,False,2639,1,TypeScript,True,2016-01-03T08:14:17Z,2026-01-08T18:31:39Z
+onyx-dot-app/onyx,https://github.com/onyx-dot-app/onyx,17010,2276,Other,False,False,438365,266,Python,True,2023-04-27T06:04:01Z,2026-01-08T22:57:11Z
+zeroc-ice/ice,https://github.com/zeroc-ice/ice,2156,601,GNU General Public License v2.0,False,False,220517,80,C++,True,2015-03-03T22:31:57Z,2026-01-08T19:56:19Z
+bruin-data/ingestr,https://github.com/bruin-data/ingestr,3367,114,MIT License,False,False,179472,18,Python,True,2024-02-12T23:00:36Z,2026-01-08T15:16:46Z
+microsoft/vstest,https://github.com/microsoft/vstest,944,341,MIT License,False,False,39261,46,C#,True,2016-07-07T04:18:58Z,2026-01-06T11:59:25Z
+elizaos/eliza,https://github.com/elizaOS/eliza,17311,5411,MIT License,False,False,1113232,116,TypeScript,True,2024-07-09T07:55:40Z,2026-01-08T23:21:45Z
+buefy/buefy,https://github.com/buefy/buefy,9557,1105,MIT License,False,False,34912,81,Vue,True,2017-03-31T16:44:48Z,2026-01-08T15:48:14Z
+microsoftdocs/mcp,https://github.com/MicrosoftDocs/mcp,1264,143,Creative Commons Attribution 4.0 International,False,False,66,7,PowerShell,False,2025-06-09T03:31:49Z,2026-01-08T21:39:59Z
+frenck/spook,https://github.com/frenck/spook,962,65,MIT License,False,False,20238,44,Python,True,2023-02-23T15:22:51Z,2026-01-08T11:45:40Z
+rishikanthc/scriberr,https://github.com/rishikanthc/Scriberr,1833,132,MIT License,False,False,109456,33,Go,True,2024-10-04T19:11:50Z,2026-01-08T15:57:24Z
+beehiveinnovations/zen-mcp-server,https://github.com/BeehiveInnovations/pal-mcp-server,10777,914,Other,False,False,4096,93,Python,True,2025-06-08T15:36:50Z,2026-01-08T22:24:18Z
+dotnet/yarp,https://github.com/dotnet/yarp,9363,907,MIT License,False,False,23206,179,C#,True,2020-03-05T18:10:21Z,2026-01-07T19:24:11Z
+microsoft/web-dev-for-beginners,https://github.com/microsoft/Web-Dev-For-Beginners,94948,14987,MIT License,False,False,1832116,55,JavaScript,False,2020-11-10T02:44:00Z,2026-01-08T23:02:14Z
+getsentry/sentry-python,https://github.com/getsentry/sentry-python,2122,571,MIT License,False,False,75687,251,Python,True,2018-06-18T22:51:10Z,2026-01-08T13:27:15Z
+browserless/browserless,https://github.com/browserless/browserless,12151,935,Other,False,False,103095,40,TypeScript,True,2017-11-17T04:35:31Z,2026-01-08T21:59:51Z
+lutzroeder/netron,https://github.com/lutzroeder/netron,32154,3057,MIT License,False,False,78044,21,JavaScript,True,2010-12-26T12:53:43Z,2026-01-08T17:56:12Z
+satmihir/fair,https://github.com/satmihir/fair,778,28,MIT License,False,False,480,10,Go,True,2024-09-06T01:58:30Z,2025-12-07T02:22:45Z
+beckschen/transunet,https://github.com/Beckschen/TransUNet,3058,571,Apache License 2.0,False,False,38,137,Python,False,2021-02-08T06:12:54Z,2026-01-08T14:44:48Z
+flyerhq/flutter_chat_ui,https://github.com/flyerhq/flutter_chat_ui,2182,836,Apache License 2.0,False,False,2657,20,Dart,True,2020-08-30T18:20:18Z,2026-01-08T17:39:08Z
+git/git-scm.com,https://github.com/git/git-scm.com,2336,1362,MIT License,False,False,283904,25,HTML,False,2012-03-08T17:16:41Z,2026-01-07T03:23:14Z
+angular-eslint/angular-eslint,https://github.com/angular-eslint/angular-eslint,1767,253,MIT License,False,False,21331,25,TypeScript,True,2019-07-28T22:51:06Z,2026-01-04T15:08:24Z
+openpipe/art,https://github.com/OpenPipe/ART,8127,645,Apache License 2.0,False,False,65606,94,Python,True,2025-03-10T18:25:47Z,2026-01-08T23:07:08Z
+wandb/wandb,https://github.com/wandb/wandb,10711,806,MIT License,False,False,199872,809,Python,True,2017-03-24T05:46:23Z,2026-01-08T17:55:28Z
+azure/azure-storage-azcopy,https://github.com/Azure/azure-storage-azcopy,670,256,MIT License,False,False,61125,255,Go,True,2017-12-19T18:33:42Z,2026-01-07T22:25:31Z
+blair2004/nexopos,https://github.com/Blair2004/NexoPOS,1143,486,GNU General Public License v3.0,False,False,223674,54,PHP,True,2020-06-25T14:40:59Z,2026-01-04T11:33:40Z
+barter-rs/barter-rs,https://github.com/barter-rs/barter-rs,1850,298,MIT License,False,False,2580,77,Rust,True,2022-10-09T16:39:34Z,2026-01-08T15:48:57Z
+voku/portable-utf8,https://github.com/voku/portable-utf8,517,91,Apache License 2.0,False,False,9417,22,PHP,True,2014-05-24T11:37:29Z,2025-12-04T04:34:26Z
+microsoft/vscode-remote-release,https://github.com/microsoft/vscode-remote-release,4016,406,Other,False,False,102752,1084,Dockerfile,False,2019-03-26T17:39:32Z,2026-01-08T22:04:10Z
+continuedev/continue,https://github.com/continuedev/continue,30762,4012,Apache License 2.0,False,False,852736,765,TypeScript,True,2023-05-24T03:39:39Z,2026-01-08T21:05:18Z
+lightdash/lightdash,https://github.com/lightdash/lightdash,5435,655,Other,False,False,241220,1680,TypeScript,True,2021-03-19T09:44:40Z,2026-01-08T18:19:17Z
+getsentry/sentry-react-native,https://github.com/getsentry/sentry-react-native,1743,355,MIT License,False,False,84316,202,TypeScript,True,2016-11-30T14:45:57Z,2026-01-03T01:26:27Z
+plantuml/plantuml,https://github.com/plantuml/plantuml,12501,1128,Other,False,False,496103,572,Java,True,2010-11-04T15:55:50Z,2026-01-08T22:40:13Z
+openhft/chronicle-core,https://github.com/OpenHFT/Chronicle-Core,623,135,Apache License 2.0,False,False,8088,12,Java,True,2015-02-24T13:42:22Z,2026-01-04T21:13:13Z
+schemahero/schemahero,https://github.com/schemahero/schemahero,1081,89,Apache License 2.0,False,False,39182,127,Go,True,2019-04-28T00:30:58Z,2026-01-06T15:13:23Z
+microsoft/typescript,https://github.com/microsoft/TypeScript,107378,13203,Apache License 2.0,False,False,2912808,5461,TypeScript,True,2014-06-17T15:28:39Z,2026-01-08T22:58:24Z
+microsoft/gsl,https://github.com/microsoft/GSL,6599,761,Other,False,False,1780,13,C++,True,2015-08-19T01:11:19Z,2026-01-08T08:38:06Z
+getsentry/sentry-dotnet,https://github.com/getsentry/sentry-dotnet,735,226,MIT License,False,False,132401,351,C#,True,2018-05-14T14:29:17Z,2026-01-02T07:52:24Z
+grimanticheat/grim,https://github.com/GrimAnticheat/Grim,1469,492,GNU General Public License v3.0,False,False,12277,298,Java,True,2021-02-22T02:03:30Z,2026-01-08T17:34:51Z
+sirver/ultisnips,https://github.com/SirVer/ultisnips,7669,682,GNU General Public License v3.0,False,False,7069,119,Python,True,2011-12-30T07:07:24Z,2026-01-08T09:13:18Z
+dotnet/efcore,https://github.com/dotnet/efcore,14520,3343,MIT License,False,False,216164,2443,C#,True,2014-01-23T00:52:01Z,2026-01-08T20:39:30Z
+wolfssl/wolfmqtt,https://github.com/wolfSSL/wolfMQTT,572,163,GNU General Public License v3.0,False,False,2174,6,C,True,2015-10-26T16:58:13Z,2025-12-28T08:58:17Z
+app-vnext/polly,https://github.com/App-vNext/Polly,14079,1260,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,53364,5,C#,True,2013-05-05T04:40:04Z,2026-01-08T18:02:59Z
+microsoft/onnxruntime-genai,https://github.com/microsoft/onnxruntime-genai,923,249,MIT License,False,False,88768,166,C++,True,2023-11-13T20:37:15Z,2026-01-08T20:14:31Z
+dotnet/aspire,https://github.com/dotnet/aspire,5302,769,MIT License,False,False,57962,1603,C#,True,2023-09-25T23:49:49Z,2026-01-08T20:10:07Z
+azure/data-api-builder,https://github.com/Azure/data-api-builder,1274,298,MIT License,False,False,90057,477,C#,True,2021-08-31T18:37:59Z,2026-01-08T01:09:25Z
+maciek-roboblog/claude-code-usage-monitor,https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor,6104,294,MIT License,False,False,836,72,Python,True,2025-06-19T00:00:05Z,2026-01-08T18:37:46Z
+browserbase/stagehand,https://github.com/browserbase/stagehand,20110,1304,MIT License,False,False,75703,120,TypeScript,True,2024-03-24T19:19:44Z,2026-01-08T23:07:49Z
+wandb/weave,https://github.com/wandb/weave,1039,141,Apache License 2.0,False,False,1584835,338,Python,True,2023-06-07T00:18:13Z,2026-01-08T19:36:55Z
+marimo-team/marimo,https://github.com/marimo-team/marimo,18286,858,Apache License 2.0,False,False,190256,537,Python,True,2023-08-14T18:56:20Z,2026-01-08T23:22:03Z
+sebastianwessel/quickjs,https://github.com/sebastianwessel/quickjs,834,28,MIT License,False,False,4525,8,TypeScript,True,2024-06-30T11:58:26Z,2025-12-26T07:11:52Z
+tonybaloney/csnakes,https://github.com/tonybaloney/CSnakes,1030,64,MIT License,False,False,7312,150,C#,True,2024-07-18T04:47:22Z,2026-01-05T15:34:15Z
+wizarrrr/wizarr,https://github.com/wizarrrr/wizarr,2594,160,MIT License,False,False,162134,85,Python,True,2022-09-12T16:19:06Z,2026-01-08T23:11:19Z
+prebid/prebid.js,https://github.com/prebid/Prebid.js,1524,2292,Apache License 2.0,False,False,133332,145,JavaScript,True,2015-07-19T03:26:23Z,2026-01-08T22:31:13Z
+azure/enterprise-scale,https://github.com/Azure/Enterprise-Scale,1904,1054,MIT License,False,False,102259,10,PowerShell,True,2020-05-15T21:36:46Z,2026-01-07T19:28:47Z
+microsoft/windows-drivers-rs,https://github.com/microsoft/windows-drivers-rs,1810,111,Apache License 2.0,False,False,1558,124,Rust,True,2023-09-16T21:45:21Z,2026-01-07T13:58:15Z
+ethereum-optimism/optimism,https://github.com/ethereum-optimism/optimism,6341,3874,MIT License,False,False,1075678,669,Go,True,2020-02-06T22:28:26Z,2026-01-08T22:30:33Z
+ironcalc/ironcalc,https://github.com/ironcalc/IronCalc,3520,112,Apache License 2.0,False,False,8648,183,Rust,True,2023-11-20T09:47:54Z,2026-01-08T14:59:12Z
+nexus-xyz/nexus-cli,https://github.com/nexus-xyz/nexus-cli,1092,643,Apache License 2.0,False,False,4415,113,Rust,True,2024-08-08T23:42:12Z,2026-01-08T20:13:23Z
+thedevdojo/wave,https://github.com/thedevdojo/wave,6403,906,MIT License,False,False,44040,5,CSS,True,2021-03-25T03:34:48Z,2026-01-08T23:04:35Z
+prql/prql,https://github.com/PRQL/prql,10617,249,Apache License 2.0,False,False,24324,244,Rust,True,2022-01-18T00:37:55Z,2026-01-08T22:59:33Z
+pomerium/pomerium,https://github.com/pomerium/pomerium,4624,317,Apache License 2.0,False,False,78905,118,Go,True,2019-01-01T08:04:37Z,2026-01-08T15:50:11Z
+quiltdata/quilt,https://github.com/quiltdata/quilt,1357,91,Apache License 2.0,False,False,180399,70,TypeScript,True,2017-02-10T02:46:03Z,2026-01-06T10:12:10Z
+moonbitlang/core,https://github.com/moonbitlang/core,1041,146,Apache License 2.0,False,False,11585,86,MoonBit,False,2024-01-29T07:18:38Z,2026-01-08T03:43:59Z
+arikchakma/maily.to,https://github.com/arikchakma/maily.to,3558,212,MIT License,False,False,4854,4,TypeScript,False,2023-06-23T13:24:23Z,2026-01-07T23:16:08Z
+microsoft/azure-pipelines-tasks,https://github.com/microsoft/azure-pipelines-tasks,3605,2681,MIT License,False,False,720868,488,TypeScript,True,2014-12-06T11:11:46Z,2026-01-08T19:38:07Z
+vlm-run/vlmrun-hub,https://github.com/vlm-run/vlmrun-hub,537,23,Apache License 2.0,False,False,376,8,Python,True,2024-11-11T20:07:48Z,2025-12-27T13:45:59Z
+afadil/wealthfolio,https://github.com/afadil/wealthfolio,6794,386,GNU Affero General Public License v3.0,False,False,124618,178,TypeScript,True,2024-05-27T14:44:18Z,2026-01-08T20:31:41Z
+flagsmith/flagsmith,https://github.com/Flagsmith/flagsmith,6165,466,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,97134,480,Python,True,2018-06-05T10:49:57Z,2026-01-08T18:02:37Z
+ohif/viewers,https://github.com/OHIF/Viewers,3982,4086,MIT License,False,False,404516,423,TypeScript,True,2015-10-13T08:57:37Z,2026-01-08T21:47:06Z
+synth-inc/onit,https://github.com/synth-inc/onit,1019,38,Other,False,False,50578,24,Swift,True,2024-09-20T22:32:26Z,2026-01-07T02:12:43Z
+dotnet/wcf,https://github.com/dotnet/wcf,1750,572,MIT License,False,False,30073,332,C#,True,2015-05-13T17:17:03Z,2026-01-08T01:48:12Z
+stocksharp/stocksharp,https://github.com/StockSharp/StockSharp,8976,2041,Apache License 2.0,False,False,1974414,9,C#,True,2014-12-08T07:53:44Z,2026-01-08T20:55:48Z
+linkerd/linkerd2-proxy,https://github.com/linkerd/linkerd2-proxy,2095,285,Apache License 2.0,False,False,17605,20,Rust,True,2018-07-07T22:40:57Z,2026-01-08T17:06:09Z
+zoidsh/meru,https://github.com/zoidsh/meru,952,104,GNU Affero General Public License v3.0,False,False,21745,7,TypeScript,True,2016-04-25T14:14:16Z,2026-01-08T22:26:52Z
+forummagnum/forummagnum,https://github.com/ForumMagnum/ForumMagnum,688,140,GNU General Public License v3.0,False,False,631486,956,TypeScript,True,2017-01-03T01:32:37Z,2026-01-04T20:08:12Z
+prefecthq/marvin,https://github.com/PrefectHQ/marvin,6044,392,Apache License 2.0,False,False,66093,61,Python,True,2023-03-10T18:44:40Z,2026-01-08T18:50:47Z
+microsoft/semantic-kernel,https://github.com/microsoft/semantic-kernel,26999,4415,MIT License,False,False,92984,546,C#,True,2023-02-27T17:39:42Z,2026-01-08T22:17:05Z
+getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript,8537,1746,MIT License,False,False,187127,451,TypeScript,True,2012-02-01T20:16:25Z,2026-01-08T22:36:10Z
+exo-lang/exo,https://github.com/exo-lang/exo,697,51,MIT License,False,False,42297,129,Python,True,2020-08-07T02:49:05Z,2026-01-08T17:02:46Z
+nethermindeth/nethermind,https://github.com/NethermindEth/nethermind,1499,623,GNU General Public License v3.0,False,False,533842,496,C#,True,2017-08-23T15:10:51Z,2026-01-08T13:23:15Z
+modelcontextprotocol/typescript-sdk,https://github.com/modelcontextprotocol/typescript-sdk,11244,1551,MIT License,False,False,4887,264,TypeScript,True,2024-09-24T20:45:31Z,2026-01-08T23:07:54Z
+flowiseai/flowise,https://github.com/FlowiseAI/Flowise,47921,23519,Other,False,False,70821,744,TypeScript,True,2023-03-31T12:23:09Z,2026-01-08T23:13:32Z
+modelcontextprotocol/modelcontextprotocol,https://github.com/modelcontextprotocol/modelcontextprotocol,6849,1217,Other,False,False,30912,334,TypeScript,True,2024-09-24T20:26:52Z,2026-01-08T20:56:13Z
+kanaries/graphic-walker,https://github.com/Kanaries/graphic-walker,3031,165,Apache License 2.0,False,False,3950,38,TypeScript,True,2022-09-27T10:02:28Z,2026-01-07T20:47:48Z
+corewcf/corewcf,https://github.com/CoreWCF/CoreWCF,1754,310,MIT License,False,False,13249,380,C#,True,2019-05-09T17:14:51Z,2026-01-06T20:49:33Z
+propelorm/propel2,https://github.com/propelorm/Propel2,1271,402,MIT License,False,False,31001,267,PHP,True,2011-10-06T06:50:51Z,2025-12-10T22:24:47Z
+microsoftdocs/azure-devops-docs,https://github.com/MicrosoftDocs/azure-devops-docs,915,2592,Creative Commons Attribution 4.0 International,False,False,1575053,44,Shell,False,2017-08-30T18:20:34Z,2026-01-07T23:40:02Z
+nethereum/nethereum,https://github.com/Nethereum/Nethereum,2240,744,MIT License,False,False,792704,115,C#,True,2015-11-23T20:30:14Z,2026-01-08T10:29:49Z
+layr-labs/eigenlayer-contracts,https://github.com/Layr-Labs/eigenlayer-contracts,707,462,Other,False,False,44143,74,Solidity,True,2023-03-27T20:55:53Z,2026-01-08T06:50:56Z
+anaisbetts/mcp-installer,https://github.com/anaisbetts/mcp-installer,1492,192,MIT License,False,False,30,21,JavaScript,True,2024-11-26T18:01:53Z,2026-01-07T03:09:50Z
+buildbuddy-io/buildbuddy,https://github.com/buildbuddy-io/buildbuddy,719,123,Other,False,False,881612,149,Go,True,2020-02-14T19:24:58Z,2026-01-08T23:22:41Z
+twentyhq/twenty,https://github.com/twentyhq/twenty,37896,4852,Other,False,False,663781,242,TypeScript,True,2022-12-01T13:04:40Z,2026-01-08T22:40:39Z
+wailsapp/wails,https://github.com/wailsapp/wails,32096,1550,MIT License,False,False,286962,361,Go,True,2018-12-15T23:14:06Z,2026-01-08T22:20:48Z
+cornerstonejs/cornerstone3d,https://github.com/cornerstonejs/cornerstone3D,985,453,MIT License,False,False,277753,439,TypeScript,True,2022-03-21T11:46:45Z,2026-01-08T09:27:10Z
+aidenybai/bippy,https://github.com/aidenybai/bippy,1083,28,MIT License,False,False,129919,5,TypeScript,False,2024-12-03T12:28:22Z,2026-01-08T06:03:14Z
+jmberesford/retrom,https://github.com/JMBeresford/retrom,1633,33,GNU General Public License v3.0,False,False,44343,65,TypeScript,True,2024-04-19T00:05:31Z,2026-01-08T18:03:52Z
+volcengine/verl,https://github.com/volcengine/verl,18154,2981,Apache License 2.0,False,False,16948,1650,Python,True,2024-10-31T06:11:15Z,2026-01-08T19:16:36Z
+latitude-dev/latitude-llm,https://github.com/latitude-dev/latitude-llm,3744,275,GNU Lesser General Public License v3.0,False,False,83157,137,TypeScript,True,2024-06-28T11:16:02Z,2026-01-08T19:21:26Z
+dotnet/dotnet,https://github.com/dotnet/dotnet,890,230,MIT License,False,False,1869175,166,C#,True,2022-10-13T14:09:52Z,2026-01-08T23:02:26Z
+hotcakex/harden-windows-security,https://github.com/HotCakeX/Harden-Windows-Security,3966,287,MIT License,False,False,422747,14,C#,True,2022-11-22T11:26:53Z,2026-01-08T21:38:38Z
+dotnet/winforms,https://github.com/dotnet/winforms,4734,1077,MIT License,False,False,269359,757,C#,True,2018-10-19T01:54:02Z,2026-01-08T08:33:35Z
+stair-lab/kg-gen,https://github.com/stair-lab/kg-gen,855,126,None,False,False,23780,18,Python,True,2024-10-30T16:22:55Z,2026-01-08T20:49:05Z
+datadog/dd-trace-java,https://github.com/DataDog/dd-trace-java,684,323,Apache License 2.0,False,False,283364,290,Java,True,2017-04-24T09:24:40Z,2026-01-08T16:47:30Z
+edgenesis/shifu,https://github.com/Edgenesis/shifu,1392,133,Apache License 2.0,False,False,51216,27,Go,True,2021-08-09T08:15:25Z,2026-01-06T09:54:31Z
+azure/azure-sdk-for-python,https://github.com/Azure/azure-sdk-for-python,5428,3207,MIT License,False,False,827957,985,Python,True,2012-04-24T16:46:12Z,2026-01-08T22:55:58Z
+microsoft/olive,https://github.com/microsoft/Olive,2222,267,MIT License,False,False,169149,23,Python,True,2019-08-12T19:00:23Z,2026-01-08T15:29:44Z
+dotnet/fsharp,https://github.com/dotnet/fsharp,4227,841,MIT License,False,False,417589,1344,F#,True,2015-01-10T05:58:43Z,2026-01-08T16:55:10Z
+neondatabase/neon,https://github.com/neondatabase/neon,20640,866,Apache License 2.0,False,False,83740,511,Rust,True,2021-03-26T14:20:47Z,2026-01-08T23:17:15Z
+micropython/micropython,https://github.com/micropython/micropython,21316,8637,Other,False,False,70492,1828,C,True,2013-12-20T11:47:07Z,2026-01-08T23:19:39Z
+levigross/grequests,https://github.com/levigross/grequests,2186,139,Apache License 2.0,False,False,225,24,Go,True,2015-06-11T16:41:48Z,2026-01-08T03:22:36Z
+openops-cloud/openops,https://github.com/openops-cloud/openops,975,166,Other,False,False,24658,9,TypeScript,True,2025-03-09T23:54:23Z,2026-01-08T15:42:18Z
+nerfstudio-project/nerfstudio,https://github.com/nerfstudio-project/nerfstudio,11070,1545,Apache License 2.0,False,False,121997,925,Python,True,2022-05-31T18:17:37Z,2026-01-08T12:37:54Z
+dotnet/performance,https://github.com/dotnet/performance,753,286,MIT License,False,False,72525,273,F#,False,2018-03-12T20:41:10Z,2026-01-06T18:45:39Z
+writer/writer-framework,https://github.com/writer/writer-framework,1438,97,Apache License 2.0,False,False,121743,8,Python,True,2022-02-17T21:10:19Z,2026-01-07T13:49:51Z
+microsoft/retina,https://github.com/microsoft/retina,3083,270,MIT License,False,False,53587,168,Go,True,2024-01-23T01:31:59Z,2026-01-08T20:14:02Z
+modular/modular,https://github.com/modular/modular,25431,2759,Other,False,False,218941,818,Mojo,True,2023-04-28T22:17:24Z,2026-01-08T22:59:22Z
+tobikodata/sqlmesh,https://github.com/TobikoData/sqlmesh,2839,325,Apache License 2.0,False,False,87732,220,Python,True,2022-09-23T16:28:39Z,2026-01-08T22:18:42Z
+rocketchat/rocket.chat.reactnative,https://github.com/RocketChat/Rocket.Chat.ReactNative,2322,1398,MIT License,False,False,348148,383,TypeScript,True,2017-08-03T18:21:33Z,2026-01-08T20:03:12Z
+bmadcode/bmad-method,https://github.com/bmad-code-org/BMAD-METHOD,28568,3884,Other,False,False,25618,136,JavaScript,True,2025-04-13T14:54:25Z,2026-01-08T23:05:32Z
+reflex-dev/reflex,https://github.com/reflex-dev/reflex,27905,1673,Apache License 2.0,False,False,28986,258,Python,True,2022-10-25T03:08:48Z,2026-01-08T19:16:11Z
+microsoft/vscode,https://github.com/microsoft/vscode,180463,37264,MIT License,False,False,1107435,12345,TypeScript,True,2015-09-03T20:23:38Z,2026-01-08T23:16:26Z
+kanisterio/kanister,https://github.com/kanisterio/kanister,857,176,Apache License 2.0,False,False,84316,87,Go,True,2017-11-21T20:42:23Z,2026-01-01T01:31:20Z
+formbricks/formbricks,https://github.com/formbricks/formbricks,11717,2078,Other,False,False,275048,223,TypeScript,True,2022-06-06T04:25:21Z,2026-01-08T16:38:30Z
+brentyi/tyro,https://github.com/brentyi/tyro,920,38,MIT License,False,False,126648,15,Python,True,2021-10-05T08:54:08Z,2026-01-08T13:59:58Z
+vercel/vercel,https://github.com/vercel/vercel,14601,3314,Apache License 2.0,False,False,171640,408,TypeScript,True,2016-09-09T01:12:08Z,2026-01-08T22:07:09Z
+superlinear-ai/raglite,https://github.com/superlinear-ai/raglite,1133,101,Mozilla Public License 2.0,False,False,1029,17,Python,True,2024-06-10T09:05:57Z,2026-01-07T06:49:22Z
+odigos-io/odigos,https://github.com/odigos-io/odigos,3605,238,Apache License 2.0,False,False,112792,56,Go,True,2022-06-08T04:09:44Z,2026-01-08T20:32:49Z
+konvajs/konva,https://github.com/konvajs/konva,13978,1031,Other,False,False,22641,27,TypeScript,True,2015-01-09T10:14:35Z,2026-01-08T20:40:46Z
+lostintangent/gistpad,https://github.com/lostintangent/gistpad,1040,77,MIT License,False,False,9406,15,TypeScript,True,2019-11-24T06:03:36Z,2026-01-08T01:19:53Z
+gptme/gptme,https://github.com/gptme/gptme,4136,347,MIT License,False,False,35478,67,Python,True,2023-03-24T16:25:01Z,2026-01-08T17:43:46Z
+git-for-windows/git,https://github.com/git-for-windows/git,9015,2773,Other,False,True,359038,222,C,True,2014-08-22T07:07:36Z,2026-01-08T16:26:55Z
+avaloniaui/avalonia,https://github.com/AvaloniaUI/Avalonia,29737,2576,MIT License,False,False,196551,1877,C#,True,2013-12-05T20:13:21Z,2026-01-08T21:41:21Z
+pytorch/pytorch,https://github.com/pytorch/pytorch,96448,26456,Other,False,False,1196592,17879,Python,True,2016-08-13T05:26:41Z,2026-01-08T22:53:45Z
+subzeroid/instagrapi,https://github.com/subzeroid/instagrapi,5778,867,MIT License,False,False,6272,468,Python,True,2020-07-30T20:14:10Z,2026-01-08T08:59:51Z
+significant-gravitas/autogpt,https://github.com/Significant-Gravitas/AutoGPT,180931,46252,Other,False,False,321458,294,Python,True,2023-03-16T09:21:07Z,2026-01-08T22:55:44Z
+dotnet/sqlclient,https://github.com/dotnet/SqlClient,956,319,MIT License,False,False,42506,288,C#,True,2019-02-28T19:01:45Z,2026-01-08T06:43:29Z
+cartography-cncf/cartography,https://github.com/cartography-cncf/cartography,3669,466,Apache License 2.0,False,False,18930,209,Python,True,2019-02-27T00:16:29Z,2026-01-08T02:10:27Z
+licensee/licensee,https://github.com/licensee/licensee,866,312,MIT License,False,False,3172,22,Ruby,True,2014-08-16T16:39:56Z,2025-12-30T23:38:37Z
+reown-com/appkit,https://github.com/reown-com/appkit,5340,1605,Other,False,False,157668,91,TypeScript,True,2018-03-29T06:20:57Z,2026-01-08T21:20:39Z
+n3d1117/chatgpt-telegram-bot,https://github.com/n3d1117/chatgpt-telegram-bot,3456,1568,GNU General Public License v2.0,False,False,649,108,Python,True,2022-12-04T16:03:58Z,2026-01-08T01:43:17Z
+microsoft/cpprestsdk,https://github.com/microsoft/cpprestsdk,8253,1693,Other,False,False,11091,883,C++,True,2014-08-21T20:57:45Z,2026-01-08T05:36:19Z
+chainlit/chainlit,https://github.com/Chainlit/chainlit,11332,1634,Apache License 2.0,False,False,10990,108,Python,True,2023-03-14T16:54:04Z,2026-01-08T20:17:07Z
+codergamester/mcp-unity,https://github.com/CoderGamester/mcp-unity,1201,151,MIT License,False,False,6141,8,C#,True,2025-03-13T20:41:25Z,2026-01-08T19:28:58Z
+azure/azure-sdk-for-go,https://github.com/Azure/azure-sdk-for-go,1785,954,MIT License,False,False,381593,284,Go,True,2014-08-11T21:18:43Z,2026-01-08T09:13:06Z
+lyqht/mini-qr,https://github.com/lyqht/mini-qr,1653,215,GNU General Public License v3.0,False,False,23720,19,Vue,True,2023-04-21T14:20:14Z,2026-01-08T18:57:25Z
+zenml-io/zenml,https://github.com/zenml-io/zenml,5133,568,Apache License 2.0,False,False,800488,97,Python,True,2020-11-19T09:25:46Z,2026-01-07T14:13:02Z
+openhft/java-thread-affinity,https://github.com/OpenHFT/Java-Thread-Affinity,1886,370,Other,False,False,1336,11,Java,True,2013-09-20T13:34:25Z,2026-01-07T15:07:41Z
+gitbookio/gitbook,https://github.com/GitbookIO/gitbook,28539,4018,GNU General Public License v3.0,False,False,365194,70,TypeScript,True,2014-03-31T03:01:56Z,2026-01-08T22:02:43Z
+kohya-ss/musubi-tuner,https://github.com/kohya-ss/musubi-tuner,1603,215,None,False,False,4497,278,Python,True,2024-12-31T11:34:01Z,2026-01-08T14:39:55Z
+gustavoguichard/string-ts,https://github.com/gustavoguichard/string-ts,1254,19,MIT License,False,False,2915,3,TypeScript,True,2023-06-23T14:05:39Z,2026-01-08T19:48:26Z
+microsoft/graphrag,https://github.com/microsoft/graphrag,30217,3184,MIT License,False,False,219474,94,Python,True,2024-03-27T17:57:52Z,2026-01-08T23:07:49Z
+oekazuma/svelte-meta-tags,https://github.com/oekazuma/svelte-meta-tags,642,27,MIT License,False,False,6818,5,TypeScript,True,2021-07-13T15:34:05Z,2026-01-08T18:42:07Z
+go-vikunja/vikunja,https://github.com/go-vikunja/vikunja,3019,281,GNU Affero General Public License v3.0,False,False,73982,220,Go,True,2018-11-28T19:52:27Z,2026-01-08T20:37:54Z
+virattt/ai-hedge-fund,https://github.com/virattt/ai-hedge-fund,45026,7901,None,False,False,2382,50,Python,False,2024-11-29T16:30:01Z,2026-01-08T23:21:13Z
+microsoft/openapi.net,https://github.com/microsoft/OpenAPI.NET,1569,280,MIT License,False,False,13695,27,C#,True,2017-07-14T00:24:14Z,2026-01-08T11:46:27Z
+pastebar/pastebarapp,https://github.com/PasteBar/PasteBarApp,1861,70,Other,False,False,228899,26,TypeScript,True,2024-04-10T13:19:35Z,2026-01-08T19:10:49Z
+mangiucugna/json_repair,https://github.com/mangiucugna/json_repair,4301,164,MIT License,False,False,3047,0,Python,True,2023-09-06T18:28:42Z,2026-01-08T17:05:16Z
+livepeer/go-livepeer,https://github.com/livepeer/go-livepeer,576,207,MIT License,False,False,159126,325,Go,True,2017-06-19T02:36:09Z,2026-01-07T23:25:06Z
+projectnessie/nessie,https://github.com/projectnessie/nessie,1395,168,Apache License 2.0,False,False,196679,153,Java,True,2020-04-09T18:39:03Z,2026-01-08T21:58:13Z
+mendableai/fire-enrich,https://github.com/firecrawl/fire-enrich,1053,271,MIT License,False,False,529,16,TypeScript,False,2025-06-06T14:32:34Z,2026-01-08T21:30:17Z
+duplicati/duplicati,https://github.com/duplicati/duplicati,14017,1023,MIT License,False,False,191147,727,C#,True,2014-08-05T08:28:16Z,2026-01-08T20:01:45Z
+cline/cline,https://github.com/cline/cline,56769,5581,Apache License 2.0,False,False,306132,825,TypeScript,True,2024-07-06T07:28:10Z,2026-01-08T23:18:33Z
+microsoft/pxt-arcade,https://github.com/microsoft/pxt-arcade,531,241,MIT License,False,False,483656,561,TypeScript,True,2018-01-17T01:43:03Z,2026-01-08T19:27:01Z
+vercel/next.js,https://github.com/vercel/next.js,137026,30224,MIT License,False,False,2449148,3207,JavaScript,True,2016-10-05T23:32:51Z,2026-01-08T23:22:08Z
+codestoryai/sidecar,https://github.com/codestoryai/sidecar,590,97,GNU Affero General Public License v3.0,False,False,235809,230,Rust,False,2023-09-26T18:41:14Z,2026-01-05T18:09:26Z
+tavily-ai/tavily-mcp,https://github.com/tavily-ai/tavily-mcp,1057,173,MIT License,False,False,57948,2,JavaScript,False,2025-01-27T16:56:37Z,2026-01-08T19:32:53Z
+eyaltoledano/claude-task-master,https://github.com/eyaltoledano/claude-task-master,24690,2374,Other,False,False,24355,155,JavaScript,True,2025-03-04T18:54:54Z,2026-01-08T22:11:39Z
+tasshack/dreame-vacuum,https://github.com/Tasshack/dreame-vacuum,1665,215,MIT License,False,False,54359,23,Python,True,2022-10-02T12:59:19Z,2026-01-08T17:53:01Z
+owncast/owncast,https://github.com/owncast/owncast,10800,1165,MIT License,False,False,979994,199,TypeScript,True,2020-05-24T00:58:13Z,2026-01-08T21:46:10Z
+wolfi-dev/os,https://github.com/wolfi-dev/os,1129,418,Other,False,False,186216,505,Shell,False,2022-09-07T19:46:09Z,2026-01-08T23:19:39Z
+microsoft/vscode-mssql,https://github.com/microsoft/vscode-mssql,1821,560,Other,False,False,86071,155,TypeScript,True,2016-06-26T04:38:04Z,2026-01-08T16:38:35Z
+jnsahaj/tweakcn,https://github.com/jnsahaj/tweakcn,8936,553,Apache License 2.0,False,False,89059,41,TypeScript,False,2025-03-13T21:53:42Z,2026-01-08T22:33:51Z
+gitroomhq/postiz-app,https://github.com/gitroomhq/postiz-app,25906,4402,GNU Affero General Public License v3.0,False,False,39258,159,TypeScript,True,2023-07-08T17:24:22Z,2026-01-08T22:22:57Z
+mail-0/zero,https://github.com/Mail-0/Zero,10319,1262,MIT License,False,False,119302,14,TypeScript,True,2025-02-02T22:25:26Z,2026-01-08T23:22:57Z
+elsa-workflows/elsa-core,https://github.com/elsa-workflows/elsa-core,7554,1454,MIT License,False,False,97143,765,C#,True,2018-10-01T19:43:12Z,2026-01-08T21:13:12Z
+cvxpy/cvxpy,https://github.com/cvxpy/cvxpy,6052,1141,Apache License 2.0,False,False,216341,244,C++,True,2013-07-01T23:48:58Z,2026-01-08T01:28:05Z
+wan-video/wan2.1,https://github.com/Wan-Video/Wan2.1,15075,2257,Apache License 2.0,False,False,10332,347,Python,False,2025-02-25T11:49:33Z,2026-01-08T21:00:55Z
+microsoft/botframework-webchat,https://github.com/microsoft/BotFramework-WebChat,1762,1607,MIT License,False,False,532642,444,HTML,True,2016-07-07T23:16:57Z,2026-01-08T19:30:47Z
+bruin-data/bruin,https://github.com/bruin-data/bruin,1325,52,Apache License 2.0,False,False,342216,27,Go,True,2023-08-03T12:32:10Z,2026-01-08T17:26:32Z
+onnx/onnx,https://github.com/onnx/onnx,20126,3855,Apache License 2.0,False,False,65770,275,Python,True,2017-09-07T04:53:45Z,2026-01-08T09:41:02Z
+azure/azure-sdk,https://github.com/Azure/azure-sdk,568,347,MIT License,False,False,56008,106,PowerShell,False,2018-10-08T17:49:19Z,2026-01-08T18:54:21Z
+golang-design/clipboard,https://github.com/golang-design/clipboard,757,80,MIT License,False,False,2202,29,Go,True,2020-11-19T11:42:08Z,2026-01-08T08:24:08Z
+markuplint/markuplint,https://github.com/markuplint/markuplint,597,62,MIT License,False,False,44397,120,TypeScript,True,2017-09-26T04:25:35Z,2026-01-07T05:26:44Z
+farmbot/farmbot-web-app,https://github.com/FarmBot/Farmbot-Web-App,955,349,MIT License,False,False,69322,38,TypeScript,True,2014-03-12T02:38:25Z,2026-01-08T22:44:23Z
+mondaycom/vibe,https://github.com/mondaycom/vibe,588,353,None,False,False,187110,26,TypeScript,True,2020-10-06T10:27:13Z,2026-01-08T12:23:49Z
+dotnet/machinelearning,https://github.com/dotnet/machinelearning,9311,1940,MIT License,False,False,101603,986,C#,True,2018-05-03T16:20:42Z,2026-01-08T08:06:34Z
+gofiber/fiber,https://github.com/gofiber/fiber,38927,1936,MIT License,False,False,234993,73,Go,True,2020-01-16T03:59:20Z,2026-01-08T23:15:41Z
+razimantv/mazegenerator,https://github.com/razimantv/mazegenerator,1081,108,MIT License,False,False,2369,5,C++,False,2013-05-25T16:24:56Z,2025-12-18T08:54:37Z
+peass-ng/peass-ng,https://github.com/peass-ng/PEASS-ng,19045,3331,Other,False,False,64446,46,C#,True,2019-01-13T19:58:24Z,2026-01-08T22:31:23Z
+pythonnest/pynest,https://github.com/PythonNest/PyNest,846,59,MIT License,False,False,3084,31,Python,True,2023-05-19T04:22:25Z,2026-01-07T21:22:05Z
+hcengineering/platform,https://github.com/hcengineering/platform,24081,1682,Eclipse Public License 2.0,False,False,309632,785,TypeScript,True,2021-08-02T19:39:23Z,2026-01-08T23:06:00Z
+commaai/openpilot,https://github.com/commaai/openpilot,59581,10548,MIT License,False,False,853118,237,Python,True,2016-11-24T01:33:30Z,2026-01-08T23:08:27Z
+microsoft/autogen,https://github.com/microsoft/autogen,53283,8087,Creative Commons Attribution 4.0 International,False,False,147840,537,Python,True,2023-08-18T11:43:45Z,2026-01-08T20:56:08Z
+azure/azure-mcp,https://github.com/Azure/azure-mcp,1197,359,MIT License,True,False,6673,1,C#,True,2025-04-16T14:54:24Z,2026-01-08T12:44:12Z
+jonaskruckenberg/k23,https://github.com/JonasKruckenberg/k23,599,42,Apache License 2.0,False,False,73360,85,Rust,True,2023-10-12T10:28:02Z,2026-01-05T13:37:33Z
+vdaas/vald,https://github.com/vdaas/vald,1680,92,Apache License 2.0,False,False,89700,143,Go,True,2019-07-07T06:42:22Z,2026-01-07T12:55:41Z
+tact-lang/tact,https://github.com/tact-lang/tact,692,215,MIT License,False,False,50138,831,TypeScript,True,2023-02-17T11:28:13Z,2026-01-06T19:09:02Z
+mattiasw/exifreader,https://github.com/mattiasw/ExifReader,940,99,Mozilla Public License 2.0,False,False,6966,8,JavaScript,True,2012-01-01T23:05:20Z,2026-01-07T07:11:13Z
+distribworks/dkron,https://github.com/distribworks/dkron,4656,406,GNU Lesser General Public License v3.0,False,False,144304,37,Go,True,2015-06-10T08:13:17Z,2026-01-06T18:56:19Z
+doriandarko/deepseek-engineer,https://github.com/Doriandarko/deepseek-engineer,2249,379,MIT License,False,False,62,16,Python,False,2024-12-26T20:22:01Z,2026-01-08T18:24:25Z
+azu/promises-book,https://github.com/azu/promises-book,1384,572,MIT License,False,False,49778,17,HTML,True,2014-03-02T01:12:13Z,2025-11-22T12:01:01Z
+gitpod-io/gitpod,https://github.com/gitpod-io/gitpod,13573,1361,GNU Affero General Public License v3.0,False,False,106563,459,TypeScript,True,2018-04-24T15:56:54Z,2026-01-08T18:20:52Z
+roblox-ts/roblox-ts,https://github.com/roblox-ts/roblox-ts,1177,162,MIT License,False,False,8522,155,TypeScript,True,2018-09-05T22:39:34Z,2026-01-08T20:58:58Z
+julep-ai/julep,https://github.com/julep-ai/julep,6618,983,None,False,False,90537,113,Jupyter Notebook,True,2024-04-04T09:33:02Z,2026-01-08T09:01:15Z
+akto-api-security/akto,https://github.com/akto-api-security/akto,1425,272,MIT License,False,False,343841,242,Java,True,2023-01-31T09:07:07Z,2026-01-08T20:16:59Z
+noodlehaus/dispatch,https://github.com/noodlehaus/dispatch,535,101,None,False,False,613,0,PHP,True,2012-02-01T05:37:06Z,2025-12-16T20:19:35Z
+keitaoouchi/markdownview,https://github.com/keitaoouchi/MarkdownView,2123,227,MIT License,False,False,3864,45,Swift,True,2017-05-11T04:33:42Z,2026-01-08T17:43:17Z
+logancyang/obsidian-copilot,https://github.com/logancyang/obsidian-copilot,5889,529,GNU Affero General Public License v3.0,False,False,123043,175,TypeScript,True,2023-03-31T00:15:29Z,2026-01-08T23:20:01Z
+azure/azure-functions-core-tools,https://github.com/Azure/azure-functions-core-tools,1422,464,MIT License,False,False,14892,637,C#,True,2017-01-04T07:09:00Z,2026-01-07T22:05:15Z
+microsoft/testfx,https://github.com/microsoft/testfx,974,291,MIT License,False,False,53203,244,C#,True,2016-08-06T12:03:38Z,2026-01-08T18:27:12Z
+possibilities/claude-composer,https://github.com/possibilities/claude-composer,676,23,The Unlicense,False,False,758,3,TypeScript,True,2025-05-28T13:05:16Z,2026-01-07T13:25:10Z
+zeyuet/audiox,https://github.com/ZeyueT/AudioX,1122,124,Other,False,False,83242,52,Python,False,2025-03-13T10:18:21Z,2026-01-05T17:40:27Z
+comet-ml/opik,https://github.com/comet-ml/opik,17198,1278,Apache License 2.0,False,False,424800,109,Python,True,2023-05-10T12:57:13Z,2026-01-08T23:07:39Z
+celestiaorg/celestia-node,https://github.com/celestiaorg/celestia-node,990,1060,Apache License 2.0,False,False,94821,377,Go,True,2021-08-16T12:15:31Z,2026-01-06T07:03:55Z
+berriai/litellm,https://github.com/BerriAI/litellm,33486,5257,Other,False,False,696783,1254,Python,True,2023-07-27T00:09:52Z,2026-01-08T23:00:27Z
+syntasso/kratix,https://github.com/syntasso/kratix,709,48,Apache License 2.0,False,False,15088,50,Go,True,2021-05-17T15:32:35Z,2026-01-08T15:57:08Z
+spcl/dace,https://github.com/spcl/dace,570,149,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,163565,276,Python,True,2019-02-26T12:05:50Z,2026-01-07T05:20:31Z
+orbitinghail/graft,https://github.com/orbitinghail/graft,1386,25,Apache License 2.0,False,False,3740,33,Rust,True,2024-09-12T19:11:25Z,2026-01-06T16:51:03Z
+akvorado/akvorado,https://github.com/akvorado/akvorado,2039,135,GNU Affero General Public License v3.0,False,False,13482,31,Go,True,2022-06-28T14:19:44Z,2026-01-08T14:48:06Z
+nkdagility/azure-devops-migration-tools,https://github.com/nkdAgility/azure-devops-migration-tools,579,373,GNU Affero General Public License v3.0,False,False,56070,14,C#,True,2016-04-15T12:39:08Z,2026-01-08T16:31:52Z
+analogdotnow/analog,https://github.com/analogdotnow/Analog,1526,191,MIT License,False,False,4772,62,TypeScript,False,2025-05-16T20:21:57Z,2026-01-07T19:38:55Z
+recallnet/js-recall,https://github.com/recallnet/js-recall,970,45,None,False,False,96931,112,TypeScript,True,2025-01-08T21:08:21Z,2026-01-08T17:16:28Z
+roocodeinc/roo-code,https://github.com/RooCodeInc/Roo-Code,21647,2750,Apache License 2.0,False,False,333253,280,TypeScript,True,2024-10-31T17:56:50Z,2026-01-08T23:01:20Z
+mlflow/mlflow,https://github.com/mlflow/mlflow,23603,5141,Apache License 2.0,False,False,1260675,2100,Python,True,2018-06-05T16:05:58Z,2026-01-08T22:05:58Z
+cloudflare/workerd,https://github.com/cloudflare/workerd,7401,506,Apache License 2.0,False,False,35687,514,C++,True,2022-09-15T15:15:16Z,2026-01-08T23:07:33Z
+azure-samples/serverless-chat-langchainjs,https://github.com/Azure-Samples/serverless-chat-langchainjs,838,468,MIT License,False,False,18643,2,Bicep,False,2024-02-06T15:09:54Z,2026-01-07T08:27:52Z
+hyperion-mc/hyperion,https://github.com/hyperion-mc/hyperion,1018,31,Apache License 2.0,False,False,7728,42,Rust,False,2024-03-01T07:28:41Z,2026-01-08T14:30:26Z
+sakaiproject/sakai,https://github.com/sakaiproject/sakai,1195,998,Educational Community License v2.0,False,False,544843,66,Java,True,2014-12-29T11:14:17Z,2026-01-07T16:21:39Z
+oss-apps/split-pro,https://github.com/oss-apps/split-pro,1023,116,MIT License,False,False,5478,31,TypeScript,True,2024-02-22T10:08:13Z,2026-01-08T17:56:56Z
+julialang/julia,https://github.com/JuliaLang/julia,48207,5704,MIT License,False,False,354008,4924,Julia,True,2011-04-21T07:01:50Z,2026-01-08T22:20:18Z
+sylius/sylius,https://github.com/Sylius/Sylius,8389,2156,MIT License,False,False,358730,249,PHP,True,2011-11-05T22:05:52Z,2026-01-08T07:45:55Z
+shopware/shopware,https://github.com/shopware/shopware,3263,1149,MIT License,False,False,375234,1329,PHP,True,2018-05-03T13:00:31Z,2026-01-08T17:25:41Z
+robherley/snips.sh,https://github.com/robherley/snips.sh,1244,49,MIT License,False,False,11858,18,Go,True,2023-01-21T04:17:29Z,2026-01-05T21:59:49Z
+azure/azure-rest-api-specs,https://github.com/Azure/azure-rest-api-specs,2982,5599,MIT License,False,False,392232,3334,TypeSpec,True,2015-07-14T18:37:13Z,2026-01-08T19:03:36Z
+syntaxfm/website,https://github.com/syntaxfm/website,1175,518,MIT License,False,False,226251,45,Svelte,True,2017-06-19T21:28:08Z,2026-01-08T10:59:48Z
+python/devguide,https://github.com/python/devguide,2032,956,Creative Commons Zero v1.0 Universal,False,False,3067,116,Python,False,2016-07-22T17:48:56Z,2026-01-07T20:55:46Z
+github/rubocop-github,https://github.com/github/rubocop-github,653,161,MIT License,False,False,9997,10,Ruby,True,2016-12-10T06:11:29Z,2025-12-27T14:33:05Z
+afassoftware/maquette,https://github.com/AFASSoftware/maquette,784,63,MIT License,False,False,2183,13,TypeScript,True,2014-12-03T21:49:50Z,2025-11-03T16:18:32Z
+anthropics/claude-code,https://github.com/anthropics/claude-code,53352,3832,None,False,False,27143,4998,Shell,True,2025-02-22T17:41:21Z,2026-01-08T23:13:21Z
+uniswap/interface,https://github.com/Uniswap/interface,5443,5444,GNU General Public License v3.0,False,False,371266,799,TypeScript,True,2017-10-29T05:09:58Z,2026-01-07T12:59:40Z
+traccar/traccar,https://github.com/traccar/traccar,6825,3068,Apache License 2.0,False,False,24844,493,Java,True,2012-04-16T08:33:49Z,2026-01-08T19:10:22Z
+noneback/go-taskflow,https://github.com/noneback/go-taskflow,607,28,Apache License 2.0,False,False,160,0,Go,True,2024-03-06T04:53:14Z,2026-01-07T10:17:16Z
+rsyslog/rsyslog,https://github.com/rsyslog/rsyslog,2240,706,GNU Lesser General Public License v3.0,False,False,83666,720,C,True,2013-06-03T15:57:55Z,2026-01-08T21:15:58Z
+freenet/freenet-core,https://github.com/freenet/freenet-core,2493,112,Other,False,False,167967,116,Rust,True,2021-07-16T13:19:06Z,2026-01-08T17:17:08Z
+better-auth/better-auth,https://github.com/better-auth/better-auth,24896,2117,MIT License,False,False,85616,753,TypeScript,True,2024-05-19T21:40:04Z,2026-01-08T23:23:57Z
+distroav/distroav,https://github.com/DistroAV/DistroAV,4130,419,GNU General Public License v2.0,False,False,8244,60,C++,True,2016-10-22T14:07:25Z,2026-01-08T21:24:47Z
+microsoft/botbuilder-samples,https://github.com/microsoft/BotBuilder-Samples,4513,4884,MIT License,True,False,86547,0,HTML,True,2016-09-20T16:17:28Z,2026-01-07T22:50:51Z
+antiwork/flexile,https://github.com/antiwork/flexile,775,368,MIT License,False,False,21015,6,Ruby,False,2025-03-27T11:37:22Z,2026-01-08T10:38:09Z
+marimerllc/csla,https://github.com/MarimerLLC/csla,1321,402,MIT License,False,False,283377,32,C#,True,2013-02-08T01:51:31Z,2026-01-08T21:41:24Z
+mistralai/mistral-common,https://github.com/mistralai/mistral-common,843,121,Apache License 2.0,False,False,8201,4,Python,True,2024-04-15T08:43:59Z,2026-01-08T17:19:55Z
+catatsuy/private-isu,https://github.com/catatsuy/private-isu,542,320,MIT License,False,False,4147,10,Go,True,2016-01-30T12:52:56Z,2026-01-04T07:24:46Z
+eduardopires/equinoxproject,https://github.com/EduardoPires/EquinoxProject,6760,1655,MIT License,False,False,1777,2,C#,True,2016-12-14T04:36:58Z,2026-01-07T22:38:58Z
+elixir-lsp/vscode-elixir-ls,https://github.com/elixir-lsp/vscode-elixir-ls,587,108,MIT License,False,False,3761,20,TypeScript,True,2019-01-16T10:10:46Z,2026-01-08T20:53:11Z
+sequinstream/sequin,https://github.com/sequinstream/sequin,1877,105,MIT License,False,False,137539,31,Elixir,True,2024-06-26T01:50:46Z,2026-01-08T02:13:45Z
+microsoft/mcp-for-beginners,https://github.com/microsoft/mcp-for-beginners,13996,4584,MIT License,False,False,2332780,6,Jupyter Notebook,False,2025-04-04T20:46:17Z,2026-01-08T19:29:15Z
+fidelusaleksander/ghcertified,https://github.com/FidelusAleksander/ghcertified,833,290,MIT License,False,False,5008,6,HTML,False,2023-08-17T06:09:14Z,2026-01-07T12:53:52Z
+kittycad/modeling-app,https://github.com/KittyCAD/modeling-app,1052,98,MIT License,False,False,603700,857,TypeScript,True,2023-01-11T23:51:37Z,2026-01-08T23:02:17Z
+syedazharmbnr1/claude-chatgpt-mcp,https://github.com/syedazharmbnr1/claude-chatgpt-mcp,761,94,None,False,False,24,9,JavaScript,False,2025-02-27T12:33:00Z,2026-01-03T18:15:54Z
+bytebot-ai/bytebot,https://github.com/bytebot-ai/bytebot,10153,1318,Apache License 2.0,False,False,19011,70,TypeScript,False,2025-02-03T18:18:50Z,2026-01-08T23:07:59Z
+blaizzy/mlx-vlm,https://github.com/Blaizzy/mlx-vlm,1986,230,MIT License,False,False,31970,73,Python,True,2024-04-16T15:10:12Z,2026-01-08T06:13:26Z
+pterm/pterm,https://github.com/pterm/pterm,5332,218,MIT License,False,False,23899,67,Go,True,2020-09-17T15:52:59Z,2026-01-08T17:03:37Z
+huggingface/huggingface_hub,https://github.com/huggingface/huggingface_hub,3234,898,Apache License 2.0,False,False,36022,149,Python,True,2020-12-22T10:20:28Z,2026-01-08T17:03:25Z
+dynamoose/dynamoose,https://github.com/dynamoose/dynamoose,2239,368,The Unlicense,False,False,14466,127,JavaScript,True,2014-02-18T20:24:54Z,2026-01-05T03:39:13Z
+dotnet/core,https://github.com/dotnet/core,21834,4950,MIT License,False,False,55073,327,PowerShell,True,2014-11-18T00:44:57Z,2026-01-08T15:07:15Z
+objectionary/eo,https://github.com/objectionary/eo,1322,176,MIT License,False,False,689114,108,Java,True,2016-11-07T08:21:27Z,2026-01-08T15:52:19Z
+wled/wled,https://github.com/wled/WLED,17315,3945,European Union Public License 1.2,False,False,67344,490,C++,True,2016-12-20T20:42:27Z,2026-01-08T17:35:58Z
+openadaptai/openadapt,https://github.com/OpenAdaptAI/OpenAdapt,1463,212,MIT License,False,False,30304,418,Python,True,2023-04-12T16:20:23Z,2026-01-08T06:17:46Z
+pushpalroy/jetlime,https://github.com/pushpalroy/JetLime,576,31,MIT License,False,False,40996,2,Kotlin,True,2022-01-31T21:13:11Z,2026-01-06T12:55:08Z
+firezone/firezone,https://github.com/firezone/firezone,8339,399,Apache License 2.0,False,False,205139,477,Elixir,True,2020-04-22T04:05:12Z,2026-01-08T22:15:38Z
+dotnet/msbuild,https://github.com/dotnet/msbuild,5474,1398,MIT License,False,False,329552,1508,C#,True,2015-03-12T02:04:46Z,2026-01-08T13:26:35Z
+intellij-solidity/intellij-solidity,https://github.com/intellij-solidity/intellij-solidity,1097,99,MIT License,False,False,5439,21,Kotlin,True,2017-02-21T13:26:43Z,2026-01-07T21:39:56Z
+fastled/fastled,https://github.com/FastLED/FastLED,7228,1731,MIT License,False,False,248483,315,C++,True,2013-11-10T01:41:14Z,2026-01-08T21:47:31Z
+gridaco/grida,https://github.com/gridaco/grida,2360,118,Apache License 2.0,False,False,841865,45,TypeScript,True,2021-02-13T08:27:42Z,2026-01-08T21:27:30Z
+onekeyhq/app-monorepo,https://github.com/OneKeyHQ/app-monorepo,2161,461,Other,False,False,531066,78,TypeScript,True,2021-11-22T14:54:51Z,2026-01-08T08:13:52Z
+hasanharman/form-builder,https://github.com/hasanharman/form-builder,2629,259,MIT License,False,False,3589,28,TypeScript,False,2024-09-24T11:02:33Z,2026-01-08T18:19:13Z
+microsoft/wsl,https://github.com/microsoft/WSL,30808,1576,MIT License,False,False,34308,955,C++,True,2016-04-06T17:32:56Z,2026-01-08T22:10:44Z
+vectordotdev/vector,https://github.com/vectordotdev/vector,21057,1965,Mozilla Public License 2.0,False,False,131497,2221,Rust,True,2018-08-27T16:57:34Z,2026-01-08T22:50:55Z
+pyspur-dev/pyspur,https://github.com/PySpur-Dev/pyspur,5644,422,Apache License 2.0,False,False,86943,26,TypeScript,True,2024-09-23T17:24:52Z,2026-01-07T02:05:09Z
+microsoft/fluidframework,https://github.com/microsoft/FluidFramework,4906,562,MIT License,False,False,703958,102,TypeScript,True,2019-08-22T17:37:57Z,2026-01-08T22:42:04Z
+microsoft/garnet,https://github.com/microsoft/garnet,11651,630,MIT License,False,False,432999,41,C#,True,2023-08-21T21:54:58Z,2026-01-08T21:32:19Z
+antiwork/shortest,https://github.com/antiwork/shortest,5469,328,MIT License,False,False,2091,2,TypeScript,True,2024-09-18T20:44:05Z,2026-01-08T16:23:45Z
+devitocodes/devito,https://github.com/devitocodes/devito,654,247,MIT License,False,False,356117,145,Python,True,2016-03-23T18:59:49Z,2026-01-08T16:16:33Z
+artsy/eigen,https://github.com/artsy/eigen,3739,594,MIT License,False,False,644781,16,TypeScript,True,2015-01-22T21:52:39Z,2026-01-08T17:58:39Z
+getsentry/sentry,https://github.com/getsentry/sentry,42857,4578,Other,False,False,770592,1963,Python,True,2010-08-30T22:06:41Z,2026-01-08T23:11:03Z
+dotenvx/dotenvx,https://github.com/dotenvx/dotenvx,4836,115,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,19653,42,JavaScript,True,2023-11-18T00:55:16Z,2026-01-08T22:52:48Z
+github/choosealicense.com,https://github.com/github/choosealicense.com,4016,1514,MIT License,False,False,3047,40,Ruby,False,2013-07-15T15:25:34Z,2026-01-07T18:39:23Z
+jina-ai/node-deepresearch,https://github.com/jina-ai/node-DeepResearch,5049,463,Apache License 2.0,False,False,31162,52,TypeScript,True,2025-01-26T06:46:28Z,2026-01-08T23:07:58Z
+glaredb/glaredb,https://github.com/GlareDB/glaredb,987,55,MIT License,False,False,19181,129,Rust,True,2022-05-27T00:52:47Z,2026-01-07T18:03:51Z
+moinulmoin/chadnext,https://github.com/moinulmoin/chadnext,1307,138,MIT License,False,False,3707,15,TypeScript,True,2023-05-24T12:09:58Z,2026-01-07T10:26:30Z
+priorlabs/tabpfn,https://github.com/PriorLabs/TabPFN,5450,538,Other,False,False,281772,45,Jupyter Notebook,True,2022-07-01T11:54:47Z,2026-01-08T23:19:05Z
+brooooooklyn/canvas,https://github.com/Brooooooklyn/canvas,2146,93,MIT License,False,False,73482,87,Rust,True,2020-08-30T03:08:40Z,2026-01-08T08:31:12Z
+vrsen/agency-swarm,https://github.com/VRSEN/agency-swarm,3919,998,MIT License,False,False,38438,9,Python,True,2023-11-16T02:29:26Z,2026-01-08T19:16:23Z
+mikepopoloski/slang,https://github.com/MikePopoloski/slang,914,194,MIT License,False,False,34273,39,C++,True,2017-02-03T22:20:21Z,2026-01-07T17:55:08Z
+microsoft/miengine,https://github.com/microsoft/MIEngine,845,227,MIT License,False,False,12013,171,C#,True,2015-05-28T00:44:08Z,2026-01-01T10:26:02Z
+hackmdio/codimd,https://github.com/hackmdio/codimd,9936,1116,GNU Affero General Public License v3.0,False,False,28828,346,JavaScript,True,2015-05-04T06:06:45Z,2026-01-08T22:02:58Z
+jacoblincool/leetcode-stats-card,https://github.com/JacobLinCool/LeetCode-Stats-Card,884,118,MIT License,False,False,1423,27,TypeScript,False,2021-06-11T10:43:56Z,2026-01-08T19:52:14Z
+microsoft/windows-rs,https://github.com/microsoft/windows-rs,11795,590,Apache License 2.0,False,False,1161786,30,Rust,True,2019-09-12T17:03:25Z,2026-01-08T23:07:17Z
+livekit/agents,https://github.com/livekit/agents,8979,2338,Apache License 2.0,False,False,20498,486,Python,True,2023-10-19T23:00:55Z,2026-01-08T23:17:18Z
+huggingface/huggingface.js,https://github.com/huggingface/huggingface.js,2316,586,MIT License,False,False,19473,198,TypeScript,True,2023-02-06T18:37:09Z,2026-01-07T13:18:41Z
+joshuac215/agent-service-toolkit,https://github.com/JoshuaC215/agent-service-toolkit,3985,654,MIT License,False,False,2112,14,Python,False,2024-08-04T23:13:44Z,2026-01-08T22:09:42Z
+stephendev0/stikdebug,https://github.com/StephenDev0/StikDebug,963,130,GNU Affero General Public License v3.0,False,False,239811,0,Swift,True,2025-03-27T02:05:59Z,2026-01-08T13:58:21Z
+prefecthq/prefect,https://github.com/PrefectHQ/prefect,21277,2064,Apache License 2.0,False,False,198137,1081,Python,True,2018-06-29T21:59:26Z,2026-01-08T23:17:56Z
+stack-chan/stack-chan,https://github.com/stack-chan/stack-chan,1047,119,Apache License 2.0,False,False,203193,28,TypeScript,True,2021-06-06T14:31:19Z,2026-01-08T17:32:33Z
+near/nearcore,https://github.com/near/nearcore,2547,758,GNU General Public License v3.0,False,False,229952,387,Rust,True,2018-10-02T22:30:39Z,2026-01-08T12:57:33Z
+mervinpraison/praisonai,https://github.com/MervinPraison/PraisonAI,5545,753,MIT License,False,False,34262,58,Python,True,2024-03-19T16:45:25Z,2026-01-08T21:52:50Z
+microsoft/ebpf-for-windows,https://github.com/microsoft/ebpf-for-windows,3390,271,MIT License,False,False,40680,287,C,True,2021-04-08T00:32:50Z,2026-01-08T18:03:53Z
+stirling-tools/stirling-pdf,https://github.com/Stirling-Tools/Stirling-PDF,72873,6198,Other,False,False,361139,509,TypeScript,True,2023-01-27T18:22:42Z,2026-01-08T22:05:36Z
+openai/swelancer-benchmark,https://github.com/openai/SWELancer-Benchmark,1438,140,None,True,False,55556,0,Unknown,False,2025-02-18T17:23:15Z,2026-01-03T08:19:00Z
+plexguide/huntarr.io,https://github.com/plexguide/Huntarr.io,2746,49,GNU General Public License v3.0,False,False,8780,104,Python,True,2025-03-30T13:33:06Z,2026-01-08T22:34:19Z
+azure/review-checklists,https://github.com/Azure/review-checklists,1317,363,MIT License,False,False,189047,64,Python,True,2021-10-08T09:41:55Z,2026-01-08T11:14:29Z
+github/docs,https://github.com/github/docs,18685,65482,Creative Commons Attribution 4.0 International,False,False,2247595,167,TypeScript,True,2019-05-31T15:57:39Z,2026-01-08T21:36:05Z
+genymobile/scrcpy,https://github.com/Genymobile/scrcpy,133785,12495,Apache License 2.0,False,False,7789,2674,C,True,2017-11-21T18:00:27Z,2026-01-08T23:21:11Z
+amoylab/unla,https://github.com/AmoyLab/Unla,1988,166,MIT License,False,False,2498,82,TypeScript,True,2025-04-15T08:51:28Z,2026-01-08T09:32:03Z
+chhoumann/quickadd,https://github.com/chhoumann/quickadd,2030,169,MIT License,False,False,31190,148,TypeScript,True,2021-06-09T14:43:59Z,2026-01-08T14:50:37Z
+rilldata/rill,https://github.com/rilldata/rill,2441,159,Apache License 2.0,False,False,599912,233,Go,True,2021-12-09T03:10:31Z,2026-01-08T21:38:45Z
+riganti/dotvvm,https://github.com/riganti/dotvvm,793,96,Apache License 2.0,False,False,64109,171,C#,True,2014-11-05T17:14:34Z,2026-01-08T14:43:09Z
+prunaai/pruna,https://github.com/PrunaAI/pruna,1065,74,Apache License 2.0,False,False,39214,65,Python,True,2025-03-11T14:03:49Z,2026-01-08T19:16:42Z
+keepassxreboot/keepassxc,https://github.com/keepassxreboot/keepassxc,25436,1675,Other,False,False,76760,802,C++,True,2016-02-28T15:52:40Z,2026-01-08T17:21:16Z
+gluesql/gluesql,https://github.com/gluesql/gluesql,3014,247,Apache License 2.0,False,False,6716,207,Rust,True,2019-12-11T03:09:07Z,2026-01-05T16:55:19Z
+microsoft/rulesengine,https://github.com/microsoft/RulesEngine,4144,607,MIT License,False,False,433,80,C#,True,2019-07-30T10:20:41Z,2026-01-04T08:41:27Z
+dotnet/runtime,https://github.com/dotnet/runtime,17363,5285,MIT License,False,False,1035677,8492,C#,True,2019-09-24T23:36:39Z,2026-01-08T23:24:28Z
+reneschulte/writeablebitmapex,https://github.com/reneschulte/WriteableBitmapEx,554,127,MIT License,False,False,2910,14,C#,True,2015-09-22T15:01:09Z,2025-12-31T09:17:40Z
+leonardsellem/n8n-mcp-server,https://github.com/leonardsellem/n8n-mcp-server,1535,280,MIT License,False,False,226,26,TypeScript,True,2025-03-12T15:56:12Z,2026-01-08T14:54:34Z
+azure/azure-sdk-for-java,https://github.com/Azure/azure-sdk-for-java,2547,2149,MIT License,False,False,3290734,572,Java,True,2011-12-06T23:33:56Z,2026-01-08T21:36:41Z
+onlook-dev/onlook,https://github.com/onlook-dev/onlook,23729,1758,Apache License 2.0,False,False,80311,349,TypeScript,True,2024-06-25T19:16:02Z,2026-01-08T21:43:21Z
+temporalio/temporal,https://github.com/temporalio/temporal,17466,1275,MIT License,False,False,122056,656,Go,True,2019-10-16T22:15:35Z,2026-01-08T23:17:44Z
+azure/autorest,https://github.com/Azure/autorest,4795,739,MIT License,False,False,79888,158,TypeSpec,True,2015-02-20T23:02:54Z,2026-01-04T12:40:04Z
+simonw/tools,https://github.com/simonw/tools,1325,146,Apache License 2.0,False,False,19414,39,HTML,False,2024-03-29T20:31:18Z,2026-01-08T02:02:56Z
+root-gg/plik,https://github.com/root-gg/plik,1681,178,Other,False,False,23248,54,Go,True,2015-04-19T18:20:27Z,2026-01-05T23:44:22Z
+dotnet/macios,https://github.com/dotnet/macios,2803,551,Other,False,False,326866,491,C#,True,2016-04-20T18:24:26Z,2026-01-08T10:02:17Z
+containers/crun,https://github.com/containers/crun,3709,381,GNU General Public License v2.0,False,False,6773,54,C,True,2017-09-13T20:20:58Z,2026-01-08T22:48:26Z
+nrwl/nx,https://github.com/nrwl/nx,27876,2644,MIT License,False,False,821304,629,TypeScript,True,2017-08-11T18:50:23Z,2026-01-08T22:31:31Z
+nrwl/nx-console,https://github.com/nrwl/nx-console,1391,237,MIT License,False,False,411169,71,TypeScript,True,2018-06-18T22:02:01Z,2026-01-08T13:46:53Z
+bambulab/bambustudio,https://github.com/bambulab/BambuStudio,3637,550,GNU Affero General Public License v3.0,False,False,810407,5566,C++,True,2022-07-08T07:05:17Z,2026-01-08T22:21:24Z
+mono/skiasharp,https://github.com/mono/SkiaSharp,5229,601,MIT License,False,False,264394,718,C#,True,2016-02-22T17:54:43Z,2026-01-07T10:41:04Z
+composiohq/composio,https://github.com/ComposioHQ/composio,26330,4402,MIT License,False,False,226335,42,TypeScript,True,2024-02-23T13:58:27Z,2026-01-08T20:56:10Z
+agentdock/agentdock,https://github.com/AgentDock/AgentDock,1571,107,MIT License,False,False,28907,35,TypeScript,True,2025-02-21T02:29:23Z,2026-01-08T10:56:00Z
+humanizr/humanizer,https://github.com/Humanizr/Humanizer,9282,1008,Other,False,False,9392,187,C#,True,2012-05-03T12:01:45Z,2026-01-08T21:10:17Z
+ben-sb/obfuscator-io-deobfuscator,https://github.com/ben-sb/obfuscator-io-deobfuscator,723,151,Apache License 2.0,False,False,192,7,TypeScript,False,2023-08-06T12:50:34Z,2026-01-06T15:17:18Z
+tinygrad/tinygrad,https://github.com/tinygrad/tinygrad,31098,3829,MIT License,False,False,96325,219,Python,True,2020-10-18T16:23:12Z,2026-01-08T22:49:42Z
+weecology/deepforest,https://github.com/weecology/DeepForest,686,227,MIT License,False,False,1062161,103,Python,True,2018-03-07T20:22:58Z,2026-01-07T06:28:35Z
+dlt-hub/dlt,https://github.com/dlt-hub/dlt,4774,422,Apache License 2.0,False,False,105696,316,Python,True,2022-01-26T09:51:04Z,2026-01-08T09:19:14Z
+edgetranslate/edgetranslate,https://github.com/EdgeTranslate/EdgeTranslate,2908,363,Other,False,False,39069,155,JavaScript,True,2018-07-02T12:59:01Z,2026-01-08T16:47:13Z
+facebook/idb,https://github.com/facebook/idb,4862,472,MIT License,False,False,99072,198,Objective-C,True,2015-09-03T16:25:17Z,2026-01-08T08:26:36Z
+openai/openai-agents-python,https://github.com/openai/openai-agents-python,18243,3047,MIT License,False,False,14374,170,Python,True,2025-03-11T03:42:36Z,2026-01-08T23:23:47Z
+jessicategner/pypandoc,https://github.com/JessicaTegner/pypandoc,1090,120,MIT License,False,False,531,36,Python,True,2011-11-16T09:21:06Z,2026-01-07T02:38:17Z
+appsmithorg/appsmith,https://github.com/appsmithorg/appsmith,38854,4417,Apache License 2.0,False,False,795428,4428,TypeScript,True,2020-06-30T04:07:36Z,2026-01-08T22:04:40Z
+azure/azure-sdk-for-net,https://github.com/Azure/azure-sdk-for-net,5915,5097,MIT License,False,False,4335741,1181,C#,True,2011-12-06T23:32:47Z,2026-01-08T22:52:41Z
+dropseed/plain,https://github.com/dropseed/plain,651,13,None,False,False,202325,3,Python,True,2023-03-22T03:01:33Z,2025-12-26T18:43:05Z
+alasql/alasql,https://github.com/AlaSQL/alasql,7247,689,MIT License,False,False,100352,421,JavaScript,True,2014-10-26T16:30:37Z,2026-01-08T13:45:46Z
+maybe-finance/maybe,https://github.com/maybe-finance/maybe,53930,5071,GNU Affero General Public License v3.0,True,False,6891,0,Ruby,True,2024-01-01T22:23:46Z,2026-01-08T22:05:50Z
+sparkdevnetwork/rock,https://github.com/SparkDevNetwork/Rock,643,403,None,False,False,2250795,13,C#,True,2011-04-14T13:11:46Z,2026-01-08T23:22:47Z
+effekseer/effekseer,https://github.com/effekseer/Effekseer,1628,245,MIT License,False,False,203064,100,C++,True,2013-10-19T05:47:35Z,2026-01-07T16:29:39Z
+dotnet/android,https://github.com/dotnet/android,2082,564,MIT License,False,False,152993,384,C#,True,2016-03-30T15:37:14Z,2026-01-08T23:21:45Z
+uxlfoundation/scikit-learn-intelex,https://github.com/uxlfoundation/scikit-learn-intelex,1325,183,Apache License 2.0,False,False,44327,75,Python,True,2018-08-07T06:45:41Z,2026-01-08T08:49:36Z
+dotnet/aspnetcore,https://github.com/dotnet/aspnetcore,37574,10522,MIT License,False,False,370912,3636,C#,True,2014-03-11T06:09:42Z,2026-01-08T23:17:34Z
+microsoft/vscode-pull-request-github,https://github.com/microsoft/vscode-pull-request-github,2521,703,MIT License,False,False,90558,241,TypeScript,True,2018-05-24T23:05:02Z,2026-01-08T22:03:53Z
+crewaiinc/crewai-tools,https://github.com/crewAIInc/crewAI-tools,1343,493,MIT License,True,False,5862,145,Python,True,2024-01-11T17:29:13Z,2026-01-05T22:56:11Z
+patched-codes/patchwork,https://github.com/patched-codes/patchwork,1539,100,GNU Affero General Public License v3.0,False,False,6088,187,Python,True,2024-04-05T14:07:29Z,2026-01-05T15:23:17Z
+ggml-org/whisper.cpp,https://github.com/ggml-org/whisper.cpp,45580,5082,MIT License,False,False,31472,1090,C++,True,2022-09-25T18:26:37Z,2026-01-08T22:52:25Z
+facet-rs/facet,https://github.com/facet-rs/facet,2317,97,Apache License 2.0,False,False,29288,126,Rust,True,2025-03-10T09:48:16Z,2026-01-08T21:32:46Z
+johnwalley/allotment,https://github.com/johnwalley/allotment,1220,69,MIT License,False,False,12598,97,TypeScript,True,2021-08-28T10:01:38Z,2026-01-08T07:15:03Z
+timburgan/timburgan,https://github.com/timburgan/timburgan,1110,177,None,False,False,48189,75,Unknown,False,2020-06-15T03:00:40Z,2026-01-08T22:42:31Z
+janbjorge/pgqueuer,https://github.com/janbjorge/pgqueuer,1422,28,MIT License,False,False,1613,7,Python,True,2024-04-19T10:11:43Z,2026-01-08T19:52:26Z
+open-llm-vtuber/open-llm-vtuber,https://github.com/Open-LLM-VTuber/Open-LLM-VTuber,5533,707,Other,False,False,46521,95,Python,True,2023-11-24T04:55:43Z,2026-01-08T22:54:49Z
+siteorigin/siteorigin-panels,https://github.com/siteorigin/siteorigin-panels,616,181,GNU General Public License v3.0,False,False,6568,18,PHP,True,2014-12-10T12:54:17Z,2026-01-07T16:33:13Z
+nangohq/nango,https://github.com/NangoHQ/nango,6295,608,Other,False,False,183936,29,TypeScript,True,2020-04-09T09:31:24Z,2026-01-08T22:15:12Z
+zaidmukaddam/scira,https://github.com/zaidmukaddam/scira,11304,1442,GNU Affero General Public License v3.0,False,False,16177,18,TypeScript,False,2024-08-07T13:29:49Z,2026-01-08T19:27:13Z
+bcherny/json-schema-to-typescript,https://github.com/bcherny/json-schema-to-typescript,3234,436,MIT License,False,False,45718,184,TypeScript,True,2016-03-22T03:56:58Z,2026-01-08T11:25:10Z
+ag2ai/ag2,https://github.com/ag2ai/ag2,4021,516,Apache License 2.0,False,False,2183137,268,Python,True,2024-11-11T20:43:34Z,2026-01-08T14:36:41Z
+mermaid-js/mermaid,https://github.com/mermaid-js/mermaid,85161,8476,MIT License,False,False,260388,1595,TypeScript,True,2014-11-01T23:52:32Z,2026-01-08T23:06:59Z
+acacode/swagger-typescript-api,https://github.com/acacode/swagger-typescript-api,4028,425,MIT License,False,False,19569,232,TypeScript,True,2020-01-12T23:46:19Z,2026-01-08T12:04:31Z
+tinyplex/tinybase,https://github.com/tinyplex/tinybase,4855,121,MIT License,False,False,382101,49,TypeScript,True,2021-12-31T01:06:00Z,2026-01-08T23:07:29Z
+capsoftware/cap,https://github.com/CapSoftware/Cap,16280,1146,Other,False,False,290174,272,TypeScript,True,2023-11-17T20:31:46Z,2026-01-08T23:10:04Z
+dotnet/docfx,https://github.com/dotnet/docfx,4381,881,MIT License,False,False,159642,429,C#,True,2015-06-24T19:43:53Z,2026-01-08T21:06:53Z
+happi/thebeambook,https://github.com/happi/theBeamBook,3971,263,Other,False,False,4337,6,Erlang,True,2017-03-23T18:25:31Z,2026-01-02T20:53:00Z
+danny-avila/librechat,https://github.com/danny-avila/LibreChat,32928,6555,MIT License,False,False,134382,361,TypeScript,True,2023-02-12T01:06:52Z,2026-01-08T20:58:16Z
+jedisct1/dsvpn,https://github.com/jedisct1/dsvpn,5296,405,MIT License,False,False,187,0,C,True,2019-07-17T17:19:19Z,2026-01-08T22:04:17Z
+unibeck/solstatus,https://github.com/jonbeckman/solstatus,757,65,GNU Affero General Public License v3.0,True,False,39625,28,TypeScript,True,2025-04-19T11:07:20Z,2025-12-28T04:27:29Z
+novuhq/novu,https://github.com/novuhq/novu,38408,4192,Other,False,False,261284,156,TypeScript,True,2021-08-26T15:22:44Z,2026-01-08T13:57:38Z
+hyperbrowserai/hyperagent,https://github.com/hyperbrowserai/HyperAgent,893,116,Other,False,False,6300,24,TypeScript,True,2025-04-14T05:02:59Z,2026-01-08T10:12:59Z
+trycompai/comp,https://github.com/trycompai/comp,1313,227,GNU Affero General Public License v3.0,False,False,94410,9,TypeScript,True,2025-01-15T20:43:05Z,2026-01-08T22:22:09Z
+azure/azure-functions-host,https://github.com/Azure/azure-functions-host,2005,476,MIT License,False,False,127219,1473,C#,True,2015-09-15T21:48:19Z,2026-01-08T21:18:53Z
+badtuxx/girus-cli,https://github.com/badtuxx/girus-cli,2449,235,GNU General Public License v3.0,False,False,4413,32,Go,True,2025-03-23T16:35:24Z,2026-01-08T16:42:01Z
+xoseperez/espurna,https://github.com/xoseperez/espurna,3040,634,GNU General Public License v3.0,False,False,223142,300,C++,True,2018-01-24T13:26:57Z,2026-01-04T17:56:21Z
+ferretdb/ferretdb,https://github.com/FerretDB/FerretDB,10779,469,Apache License 2.0,False,False,14919,406,Go,True,2021-10-30T08:06:36Z,2026-01-08T21:46:46Z
+tracecathq/tracecat,https://github.com/TracecatHQ/tracecat,3425,324,GNU Affero General Public License v3.0,False,False,67338,26,Python,True,2024-02-27T06:48:32Z,2026-01-08T22:36:34Z
+dotnet/sdk,https://github.com/dotnet/sdk,3035,1186,MIT License,False,False,366047,2799,C#,True,2016-07-22T21:26:02Z,2026-01-08T21:34:40Z
+maim-with-u/maibot,https://github.com/Mai-with-u/MaiBot,4007,445,GNU General Public License v3.0,False,False,65608,20,Python,True,2025-02-25T16:05:07Z,2026-01-08T16:54:44Z
+sooperset/mcp-atlassian,https://github.com/sooperset/mcp-atlassian,3924,830,MIT License,False,False,1762,135,Python,True,2024-12-03T09:25:20Z,2026-01-08T19:55:14Z
+pulumi/pulumi,https://github.com/pulumi/pulumi,24475,1282,Apache License 2.0,False,False,182843,2458,Go,True,2016-10-31T21:02:47Z,2026-01-08T21:09:23Z
+prosekit/prosekit,https://github.com/prosekit/prosekit,884,29,MIT License,False,False,11693,24,TypeScript,True,2023-07-09T06:07:03Z,2026-01-07T12:22:03Z
+humansignal/label-studio,https://github.com/HumanSignal/label-studio,26093,3301,Apache License 2.0,False,False,2950742,981,TypeScript,True,2019-06-19T02:00:44Z,2026-01-08T22:46:56Z
+strapi/strapi,https://github.com/strapi/strapi,70917,9357,Other,False,False,609635,747,TypeScript,True,2015-09-30T15:34:48Z,2026-01-08T22:18:04Z
+lukemurraynz/awesome-azure-architecture,https://github.com/lukemurraynz/awesome-azure-architecture,1660,346,Creative Commons Zero v1.0 Universal,False,False,508,0,Unknown,False,2022-01-11T05:05:48Z,2026-01-07T07:18:12Z
+microsoft/adaptivecards,https://github.com/microsoft/AdaptiveCards,1910,591,MIT License,False,False,370545,864,C#,True,2016-12-08T22:00:33Z,2026-01-06T15:42:40Z
+antiwork/gumroad,https://github.com/antiwork/gumroad,8177,1594,MIT License,False,False,196492,124,Ruby,True,2025-04-03T07:22:41Z,2026-01-08T23:22:42Z
+primer/react,https://github.com/primer/react,3773,648,MIT License,False,False,426076,62,TypeScript,True,2018-02-17T00:09:05Z,2026-01-08T13:28:07Z
+lightvector/katago,https://github.com/lightvector/KataGo,4342,656,Other,False,False,79261,470,C++,True,2019-02-26T04:57:14Z,2026-01-08T11:48:19Z
+daveskender/stock.indicators,https://github.com/DaveSkender/Stock.Indicators,1165,265,Apache License 2.0,False,False,97042,62,C#,True,2019-12-29T05:18:07Z,2026-01-07T22:04:44Z
+microsoft/generative-ai-for-beginners-dotnet,https://github.com/microsoft/Generative-AI-for-beginners-dotnet,2207,1699,MIT License,False,False,208478,1,C#,True,2025-01-10T19:32:34Z,2026-01-08T19:42:12Z
+giorgi/duckdb.net,https://github.com/Giorgi/DuckDB.NET,623,86,MIT License,False,False,5798,21,C#,True,2020-10-10T20:14:15Z,2026-01-05T14:09:01Z
+azure-samples/azure-search-openai-demo,https://github.com/Azure-Samples/azure-search-openai-demo,7516,5151,MIT License,False,False,82054,543,Python,True,2023-02-08T21:00:54Z,2026-01-08T22:22:31Z
+promptfoo/promptfoo,https://github.com/promptfoo/promptfoo,9787,855,MIT License,False,False,421037,182,TypeScript,True,2023-04-28T15:48:49Z,2026-01-08T23:15:07Z
+state-spaces/s4,https://github.com/state-spaces/s4,2814,351,Apache License 2.0,False,False,44199,59,Jupyter Notebook,True,2021-11-03T15:33:53Z,2026-01-07T18:20:02Z
+btwld/mix,https://github.com/btwld/mix,751,46,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,67982,43,Dart,True,2021-06-19T16:41:45Z,2026-01-06T10:49:16Z
+medplum/medplum,https://github.com/medplum/medplum,2079,660,Apache License 2.0,False,False,334985,556,TypeScript,True,2021-04-21T16:36:22Z,2026-01-08T20:55:58Z
+pingdotgg/uploadthing,https://github.com/pingdotgg/uploadthing,4984,406,MIT License,False,False,36704,47,TypeScript,True,2023-05-10T05:58:07Z,2026-01-05T04:56:08Z
+lingodotdev/lingo.dev,https://github.com/lingodotdev/lingo.dev,5108,666,Apache License 2.0,False,False,32099,136,TypeScript,True,2024-03-13T11:27:31Z,2026-01-08T10:16:26Z
+mckaywrigley/mckays-app-template,https://github.com/mckaywrigley/mckays-app-template,1928,412,MIT License,False,False,563,7,TypeScript,False,2024-08-29T04:54:33Z,2026-01-07T17:44:19Z
+modelcontextprotocol/inspector,https://github.com/modelcontextprotocol/inspector,8212,1084,MIT License,False,False,6818,150,TypeScript,True,2024-10-03T21:47:42Z,2026-01-08T21:05:08Z
+selfxyz/self,https://github.com/selfxyz/self,1214,209,Other,False,False,582667,33,Circom,False,2023-07-22T11:22:16Z,2026-01-08T07:00:37Z
+primer/view_components,https://github.com/primer/view_components,566,129,MIT License,False,False,283147,27,Ruby,True,2020-08-03T20:57:36Z,2026-01-06T23:47:18Z
+operator-framework/operator-sdk,https://github.com/operator-framework/operator-sdk,7585,1776,Apache License 2.0,False,False,71128,63,Go,True,2018-02-07T17:53:51Z,2026-01-08T03:44:25Z
+microsoft/etl2pcapng,https://github.com/microsoft/etl2pcapng,706,126,MIT License,False,False,83,7,C,True,2019-09-16T23:48:38Z,2026-01-05T19:56:13Z
+android/wear-os-samples,https://github.com/android/wear-os-samples,1308,620,Apache License 2.0,False,False,53891,15,Kotlin,False,2019-06-14T21:24:27Z,2025-12-31T20:43:55Z
+jenkinsci/helm-charts,https://github.com/jenkinsci/helm-charts,638,922,Apache License 2.0,False,False,11499,158,Mustache,True,2020-08-24T20:04:58Z,2026-01-06T13:18:01Z
+fluidgroup/brightroom,https://github.com/FluidGroup/Brightroom,3605,336,MIT License,False,False,291992,38,Swift,True,2018-10-08T11:44:36Z,2026-01-08T14:11:58Z
+unsend-dev/unsend,https://github.com/usesend/useSend,3604,293,GNU Affero General Public License v3.0,False,False,9542,35,TypeScript,True,2024-03-14T22:16:24Z,2026-01-08T19:36:35Z
+hyperlight-dev/hyperlight,https://github.com/hyperlight-dev/hyperlight,4091,156,Apache License 2.0,False,False,6455,163,Rust,True,2024-11-05T16:39:07Z,2026-01-08T13:58:14Z
+zauberzeug/nicegui,https://github.com/zauberzeug/nicegui,15053,893,MIT License,False,False,93174,84,Python,True,2021-05-07T13:55:05Z,2026-01-08T22:04:58Z
+microsoft/vcpkg,https://github.com/microsoft/vcpkg,26408,7280,MIT License,False,False,97632,1345,CMake,True,2016-09-15T16:40:50Z,2026-01-08T23:15:34Z
+azerothcore/azerothcore-wotlk,https://github.com/azerothcore/azerothcore-wotlk,7889,3146,GNU General Public License v2.0,False,False,1196648,2367,C++,True,2016-06-26T08:40:05Z,2026-01-08T22:32:10Z
+microsoft/rd-agent,https://github.com/microsoft/RD-Agent,10121,1140,MIT License,False,False,63539,131,Python,True,2024-04-03T03:39:33Z,2026-01-08T20:56:11Z
+ttplanetpig/comfyui_ttp_toolset,https://github.com/TTPlanetPig/Comfyui_TTP_Toolset,859,27,MIT License,False,False,18901,38,Python,True,2024-08-17T14:49:53Z,2026-01-08T23:19:38Z
+getsentry/sentry-cli,https://github.com/getsentry/sentry-cli,967,236,Other,False,False,60570,84,Rust,True,2016-02-05T21:44:33Z,2026-01-08T15:11:56Z
+tegnike/aituber-kit,https://github.com/tegnike/aituber-kit,796,145,Other,False,False,153771,25,TypeScript,True,2023-10-14T20:14:40Z,2026-01-05T06:51:07Z
+damien-schneider/cuicui,https://github.com/damien-schneider/cuicui,923,53,MIT License,False,False,54831,5,TypeScript,True,2024-04-22T22:43:32Z,2026-01-08T06:23:45Z
+reactivecircus/android-emulator-runner,https://github.com/ReactiveCircus/android-emulator-runner,1181,237,Apache License 2.0,False,False,1986,85,JavaScript,True,2019-11-05T15:45:42Z,2026-01-08T10:44:38Z
+dnnsoftware/dnn.platform,https://github.com/dnnsoftware/Dnn.Platform,1112,773,MIT License,False,False,940133,312,C#,True,2013-08-13T22:58:08Z,2026-01-08T19:02:22Z
+mihneadb/node-directory-tree,https://github.com/mihneadb/node-directory-tree,539,106,MIT License,False,False,249,22,JavaScript,True,2014-03-11T13:18:52Z,2025-12-27T01:29:55Z
+theturtle32/websocket-node,https://github.com/theturtle32/WebSocket-Node,3788,602,Apache License 2.0,False,False,4727,73,JavaScript,True,2011-04-09T10:19:30Z,2025-11-21T12:18:57Z
+simonhalvdansson/harmonic-hn,https://github.com/SimonHalvdansson/Harmonic-HN,848,63,Apache License 2.0,False,False,133922,48,Java,True,2023-05-23T16:36:56Z,2026-01-08T21:49:22Z
+prismlauncher/prismlauncher,https://github.com/PrismLauncher/PrismLauncher,8383,1049,GNU General Public License v3.0,False,False,40949,798,C++,True,2022-10-17T19:18:14Z,2026-01-08T23:23:39Z
+igalia/wolvic,https://github.com/Igalia/wolvic,929,131,Mozilla Public License 2.0,False,False,288830,145,Java,True,2021-12-21T10:58:01Z,2026-01-06T03:53:35Z
+tokens-studio/figma-plugin,https://github.com/tokens-studio/figma-plugin,1529,216,MIT License,False,False,58441,304,TypeScript,True,2020-05-18T16:43:45Z,2026-01-07T16:24:30Z
+dotnet/maui,https://github.com/dotnet/maui,23121,1904,MIT License,False,False,918151,4376,C#,True,2020-05-08T18:11:05Z,2026-01-08T21:42:13Z
+test-zeus-ai/testzeus-hercules,https://github.com/test-zeus-ai/testzeus-hercules,906,139,GNU Affero General Public License v3.0,False,False,18656,20,Python,True,2024-11-14T21:19:10Z,2026-01-08T13:26:15Z
+risingwavelabs/risingwave,https://github.com/risingwavelabs/risingwave,8691,721,Apache License 2.0,False,False,199549,1419,Rust,True,2022-01-28T12:58:03Z,2026-01-08T16:00:57Z
+hotovo/aider-desk,https://github.com/hotovo/aider-desk,1004,77,Apache License 2.0,False,False,71253,89,TypeScript,True,2025-01-07T22:08:01Z,2026-01-08T20:05:40Z
+dust-tt/dust,https://github.com/dust-tt/dust,1265,194,MIT License,False,False,596539,102,TypeScript,True,2022-08-19T07:57:29Z,2026-01-08T23:17:57Z
+midudev/codi.link,https://github.com/midudev/codi.link,765,181,Other,False,False,3063,5,JavaScript,True,2021-07-26T20:03:26Z,2026-01-02T08:28:26Z
+airbytehq/airbyte,https://github.com/airbytehq/airbyte,20414,4985,Other,False,False,796529,2068,Python,True,2020-07-27T23:55:54Z,2026-01-08T22:22:27Z
+activepieces/activepieces,https://github.com/activepieces/activepieces,20272,3141,Other,False,False,383816,325,TypeScript,True,2022-12-03T02:52:46Z,2026-01-08T22:00:10Z
+smtg-ai/claude-squad,https://github.com/smtg-ai/claude-squad,5563,380,GNU Affero General Public License v3.0,False,False,3318,45,Go,True,2025-03-09T20:00:41Z,2026-01-08T22:37:57Z
+joshyattridge/smart-money-concepts,https://github.com/joshyattridge/smart-money-concepts,1066,585,MIT License,False,False,24220,21,Python,True,2023-09-21T20:26:13Z,2026-01-08T14:56:39Z
+openhft/java-runtime-compiler,https://github.com/OpenHFT/Java-Runtime-Compiler,696,148,Other,False,False,450,10,Java,True,2013-09-24T00:05:33Z,2025-12-23T01:40:53Z
+redis/rueidis,https://github.com/redis/rueidis,2872,226,Apache License 2.0,False,False,8402,12,Go,True,2021-09-18T10:38:58Z,2026-01-08T09:54:17Z
+quarylabs/sqruff,https://github.com/quarylabs/sqruff,1166,49,Apache License 2.0,False,False,9828,88,Rust,True,2023-02-13T19:36:25Z,2026-01-08T21:37:16Z
+netbirdio/netbird,https://github.com/netbirdio/netbird,20734,1015,Other,False,False,46894,1198,Go,True,2021-04-14T12:27:20Z,2026-01-08T22:11:36Z
+imfing/hextra,https://github.com/imfing/hextra,1856,378,MIT License,False,False,5591,102,HTML,True,2023-07-19T21:03:57Z,2026-01-08T16:45:46Z
+cloudposse/atmos,https://github.com/cloudposse/atmos,1227,138,Apache License 2.0,False,False,163263,166,Go,True,2020-09-03T00:46:14Z,2026-01-08T03:45:32Z
+bitcoin/bitcoin,https://github.com/bitcoin/bitcoin,87584,38725,MIT License,False,False,301392,747,C++,True,2010-12-19T15:16:43Z,2026-01-08T22:44:39Z
+thefrontside/effection,https://github.com/thefrontside/effection,766,35,MIT License,False,False,14089,17,TypeScript,True,2018-11-02T19:56:47Z,2026-01-08T17:54:53Z
+leagueakari/leagueakari,https://github.com/LeagueAkari/LeagueAkari,2534,217,GNU General Public License v3.0,False,False,113672,16,TypeScript,True,2023-12-19T09:29:15Z,2026-01-08T23:07:46Z
+microsoft/vscode-jupyter,https://github.com/microsoft/vscode-jupyter,1465,360,MIT License,False,False,218419,214,TypeScript,True,2020-09-10T23:39:14Z,2026-01-07T15:15:10Z
+microsoft/powertoys,https://github.com/microsoft/PowerToys,127736,7587,MIT License,False,False,477503,7835,C#,True,2019-05-01T17:44:02Z,2026-01-08T22:04:12Z
+valkey-io/valkey,https://github.com/valkey-io/valkey,24372,988,Other,False,False,154122,582,C,True,2024-03-22T00:42:17Z,2026-01-08T18:35:19Z
+wonderwhy-er/desktopcommandermcp,https://github.com/wonderwhy-er/DesktopCommanderMCP,5200,573,MIT License,False,False,70798,74,TypeScript,True,2024-12-04T08:26:08Z,2026-01-08T19:57:44Z
+etchdroid/etchdroid,https://github.com/etchdroid/etchdroid,2727,195,GNU General Public License v3.0,False,False,16469,14,Kotlin,True,2018-09-02T00:49:40Z,2026-01-08T22:03:59Z
+stackblitz-labs/bolt.diy,https://github.com/stackblitz-labs/bolt.diy,18830,10302,MIT License,False,True,10948,73,TypeScript,True,2024-10-13T18:40:54Z,2026-01-08T22:22:52Z
+giongto35/cloud-game,https://github.com/giongto35/cloud-game,2423,366,Apache License 2.0,False,False,215561,8,Go,True,2019-04-03T14:55:08Z,2025-12-30T11:37:10Z
+mem0ai/mem0,https://github.com/mem0ai/mem0,45235,4931,Apache License 2.0,False,False,44468,590,Python,True,2023-06-20T08:58:36Z,2026-01-08T23:07:40Z
+temporalio/sdk-go,https://github.com/temporalio/sdk-go,797,276,MIT License,False,False,16609,192,Go,True,2019-10-17T16:34:57Z,2026-01-08T17:47:28Z
+ballerine-io/ballerine,https://github.com/ballerine-io/ballerine,2337,271,Other,False,False,139647,77,TypeScript,True,2022-10-02T21:20:10Z,2026-01-07T18:51:35Z
+microsoft/hydralab,https://github.com/microsoft/HydraLab,1012,98,MIT License,False,False,146177,56,Java,True,2022-04-28T09:18:16Z,2026-01-02T20:41:59Z
+navidrome/navidrome,https://github.com/navidrome/navidrome,18400,1315,GNU General Public License v3.0,False,False,50216,187,Go,True,2016-02-24T23:25:12Z,2026-01-08T21:47:10Z
+mautic/mautic,https://github.com/mautic/mautic,9041,3118,Other,False,False,265035,279,PHP,True,2013-08-19T00:36:28Z,2026-01-08T21:13:26Z
+johnlindquist/kit,https://github.com/johnlindquist/kit,4162,149,MIT License,False,False,11309,151,TypeScript,True,2020-12-01T19:00:40Z,2026-01-06T17:54:11Z
+unxsist/jet-pilot,https://github.com/unxsist/jet-pilot,620,27,MIT License,False,False,30528,15,Vue,True,2023-12-20T22:05:25Z,2026-01-07T02:30:21Z
+folke/snacks.nvim,https://github.com/folke/snacks.nvim,6819,390,Apache License 2.0,False,False,15460,81,Lua,True,2024-11-02T22:24:00Z,2026-01-08T13:57:26Z
+stack-auth/stack-auth,https://github.com/stack-auth/stack-auth,6588,488,Other,False,False,35806,60,TypeScript,False,2024-02-28T13:01:24Z,2026-01-08T23:07:48Z
+shopify/roast,https://github.com/Shopify/roast,1002,55,MIT License,False,False,6760,46,Ruby,True,2025-04-09T21:05:31Z,2026-01-07T15:48:13Z
+secretlint/secretlint,https://github.com/secretlint/secretlint,1278,47,MIT License,False,False,35533,28,TypeScript,True,2020-02-08T10:13:35Z,2026-01-08T17:54:00Z
+laravel-workflow/laravel-workflow,https://github.com/laravel-workflow/laravel-workflow,1139,60,MIT License,False,False,415,0,PHP,True,2022-02-25T01:15:04Z,2026-01-07T19:48:14Z
+apache/spark,https://github.com/apache/spark,42609,28997,Apache License 2.0,False,False,530901,240,Scala,True,2014-02-25T08:00:08Z,2026-01-08T22:03:03Z
+schemastore/schemastore,https://github.com/SchemaStore/schemastore,3601,2054,Apache License 2.0,False,False,35539,104,JavaScript,False,2014-11-18T01:02:10Z,2026-01-08T09:17:37Z
+datopian/portaljs,https://github.com/datopian/portaljs,2261,333,MIT License,False,False,180313,77,TypeScript,True,2011-10-14T21:44:30Z,2026-01-08T12:36:05Z
+ericlbuehler/mistral.rs,https://github.com/EricLBuehler/mistral.rs,6333,506,MIT License,False,False,176809,256,Rust,True,2024-02-26T22:30:06Z,2026-01-08T23:12:24Z
+spring-projects/spring-kafka,https://github.com/spring-projects/spring-kafka,2438,1688,Apache License 2.0,False,False,16379,34,Java,True,2016-03-02T17:01:33Z,2026-01-08T14:19:33Z
+yegor256/cactoos,https://github.com/yegor256/cactoos,763,173,MIT License,False,False,6695,78,Java,True,2017-05-23T16:00:02Z,2026-01-08T18:21:24Z
+supabase/etl,https://github.com/supabase/etl,2141,136,Apache License 2.0,False,False,4810,22,Rust,False,2024-02-05T06:34:48Z,2026-01-08T21:25:30Z
+sandrohanea/whisper.net,https://github.com/sandrohanea/whisper.net,853,121,MIT License,False,False,75379,25,C#,True,2023-02-03T16:44:23Z,2026-01-05T01:58:37Z
+msoedov/agentic_security,https://github.com/msoedov/agentic_security,1733,226,Apache License 2.0,False,False,22666,68,Python,True,2024-04-11T17:18:54Z,2026-01-08T10:54:35Z
+facebookresearch/fastmri,https://github.com/facebookresearch/fastMRI,1497,414,MIT License,True,False,1412,18,Python,True,2018-10-26T22:21:23Z,2026-01-08T14:39:18Z
+langchain-ai/open-agent-platform,https://github.com/langchain-ai/open-agent-platform,1802,388,MIT License,False,False,14443,71,TypeScript,False,2025-04-16T00:45:17Z,2026-01-08T20:48:43Z
+sanity-io/sanity,https://github.com/sanity-io/sanity,5941,500,MIT License,False,False,201584,411,TypeScript,True,2017-01-18T19:19:02Z,2026-01-08T21:30:11Z
+veloera/veloera,https://github.com/Veloera/Veloera,1593,162,GNU General Public License v3.0,False,False,29844,5,Go,True,2025-04-16T11:11:03Z,2026-01-08T19:15:05Z
+davidmigloz/langchain_dart,https://github.com/davidmigloz/langchain_dart,649,150,MIT License,False,False,24403,23,Dart,True,2023-06-03T14:38:25Z,2026-01-07T19:02:26Z
+zhw2590582/artplayer,https://github.com/zhw2590582/ArtPlayer,3443,336,MIT License,False,False,537050,10,JavaScript,True,2018-10-08T14:37:50Z,2026-01-08T13:57:14Z
+katspaugh/wavesurfer.js,https://github.com/katspaugh/wavesurfer.js,10033,1750,"BSD 3-Clause ""New"" or ""Revised"" License",False,False,53353,45,TypeScript,True,2012-03-04T14:38:02Z,2026-01-08T17:50:46Z
+allenai/reward-bench,https://github.com/allenai/reward-bench,675,94,Apache License 2.0,False,False,27573,5,Python,True,2023-12-23T16:20:07Z,2026-01-07T11:13:16Z
+bufbuild/buf,https://github.com/bufbuild/buf,10708,343,Apache License 2.0,False,False,27779,58,Go,True,2019-10-03T00:09:57Z,2026-01-08T17:22:28Z
+abi/screenshot-to-code,https://github.com/abi/screenshot-to-code,71350,8813,MIT License,False,False,3871,134,Python,False,2023-11-14T17:53:32Z,2026-01-08T23:07:45Z
+mrwadams/stride-gpt,https://github.com/mrwadams/stride-gpt,939,275,MIT License,False,False,94057,3,Python,False,2023-04-10T20:46:06Z,2026-01-08T23:23:57Z
+kohya-ss/sd-scripts,https://github.com/kohya-ss/sd-scripts,6833,1156,Apache License 2.0,False,False,13124,885,Python,True,2022-12-18T04:32:15Z,2026-01-08T05:05:13Z
+vllm-project/vllm,https://github.com/vllm-project/vllm,67126,12457,Apache License 2.0,False,False,138346,3113,Python,True,2023-02-09T11:23:20Z,2026-01-08T23:20:56Z
+coder/coder,https://github.com/coder/coder,11898,1132,GNU Affero General Public License v3.0,False,False,256107,789,Go,True,2021-12-22T06:08:52Z,2026-01-08T23:01:18Z
+clusterzx/paperless-ai,https://github.com/clusterzx/paperless-ai,4917,230,MIT License,False,False,15039,33,JavaScript,True,2024-12-01T16:41:07Z,2026-01-08T19:41:46Z
+microsoft/playwright-dotnet,https://github.com/microsoft/playwright-dotnet,2842,293,MIT License,False,False,221277,70,C#,True,2020-01-22T12:52:16Z,2026-01-08T06:32:29Z
+microsoft/qsharp,https://github.com/microsoft/qdk,822,161,MIT License,False,False,26364,158,Rust,True,2023-01-26T20:07:33Z,2026-01-08T23:12:25Z
+mvisonneau/gitlab-ci-pipelines-exporter,https://github.com/mvisonneau/gitlab-ci-pipelines-exporter,1475,272,Apache License 2.0,False,False,21600,201,Go,True,2018-09-21T13:15:19Z,2026-01-08T13:25:15Z
+microsoft/magentic-ui,https://github.com/microsoft/magentic-ui,9555,965,MIT License,False,False,51560,75,Python,True,2025-05-05T20:24:30Z,2026-01-08T22:11:51Z
+agentops-ai/agentops,https://github.com/AgentOps-AI/agentops,5194,508,MIT License,False,False,177586,106,Python,True,2023-08-15T23:26:23Z,2026-01-08T13:19:15Z
+esthor/react-native-swipeable-list,https://github.com/esthor/react-native-swipeable-list,733,34,MIT License,False,False,6053,3,JavaScript,True,2019-11-10T21:18:45Z,2025-12-31T10:02:27Z
+fujiapple852/trippy,https://github.com/fujiapple852/trippy,6454,197,Apache License 2.0,False,False,26071,73,Rust,True,2022-03-28T10:56:29Z,2026-01-08T22:05:18Z
+whoiskatrin/chart-gpt,https://github.com/whoiskatrin/chart-gpt,3604,348,Apache License 2.0,False,False,2221,12,TypeScript,False,2023-04-23T20:46:46Z,2026-01-03T06:26:04Z
+microsoft/generative-ai-with-javascript,https://github.com/microsoft/generative-ai-with-javascript,1087,696,MIT License,False,False,124921,46,JavaScript,False,2024-07-22T13:40:49Z,2026-01-07T16:54:24Z
+observedobserver/streamlit-shadcn-ui,https://github.com/ObservedObserver/streamlit-shadcn-ui,1087,96,MIT License,False,False,542,32,TypeScript,True,2023-09-30T06:33:35Z,2026-01-07T07:06:16Z
+opencv/opencv,https://github.com/opencv/opencv,85640,56471,Apache License 2.0,False,False,552828,2724,C++,True,2012-07-19T09:40:17Z,2026-01-08T22:57:32Z
+benbalter/wordpress-to-jekyll-exporter,https://github.com/benbalter/wordpress-static-site-exporter,1058,129,GNU General Public License v3.0,False,False,6898,19,PHP,True,2012-08-17T23:04:18Z,2025-12-31T14:14:25Z
+microsoft/msquic,https://github.com/microsoft/msquic,4584,633,MIT License,False,False,319514,283,C,True,2019-10-26T04:10:24Z,2026-01-08T17:59:36Z

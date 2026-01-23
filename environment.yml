@@ -1,0 +1,48 @@
+# ===========================================
+# AI Code Survival Analysis - Conda Environment
+# ===========================================
+# 
+# Create environment:
+#   conda env create -f environment.yml
+#
+# Activate:
+#   conda activate ai-code-survival
+#
+# Update existing environment:
+#   conda env update -f environment.yml --prune
+#
+# ===========================================
+
+name: ai-code-survival
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  # Install llvmlite via conda to avoid cmake build issues on Mac
+  - llvmlite
+  - pip:
+      - -r requirements.txt
+
+# ===========================================
+# Alternative setup without conda:
+# ===========================================
+#
+#   python -m venv venv
+#   source venv/bin/activate  # or venv\Scripts\activate on Windows
+#   pip install -r requirements.txt
+#
+# ===========================================
+# Post-installation notes:
+# ===========================================
+# 
+# 1. For Scott-Knott ESD analysis, install R and the package:
+#    - Install R: https://cran.r-project.org/
+#    - In R console: install.packages("ScottKnottESD")
+#
+# 2. Verify installation:
+#    python -c "import pandas, sklearn, xgboost, catboost, lightgbm, lifelines, sksurv, shap; print('All packages OK')"
+#
+# ===========================================
