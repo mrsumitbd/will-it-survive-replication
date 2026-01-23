@@ -336,16 +336,7 @@ devtools::install_github("klainfo/ScottKnottESD")
 
 ## Citation
 
-If you use this replication package, please cite:
-
-```bibtex
-@inproceedings{anonymous2026survival,
-  title={Will It Survive? Deciphering the Fate of AI-Generated Code in Open Source},
-  author={Anonymous},
-  booktitle={Proceedings of the International Conference on Evaluation and Assessment in Software Engineering (EASE)},
-  year={2026}
-}
-```
+To be added.
 
 ## License
 
@@ -353,4 +344,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For questions about this replication package, please open an issue in this repository.
+To be added.
