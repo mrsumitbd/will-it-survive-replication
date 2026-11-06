@@ -1,0 +1,38 @@
+
+======================================================================
+LOADING DATA
+======================================================================
+
+Code content: 7,954 rows
+Survival events: 7,954 rows
+Merged data: 7,954 rows
+
+Filtered to supported languages: ['cs', 'go', 'java', 'py', 'rs', 'ts', 'tsx']
+  Before: 7,954 rows
+  After: 6,744 rows
+  Removed: 1,210 rows from unsupported languages
+
+Language distribution:
+  .ts: 1,972 (29.2%)
+  .cs: 1,230 (18.2%)
+  .py: 1,103 (16.4%)
+  .tsx: 822 (12.2%)
+  .rs: 811 (12.0%)
+  .go: 691 (10.2%)
+  .java: 115 (1.7%)
+After removing empty tokens: 6,744 rows
+
+Removing comments...
+Filtering syntax tokens (keeping API/identifiers only)...
+  Original tokens: 13,184,262
+  After filtering: 4,406,149
+  Reduction: 66.6%
+  Rows with tokens after filtering: 6,661
+
+Target distribution:
+  Modified (event=1): 5,312 (79.7%)
+  Survived (event=0): 1,349 (20.3%)
+
+Repositories: 155
+PRs: 1220
+{'n': 6661, 'pos_rate': 0.7974778561777511, 'prior_missing': 0, 'folds': 300, 'auc_roc_mean': 0.7847897335428555, 'auc_roc_median': 0.7903030471098009, 'auc_roc_std': 0.06371751093702988, 'auc_pr_mean': 0.9292143103210098, 'auc_pr_median': 0.938163395523318, 'auc_pr_std': 0.0452660191839489, 'auc_roc_p2_5': 0.6394126175661016, 'auc_roc_p97_5': 0.8881033433693791, 'auc_pr_p2_5': 0.8281273321335066, 'auc_pr_p97_5': 0.9867229118753836}

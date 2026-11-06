@@ -1,0 +1,19 @@
+{
+ "agent_prs": 932791,
+ "agent_prs_by_agent": {
+  "OpenAI_Codex": 814522,
+  "Copilot": 50447,
+  "Cursor": 32941,
+  "Devin": 29744,
+  "Claude_Code": 5137
+ },
+ "agent_repos_by_repo_id": 116211,
+ "agent_repos_by_repo_url": 116423,
+ "agent_repos_by_slug": 116423,
+ "all_repository_rows": 116211,
+ "human_prs": 6618,
+ "human_repos_by_slug": 818,
+ "human_prs_in_repos_without_agent_prs": 20,
+ "human_repos_without_agent_prs": 2,
+ "repos_with_agent_and_human_prs": 816
+}

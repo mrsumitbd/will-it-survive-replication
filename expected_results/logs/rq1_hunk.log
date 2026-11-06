@@ -1,0 +1,11 @@
+[    0.1s] hunk loaded 62529
+[    7.0s] primary within 0.930 [0.849, 1.019] p=0.121
+[   14.1s] all_prw within 0.930 [0.849, 1.018] p=0.118
+[   21.1s] nv_unw within 1.060 [0.917, 1.226] p=0.429
+[   28.4s] all_unw within 1.092 [0.938, 1.271] p=0.258
+[   34.5s] sampled_nv_prw within 0.926 [0.845, 1.014] p=0.0981
+[   58.0s] pooled primary 0.985 [0.898, 1.079] p=0.739
+[   81.8s] pooled all_unw 0.965 [0.782, 1.190] p=0.74
+[   88.0s] boot done
+[   92.0s] A5
+[   92.1s] done

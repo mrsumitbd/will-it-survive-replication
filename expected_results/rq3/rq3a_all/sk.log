@@ -1,0 +1,8 @@
+       model  rank     mean   median
+RandomForest     1 0.911935 0.922330
+     XGBoost     1 0.909603 0.917612
+    CatBoost     1 0.909088 0.915848
+       model  rank     mean   median
+RandomForest     1 0.697340 0.696261
+     XGBoost     1 0.693782 0.694142
+    CatBoost     1 0.693040 0.694154

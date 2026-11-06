@@ -1,0 +1,147 @@
+
+======================================================================
+LOADING DATA
+======================================================================
+
+Code content: 18,120 rows
+Survival events: 18,120 rows
+Merged data: 18,120 rows
+
+Filtered to supported languages: ['cs', 'go', 'java', 'py', 'rs', 'ts', 'tsx']
+  Before: 18,120 rows
+  After: 16,111 rows
+  Removed: 2,009 rows from unsupported languages
+
+Language distribution:
+  .ts: 5,370 (33.3%)
+  .rs: 2,694 (16.7%)
+  .py: 2,573 (16.0%)
+  .cs: 2,084 (12.9%)
+  .tsx: 2,055 (12.8%)
+  .go: 1,104 (6.9%)
+  .java: 231 (1.4%)
+After removing empty tokens: 16,109 rows
+
+Removing comments...
+Filtering syntax tokens (keeping API/identifiers only)...
+  Original tokens: 29,683,721
+  After filtering: 9,769,611
+  Reduction: 67.1%
+  Rows with tokens after filtering: 15,946
+
+Target distribution:
+  Modified (event=1): 13,363 (83.8%)
+  Survived (event=0): 2,583 (16.2%)
+
+Repositories: 196
+PRs: 2199
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 10,919
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=3.106, modified=0.596
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.9172
+  AUC-PR: 0.9843
+  F1: 0.8109
+  Predicted: 6,258 modified, 4,661 survived
+fold 0 lines so far 79688
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 11,738
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=3.041, modified=0.598
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.9076
+  AUC-PR: 0.9814
+  F1: 0.8122
+  Predicted: 6,816 modified, 4,922 survived
+fold 1 lines so far 256482
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 13,900
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=3.201, modified=0.593
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.9050
+  AUC-PR: 0.9820
+  F1: 0.8067
+  Predicted: 8,027 modified, 5,873 survived
+fold 2 lines so far 286724
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 13,620
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=3.080, modified=0.597
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.8953
+  AUC-PR: 0.9794
+  F1: 0.8115
+  Predicted: 7,918 modified, 5,702 survived
+fold 3 lines so far 333811
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 13,607
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=3.008, modified=0.600
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.8946
+  AUC-PR: 0.9786
+  F1: 0.8126
+  Predicted: 7,935 modified, 5,672 survived
+fold 4 lines so far 373641
+{
+ "model": "RandomForest",
+ "files": 4851,
+ "repos": 153,
+ "lines": 373641,
+ "line_mod_rate": 0.25577760470612165,
+ "pooled_auc_roc": 0.5421852553783194,
+ "pooled_auc_pr": 0.28803382738458777,
+ "length_baseline_pooled_auc_roc": 0.5640852217189749,
+ "mean_file_auc_roc": 0.5566378195804154,
+ "median_file_auc_roc": 0.5666666666666667,
+ "precision_at_10pct": 0.38484674529779656,
+ "precision_at_10pct_length_baseline": 0.41631253445292404,
+ "base_rate_mean_per_file": 0.3220380792747619
+}

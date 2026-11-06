@@ -1,0 +1,5 @@
+{
+ "strata": 657,
+ "strata_with_agent_and_human": 128,
+ "note": "computed with the construction of src/analysis/c1_calendar.py, step (b); the original run did not store this count"
+}

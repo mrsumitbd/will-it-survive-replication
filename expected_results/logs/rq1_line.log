@@ -1,0 +1,11 @@
+[    0.2s] line loaded 854139
+[  115.3s] primary within 0.835 [0.749, 0.930] p=0.00107
+[  953.9s] all_prw within 0.833 [0.748, 0.928] p=0.00086
+[ 1161.7s] nv_unw within 0.908 [0.687, 1.199] p=0.495
+[ 1702.6s] all_unw within 0.923 [0.684, 1.246] p=0.601
+[ 1730.3s] sampled_nv_prw within 0.834 [0.749, 0.928] p=0.000924
+[ 4504.1s] pooled primary 0.894 [0.803, 0.996] p=0.0424
+[10001.5s] pooled all_unw 0.755 [0.520, 1.096] p=0.139
+[10048.2s] boot done
+[10143.7s] A5
+[10144.4s] done

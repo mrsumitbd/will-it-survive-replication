@@ -1,0 +1,7 @@
+step,repos,agent_prs,human_prs
+"AIDev, all repositories",116211,932791,6618
+(1) Repositories with agent and human PRs,816,9797,6598
+(2) Software license,666,7625,5054
+"(3) Not archived, has release or tag, >=2 contributors",566,6891,4559
+(4) Bottom-quartile removal per language,266,4649,3196
+(5) Code ratio within the 97% interval,256,4563,3132

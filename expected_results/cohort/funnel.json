@@ -1,0 +1,71 @@
+{
+ "rows": [
+  {
+   "step": "AIDev, all repositories",
+   "repos": 116211,
+   "agent_prs": 932791,
+   "human_prs": 6618
+  },
+  {
+   "step": "(1) Repositories with agent and human PRs",
+   "repos": 816,
+   "agent_prs": 9797,
+   "human_prs": 6598
+  },
+  {
+   "step": "(2) Software license",
+   "repos": 666,
+   "agent_prs": 7625,
+   "human_prs": 5054
+  },
+  {
+   "step": "(3) Not archived, has release or tag, >=2 contributors",
+   "repos": 566,
+   "agent_prs": 6891,
+   "human_prs": 4559
+  },
+  {
+   "step": "(4) Bottom-quartile removal per language",
+   "repos": 266,
+   "agent_prs": 4649,
+   "human_prs": 3196
+  },
+  {
+   "step": "(5) Code ratio within the 97% interval",
+   "repos": 256,
+   "agent_prs": 4563,
+   "human_prs": 3132
+  }
+ ],
+ "metadata_missing": [
+  "dotnet/nerdbankversioning",
+  "felix3322/potplayer_chatgpt_translate",
+  "lunary-ai/lunary"
+ ],
+ "cohort246_subset_of_q1": true,
+ "q1_without_merged_pr": [
+  "apache/spark",
+  "barryclark/jekyll-now",
+  "clusterzx/paperless-ai",
+  "devaslanphp/project-management",
+  "facebook/idb",
+  "folke/snacks.nvim",
+  "ggml-org/llama.cpp",
+  "humansignal/label-studio",
+  "openadaptai/openadapt",
+  "osmosis-labs/osmosis"
+ ],
+ "removed_by_code_ratio_inferred": [
+  "azure/azure-sdk-for-go",
+  "devitocodes/devito",
+  "dotnet/dotnet",
+  "microsoft/playwright-dotnet",
+  "microsoft/vscode-jupyter",
+  "netket/netket",
+  "pixijs/pixijs",
+  "prunaai/pruna",
+  "stanfordnlp/dspy",
+  "vdaas/vald"
+ ],
+ "step5_note": "reproduced from the cohort list; per-repository code ratios of the final run are not shipped"
+}

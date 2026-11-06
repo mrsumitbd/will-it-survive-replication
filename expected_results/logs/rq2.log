@@ -1,0 +1,26 @@
+src/analysis/rq2_fb.py:20: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  pct = (ct.T / ct.sum(1)).T * 100
+src/analysis/rq2_fb.py:20: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  pct = (ct.T / ct.sum(1)).T * 100
+src/analysis/rq2_fb.py:20: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  pct = (ct.T / ct.sum(1)).T * 100
+src/analysis/rq2_fb.py:20: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  pct = (ct.T / ct.sum(1)).T * 100
+src/analysis/rq2_fb.py:20: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  pct = (ct.T / ct.sum(1)).T * 100
+src/analysis/rq2_fb.py:20: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  pct = (ct.T / ct.sum(1)).T * 100
+src/analysis/rq2_fb.py:20: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  pct = (ct.T / ct.sum(1)).T * 100
+parents_found 8893
+commits 8896
+repro_all_lines_word 6182 42.57 1.27e-08 0.083 {'Agent': 3.87, 'Human': 3.5}
+primary_word 6112 39.1 6.63e-08 0.08 {'Agent': 3.88, 'Human': 3.53}
+primary_substring 6112 146.19 1.33e-30 0.1547 {'Agent': 29.74, 'Human': 18.8}
+merge_commits {'units': 456, 'distinct_commits': 416, 'units_total': 6112, 'parents_missing': 0, 'merge_by_group': {'Human': 315, 'Agent': 141}, 'merge_intent': {'Adaptive': 280, 'Perfective': 82, 'Corrective': 80, 'Other': 10, 'Preventive': 4}}
+primary_word_no_merge 5656 37.11 1.71e-07 0.081 {'Agent': 4.08, 'Human': 3.77}
+primary_word_single_group_commits 5088 35.83 3.13e-07 0.0839 {'Agent': 3.81, 'Human': 3.44}
+commits_touching_both_groups 512
+file_commit_word 5832 7.02 0.135 0.0347 {'Agent': 4.63, 'Human': 4.22}
+file_commit_substring 5832 100.67 7.08e-21 0.1314 {'Agent': 34.28, 'Human': 22.79}
+classifier_agreement_commits 0.6674910071942446

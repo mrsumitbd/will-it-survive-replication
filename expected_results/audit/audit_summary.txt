@@ -1,0 +1,18 @@
+rows 325 | missing labels 0
+label         agent  human  mixed  unclear  All
+agent_name                                     
+Claude_Code       1      6      0        0    7
+Copilot          62      3     45        0  110
+Cursor            9      0      1        1   11
+Devin            73      0     19        1   93
+OpenAI_Codex     73     11      6       14  104
+All             218     20     71       16  325
+all                              n= 325 agent=218 (67.1% [61.8, 72.0]) mixed=71 (21.8% [17.7, 26.7]) human=20 (6.2% [4.0, 9.3]) unclear=16 (4.9% [3.1, 7.8]) agent_or_mixed=289 (88.9% [85.0, 91.9])
+group|Devin (autonomous)         n=  93 agent=73 (78.5% [69.1, 85.6]) mixed=19 (20.4% [13.5, 29.7]) human=0 (0.0% [-0.0, 4.0]) unclear=1 (1.1% [0.2, 5.8]) agent_or_mixed=92 (98.9% [94.2, 99.8])
+group|Supervised assistants      n= 232 agent=145 (62.5% [56.1, 68.5]) mixed=52 (22.4% [17.5, 28.2]) human=20 (8.6% [5.6, 12.9]) unclear=15 (6.5% [4.0, 10.4]) agent_or_mixed=197 (84.9% [79.7, 88.9])
+agent|Claude_Code                n=   7 agent=1 (14.3% [2.6, 51.3]) mixed=0 (0.0% [-0.0, 35.4]) human=6 (85.7% [48.7, 97.4]) unclear=0 (0.0% [-0.0, 35.4]) agent_or_mixed=1 (14.3% [2.6, 51.3])
+agent|Copilot                    n= 110 agent=62 (56.4% [47.0, 65.3]) mixed=45 (40.9% [32.2, 50.3]) human=3 (2.7% [0.9, 7.7]) unclear=0 (0.0% [0.0, 3.4]) agent_or_mixed=107 (97.3% [92.3, 99.1])
+agent|Cursor                     n=  11 agent=9 (81.8% [52.3, 94.9]) mixed=1 (9.1% [1.6, 37.7]) human=0 (0.0% [0.0, 25.9]) unclear=1 (9.1% [1.6, 37.7]) agent_or_mixed=10 (90.9% [62.3, 98.4])
+agent|Devin                      n=  93 agent=73 (78.5% [69.1, 85.6]) mixed=19 (20.4% [13.5, 29.7]) human=0 (0.0% [-0.0, 4.0]) unclear=1 (1.1% [0.2, 5.8]) agent_or_mixed=92 (98.9% [94.2, 99.8])
+agent|OpenAI_Codex               n= 104 agent=73 (70.2% [60.8, 78.1]) mixed=6 (5.8% [2.7, 12.0]) human=11 (10.6% [6.0, 18.0]) unclear=14 (13.5% [8.2, 21.3]) agent_or_mixed=79 (76.0% [66.9, 83.2])
+human-labelled PRs by agent: {'OpenAI_Codex': 11, 'Claude_Code': 6, 'Copilot': 3}

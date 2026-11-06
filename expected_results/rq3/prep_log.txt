@@ -1,0 +1,4 @@
+rq3a_all: events 18308 -> 18120 (vendored dropped 188); code rows 18308 -> 18120
+rq3a_agent: events 8089 -> 7954 (vendored dropped 135); code rows 8089 -> 7954
+rq3b_all: rows 15075 -> 14923 (vendored dropped 152); prior==0 old 275 (PR itself not counted? check) new 567; bins {0: 0.1563, 1: 0.245, 2: 0.2739, 3: 0.3248}
+rq3b_agent: rows 6401 -> 6300 (vendored dropped 101); prior==0 old 97 (PR itself not counted? check) new 171; bins {0: 0.151, 1: 0.2502, 2: 0.2671, 3: 0.3317}

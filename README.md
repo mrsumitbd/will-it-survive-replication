@@ -1,347 +1,179 @@
-# Replication Package: Will It Survive? Deciphering the Fate of AI-Generated Code in Open Source
+# Replication package: "Will It Survive? Deciphering the Fate of AI Agent-Authored Code in Open Source"
 
-This repository contains the replication package for the paper "Will It Survive? Deciphering the Fate of AI-Generated Code in Open Source" submitted to EASE 2026.
+This package contains the data, the analysis scripts and the outputs behind the paper. It follows the lines that
+2,794 merged pull requests (PRs) from the AIDev dataset added to 215 open-source repositories, compares the survival
+of agent-attributed and human code (RQ1), the intent of the commits that modify it (RQ2), and the prediction of whether
+and when it will be modified (RQ3).
 
-## Overview
+One command runs every analysis from the shipped data and writes a report that maps each number of the paper to the
+reproduced value:
 
-This study presents a survival analysis tracking individual AI-generated code units from birth through modification in open-source repositories. We analyze 201 repositories and over 200,000 code units to investigate:
-
-- **RQ1 (Survival):** Does agent-authored code survive longer than human-authored code?
-- **RQ2 (Intent):** When agent-authored code is modified, what is the intent?
-- **RQ3a (Localization):** Can we localize modification-prone lines?
-- **RQ3b (Temporal):** Can we predict when code will be modified?
-
-## Repository Structure
-
+```bash
+bash reproduce.sh
 ```
-.
-├── README.md
-├── LICENSE
-├── environment.yml
-├── requirements.txt
-├── data/
-│   ├── aidev_filtered_v1.csv          # Filtered repository cohort (201 repos)
-│   ├── survival_events_line_v1.csv    # Line-level survival events
-│   ├── survival_events_file_v1.csv    # File-level survival events
-│   ├── death_details_line_v1.csv      # Line-level modification details
-│   ├── death_details_file_v1.csv      # File-level modification details
-│   ├── code_content_file_v1.csv       # Code content for BOW features
-│   ├── process_features_rq32.csv      # Process features for RQ3b
-│   ├── prediction_features_v1.csv     # Prediction features
-│   └── repo_metadata_v1.csv           # Repository metadata
-└── src/
-    ├── download_data.py               # Download AIDev dataset
-    ├── filter_repos.py                # Repository filtering pipeline
-    ├── extract_code_contents.py       # Extract code content
-    ├── extract_features.py            # Extract prediction features
-    ├── extract_process_features_rq32.py # Extract process features
-    ├── measure_retention_line.py      # Line-level survival measurement
-    ├── measure_retention_file.py      # File-level survival measurement
-    ├── mine_death_details.py          # Extract modification intent
-    ├── analyze_rq1.py                 # RQ1: Survival analysis
-    ├── analyze_rq1-check_ph_assumption.py # Check proportional hazards
-    ├── analyze_rq2.py                 # RQ2: Modification intent analysis
-    ├── model_tournament_rq31_bow.py   # RQ3a: BOW-based localization
-    ├── model_tournament_rq32_binned_process.py # RQ3b: Temporal prediction
-    ├── lime_analysis_rq32_binned_process.py # LIME explanations for RQ3b
-    ├── convert_to_wide_format_for_scott-and-knott.py # Prepare Scott-Knott input
-    └── analyze_scott_knott.R          # Scott-Knott ESD test
-```
+
+## Contents
+
+| Path | What it is |
+|---|---|
+| `reproduce.sh` | Runs all analyses from `data/` into `results/`, then writes `results/PAPER_NUMBERS.md` |
+| `rebuild_data.sh` | Rebuilds `data/` from the AIDev release and GitHub (network, several days); not needed to reproduce the paper |
+| `requirements.txt` | Pinned Python packages (Python 3.11) |
+| `data/` | All inputs of the analyses (see `data/README.md`) |
+| `src/analysis/` | Cohort, audit, RQ1 and RQ2 analyses, and the paper-number report (see `src/README.md`) |
+| `src/rq3/` | RQ3 models: tournaments, Scott-Knott ESD, baselines, SHAP and LIME, line localization |
+| `src/mining/` | Data collection and preparation, used only by `rebuild_data.sh` |
+| `expected_results/` | The outputs of the run behind the paper, in the same layout as `results/` |
+| `results/` | Created by `reproduce.sh` (not versioned) |
+| `LICENSE` | MIT license |
 
 ## Requirements
 
-### Software Dependencies
+* macOS or Linux with bash, gzip and Python 3.11. The paper's results were produced with Python 3.11.8 on macOS (Apple silicon).
+* About 3 GB of free disk space (the RQ3 inputs are unpacked into `results/`) and 8 GB of memory.
+* No network access is needed after the packages are installed. No GPU is needed.
 
-- Python 3.10+
-- R 4.0+ (for Scott-Knott ESD test)
-- Git (for repository cloning and blame analysis)
-
-### Python Environment Setup
-
-We recommend using Conda to manage the environment:
+## Quick start
 
 ```bash
-# Create conda environment
-conda env create -f environment.yml
-
-# Activate environment
-conda activate ai-code-survival
+python3.11 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+bash reproduce.sh --quick      # smoke test of every script (see "Runtimes")
+bash reproduce.sh              # the paper's settings
 ```
 
-Alternatively, using pip:
+Open `results/PAPER_NUMBERS.md` for the comparison with the paper and `results/figures/rq1_km_line_primary.pdf` for Figure 1.
+
+To compare the shipped outputs of the paper run with the paper without running anything:
 
 ```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
+python src/analysis/paper_numbers.py --results expected_results
 ```
 
-### R Dependencies
-
-Install required R packages:
-
-```r
-install.packages(c("ScottKnottESD", "tidyverse"))
-```
-
-## Data Description
-
-### Input Data
-
-| File | Description | Rows | Used In |
-|------|-------------|------|---------|
-| `aidev_filtered_v1.csv` | Filtered cohort of 201 repositories with both agent and human PRs | 201 | All RQs |
-| `survival_events_line_v1.csv` | Line-level survival events (birth, death, censoring) | ~210K | RQ1 |
-| `survival_events_file_v1.csv` | File-level survival events | ~16K | RQ1 |
-| `death_details_line_v1.csv` | Modification intent for each line death | ~129K | RQ2 |
-| `death_details_file_v1.csv` | Modification intent for each file death | ~13K | RQ2 |
-| `code_content_file_v1.csv` | Source code content for BOW feature extraction | ~15K | RQ3a |
-| `process_features_rq32.csv` | Process-level features (commit velocity, file age, etc.) | ~12K | RQ3b |
-| `prediction_features_v1.csv` | Combined prediction features | ~15K | RQ3a |
-| `repo_metadata_v1.csv` | Repository metadata (stars, contributors, etc.) | 201 | RQ1 |
-
-### Key Variables
-
-**Survival Events:**
-- `repository_slug`: Repository identifier (owner/name)
-- `pr_number`: Pull request number
-- `author_type`: `Agent` or `Human`
-- `agent_name`: Specific agent (e.g., `GitHub Copilot`, `Devin`)
-- `birth_date`: Date code was merged
-- `death_date`: Date code was modified (null if censored)
-- `survival_days`: Time from birth to death/censoring
-- `is_dead`: Binary indicator (1 = modified, 0 = censored)
-
-**Modification Intent:**
-- `intent`: Classification (`Corrective`, `Perfective`, `Adaptive`, `Preventive`, `Other`)
-- `commit_message`: Commit message of modifying commit
-
-## Reproduction Steps
-
-### Quick Start (Using Provided Data)
-
-If you want to reproduce the analysis using the provided processed data:
-
-```bash
-# Activate environment
-conda activate ai-code-survival
-
-# Run RQ1 analysis
-python src/analyze_rq1.py
-
-# Run RQ2 analysis
-python src/analyze_rq2.py
-
-# Run RQ3a analysis
-python src/model_tournament_rq31_bow.py
-
-# Run RQ3b analysis
-python src/model_tournament_rq32_binned_process.py
-
-# Run Scott-Knott ESD test (R)
-Rscript src/analyze_scott_knott.R
-```
-
-### Full Reproduction (From Scratch)
-
-To reproduce the entire pipeline from the original AIDev dataset:
-
-#### Step 1: Download AIDev Dataset
-
-```bash
-python src/download_data.py --output data/raw/
-```
-
-This downloads the AIDev dataset from the original source.
-
-#### Step 2: Filter Repositories
-
-```bash
-python src/filter_repos.py \
-    --input data/raw/aidev.parquet \
-    --output data/aidev_filtered_v1.csv
-```
-
-This applies the filtering criteria described in Section 2.1.2:
-- Cohort identification (repos with both agent and human PRs)
-- License filter
-- Repository state filter
-- Statistical distribution filter (Q1 removal)
-- Code ratio confidence interval filter
-
-#### Step 3: Measure Survival Events
-
-```bash
-# Line-level (primary analysis)
-python src/measure_retention_line.py \
-    --input data/aidev_filtered_v1.csv \
-    --output data/survival_events_line_v1.csv
-
-# File-level (secondary analysis)
-python src/measure_retention_file.py \
-    --input data/aidev_filtered_v1.csv \
-    --output data/survival_events_file_v1.csv
-```
-
-**Note:** This step requires cloning repositories and running `git blame`. It may take several hours depending on network speed and disk I/O.
-
-#### Step 4: Extract Modification Details
-
-```bash
-python src/mine_death_details.py \
-    --survival data/survival_events_line_v1.csv \
-    --output data/death_details_line_v1.csv
-```
-
-#### Step 5: Extract Features for RQ3
-
-```bash
-# Code content for BOW features
-python src/extract_code_contents.py \
-    --input data/aidev_filtered_v1.csv \
-    --output data/code_content_file_v1.csv
-
-# Prediction features
-python src/extract_features.py \
-    --input data/aidev_filtered_v1.csv \
-    --output data/prediction_features_v1.csv
-
-# Process features for RQ3b
-python src/extract_process_features_rq32.py \
-    --input data/survival_events_file_v1.csv \
-    --output data/process_features_rq32.csv
-```
-
-#### Step 6: Run Analyses
-
-```bash
-# RQ1: Survival Analysis
-python src/analyze_rq1.py
-python src/analyze_rq1-check_ph_assumption.py
-
-# RQ2: Modification Intent
-python src/analyze_rq2.py
-
-# RQ3a: Line Localization (BOW)
-python src/model_tournament_rq31_bow.py
-
-# RQ3b: Temporal Prediction
-python src/model_tournament_rq32_binned_process.py
-python src/lime_analysis_rq32_binned_process.py
-
-# Prepare for Scott-Knott
-python src/convert_to_wide_format_for_scott-and-knott.py
-
-# Scott-Knott ESD test
-Rscript src/analyze_scott_knott.R
-```
-
-## Expected Output
-
-### RQ1: Survival Analysis
-
-Running `analyze_rq1.py` produces:
-
-| Output File | Description | Paper Reference |
-|-------------|-------------|-----------------|
-| `results/rq1_survival_summary.csv` | Death rates by author type and granularity | Table 3 |
-| `results/rq1_cox_results.csv` | Cox regression hazard ratios | Table 4 |
-| `results/rq1_agent_analysis.csv` | Survival by agent type | Table 5 |
-| `results/rq1_logrank_tests.csv` | Log-rank test results | Section 3.3 |
-| `visuals/rq1_kaplan_meier_line.pdf` | Kaplan-Meier curves | Figure 1 |
-
-**Expected Results:**
-- Line-level death rate: Agent 53.9%, Human 69.3% (Δ = -15.4pp)
-- Hazard Ratio: 0.842 (95% CI: 0.833–0.852, p < 0.001)
-
-### RQ2: Modification Intent
-
-Running `analyze_rq2.py` produces:
-
-| Output File | Description | Paper Reference |
-|-------------|-------------|-----------------|
-| `results/rq2_reason_summary.csv` | Intent distribution by author type | Table 6 |
-| `results/rq2_agent_analysis.csv` | Corrective rate by agent | Table 7 |
-| `results/rq2_chi_square_tests.csv` | Chi-square test results | Section 4.3 |
-| `results/rq2_standardized_residuals.csv` | Standardized residuals | Section 4.3 |
-
-**Expected Results:**
-- Chi-square: χ² = 1739.17, df = 4, p < 0.001
-- Effect size: Cramér's V = 0.116
-- Corrective rate: Agent 26.3%, Human 23.0% (Δ = +3.3pp)
-
-### RQ3a: Line Localization
-
-Running `model_tournament_rq31_bow.py` produces:
-
-| Output File | Description | Paper Reference |
-|-------------|-------------|-----------------|
-| `results/rq31_bow_tournament_summary_combined_count.csv` | Model tournament results | Table 8 |
-| `results/rq31_lime_explanations_combined_count.csv` | LIME token attributions | Figure 2 |
-
-**Expected Results:**
-- Best model: XGBoost
-- AUC-ROC: 0.671 (95% CI: 0.663–0.679)
-- AUC-PR: 0.903 (95% CI: 0.897–0.910)
-
-### RQ3b: Temporal Prediction
-
-Running `model_tournament_rq32_binned_process.py` produces:
-
-| Output File | Description | Paper Reference |
-|-------------|-------------|-----------------|
-| `results/rq32_process_tournament_summary.csv` | Model tournament results | Table 9 |
-| `results/rq32_process_lime_feature_importance.csv` | Feature importance | Section 5.3 |
-
-**Expected Results:**
-- Best model: Logistic Regression
-- Macro F1: 0.285 (95% CI: 0.279–0.291)
-- AUC-ROC: 0.563 (95% CI: 0.557–0.568)
-
-## Troubleshooting
-
-### Common Issues
-
-**1. Git blame timeout:**
-```
-Error: Git blame operation timed out
-```
-Solution: Increase timeout in `measure_retention_line.py` or process repositories in smaller batches.
-
-**2. Memory error during BOW vectorization:**
-```
-MemoryError: Unable to allocate array
-```
-Solution: Reduce `max_features` parameter in `model_tournament_rq31_bow.py` or use a machine with more RAM.
-
-**3. R package installation fails:**
-```
-Error in install.packages: package 'ScottKnottESD' is not available
-```
-Solution: Install from GitHub:
-```r
-devtools::install_github("klainfo/ScottKnottESD")
-```
-
-### Hardware Requirements
-
-- **Minimum:** 16 GB RAM, 50 GB disk space
-- **Recommended:** 32 GB RAM, 100 GB disk space, SSD
-- **Estimated runtime:** 
-  - Using provided data: ~30 minutes
-  - Full reproduction: ~8-12 hours (depending on network and disk speed)
-
-## Citation
-
-To be added.
+This writes `expected_results/PAPER_NUMBERS.md`.
+
+## Step by step
+
+`reproduce.sh` runs the steps below in this order. `bash reproduce.sh --list` lists them, and
+`bash reproduce.sh --only <step>` runs a single one. Each step writes its log to `results/logs/<step>.log` and prints
+its runtime. The script stops at the first failing step and shows the end of its log. A finished step is skipped when
+the script is run again, unless `--force` is given or the step last ran in the other mode (quick or full).
+
+| Step | Script | Output in `results/` | Paper |
+|---|---|---|---|
+| cohort_funnel | `src/analysis/funnel.py` | `cohort/filtering_funnel.csv`, `cohort/funnel.json` | Table 1, steps (1) to (5) |
+| cohort_stats | `src/analysis/paper_stats.py` | `cohort/cohort_stats.json` | Table 1 (merged PRs), Sections 2.1.3 and 2.2 |
+| audit_summary | `src/analysis/audit_summary.py` | `audit/audit_summary.json` | Section 2.1.5 |
+| audit_kappa | `src/analysis/kappa.py` | `audit/kappa.json` | Section 2.1.5 (Cohen's kappa, pending) |
+| rq1_line, rq1_hunk, rq1_file | `src/analysis/rq1_fb.py` | `rq1/rq1_{line,hunk,file}.json` | Tables 2, 3 and 4; Section 3.3 |
+| rq1_ph | `src/analysis/a4_ph.py` | `rq1/a4_ph_line.json` | Section 3.3 (proportional hazards, time split) |
+| rq1_substantial | `src/analysis/a7_sub.py` | `rq1/a7_sub.json` | Section 3.3 (substantial modification) |
+| rq1_file_history | `src/analysis/a9_model.py` | `rq1/a9.json` | Section 3.3 (file covariates), Section 6.2 |
+| rq1_misc_figure | `src/analysis/a_misc.py` | `rq1/a_misc.json`, `figures/rq1_km_line_primary.pdf` | Figure 1; Section 2.1.5 (cohort audit); Section 3.3 |
+| rq1_calendar | `src/analysis/c1_calendar.py` | `rq1/c1_calendar_line.json` | Section 3.3 (calendar time) |
+| rq1_rate_14d | `src/analysis/rate_14d.py` | `rq1/rate_14d.txt` | 14-day rates (additional variants) |
+| rq2 | `src/analysis/rq2_fb.py` | `rq2/rq2_fb.json` | Table 5, Section 4.3 |
+| rq3_unpack | (shell) | `rq3/*/data/` | inputs of RQ3 |
+| rq3a_agent_* | `src/rq3/rq3a_tournament.py`, `rq3a_wide.py`, `sk_esd.py`, `d1_lr.py`, `lime_timed.py`, `rq3a_localize.py` | `rq3/rq3a_agent/results/` | Section 5.3 (RQ3a, line localization) |
+| rq3b_agent_* | `src/rq3/rq3b_tournament.py`, `sk_esd.py`, `lime_timed.py` | `rq3/rq3b_agent/results/` | Section 5.3 (RQ3b) |
+| rq3b_all_* | `src/rq3/rq3b_tournament.py`, `sk_esd.py` | `rq3/rq3b_all/results/` | Section 5.3 (RQ3b, all files) |
+| rq3a_all_* | `src/rq3/rq3a_sub.py`, `rq3a_wide.py`, `sk_esd.py`, `d1_lr.py`, `rq3a_localize.py` | `rq3/rq3a_all/results/` | Section 5.3 (RQ3a, all files) |
+| summary | `src/analysis/make_summary.py` | `SUMMARY.md` | long-form summary of every output |
+| paper_numbers | `src/analysis/paper_numbers.py` | `PAPER_NUMBERS.md` | every number of the paper |
+
+The default mode uses the paper's settings: 30 repetitions of 10-fold cross-validation grouped by repository,
+1,000 bootstrap replicates, all files for the line localization and fixed seeds. `--quick` fits the RQ1 models on a fixed random quarter of the PRs with
+50 bootstrap replicates, and runs RQ3 with one repetition of 10-fold cross-validation and at most 40 files per fold for
+the line localization. It checks that every script runs, and its numbers are not expected to match the paper. The report header and the console say so.
+
+## Paper-to-output map
+
+`results/PAPER_NUMBERS.md` lists every empirical number of the paper, section by section and table by table, with
+the paper's value, the reproduced value, and the status. The main sources are:
+
+| Paper element | Output |
+|---|---|
+| Abstract, Introduction | collected from the outputs below |
+| Table 1 (funnel) | `cohort/funnel.json` (steps 1 to 5), `cohort/cohort_stats.json` (merged PRs) |
+| Section 2.1.3 (cohort) | `cohort/cohort_stats.json` |
+| Section 2.1.5 (audit) | `audit/audit_summary.json` (325 PRs), `rq1/a_misc.json` key `A8` (221 PRs in the cohort) |
+| Table 2 (units and events) | `rq1/rq1_{line,hunk,file}.json` key `A12` |
+| Table 3 (designs) | `rq1/rq1_{line,hunk,file}.json` keys `A1_*` |
+| Figure 1 | `figures/rq1_km_line_primary.pdf`, `rq1/a_misc.json` key `A13` |
+| Section 3.3 (RQ1 text) | `rq1/rq1_line.json` (`A2` pooled, `A3` RMST and bootstrap, `A6` 14-day rates), `rq1/a4_ph_line.json`, `rq1/c1_calendar_line.json`, `rq1/a7_sub.json`, `rq1/a9.json`, `rq1/a_misc.json` (`A8`, `A10`, `A11`) |
+| Table 4 (per agent) | `rq1/rq1_line.json` key `A5` |
+| Table 5 and Section 4.3 (RQ2) | `rq2/rq2_fb.json` |
+| Section 5.3 (RQ3a) | `rq3/rq3a_{agent,all}/results/` (`rq31_bow_tournament_summary_combined_count.csv`, `rq3a_sk_*.csv`, `d1_lr_size_history.json`, `rq3a_explain_summary.json`, `rq3a_line_localization_summary.json`, `lime_runtime.json`) |
+| Section 5.3 (RQ3b) | `rq3/rq3b_{agent,all}/results/` (`rq32_process_tournament_summary.csv`, `rq3b_sk_*.csv`, `rq32_process_selected_features.json`, `rq3b_explain_summary.json`) |
+
+On the shipped `expected_results/`, the report gives 529 of 534 numbers matched (183 of 186 statements):
+
+* Two statements do not match. In Section 3.3, the supervised-assistant HR for substantial modification ranges from
+  0.72 to 0.77, not 0.76 (file unit, 50%: HR 0.7651). In Section 4.3, the adaptive share without merge commits is
+  8.3% for agent-attributed and 8.4% for human code, not 8.3% for both.
+* One statement is partial. Step (5) of Table 1 (code ratio) is reproduced from the cohort list, because the
+  per-repository code ratios of the final filtering run are not part of the package (see `data/README.md`).
+* Thirteen statements match only when the reproduced value is first rounded to three decimals and then to two (for
+  example, the agent HR 0.8347 is printed as 0.84). The report lists them.
+* Numbers from the AIDev release, the literature and the design (for example the observation window) are listed as
+  external. The AIDev numbers are checked against the shipped AIDev summary.
+* Cohen's kappa of the attribution audit is listed as pending. The second rater's labels are not available yet.
+  `src/analysis/kappa.py` computes the kappa from `data/audit/second_rater/second_rater_annotation_sheet.xlsx` once
+  the `label` column is filled in. Until then it prints "second-rater labels not available yet".
+
+## Runtimes
+
+Measured on a laptop with an Apple M2 processor (8 cores) and 24 GB of memory.
+
+| Run | Time |
+|---|---|
+| `pip install -r requirements.txt` | about 1 minute |
+| `bash reproduce.sh --quick` | about 30 minutes (26 minutes on the machine above; the first start of Python takes a few extra minutes) |
+| `bash reproduce.sh` (paper settings) | about 9 hours: RQ1 about 4 hours (the line-level Cox models take most of it), RQ3 about 5 hours (RQ3a agent 75 minutes, RQ3a all files 85 minutes, RQ3b agent 25 minutes, RQ3b all files 110 minutes) |
+| `python src/analysis/paper_numbers.py --results expected_results` | a few seconds |
+
+The full-run times are those of the run behind the paper. The RQ3 models use all processor cores.
+
+## Reproducibility notes
+
+* Every random step has a fixed seed (42 for the cross-validation, SMOTE, the models and the explanation folds; 1 and
+  5 for the bootstraps). With the pinned packages, a full run reproduces `expected_results/`. The LIME runtime per
+  explanation depends on the machine.
+* The RQ3 tournaments write a checkpoint per fold (`results/rq3/*/results/ckpt*.jsonl`) and resume from it after an
+  interruption. `reproduce.sh` removes the checkpoint when it reruns a tournament step.
+* The commit table (`data/tables/commits.parquet`) ships without author names and e-mail addresses, and personal
+  e-mail addresses in commit messages are replaced by `<email>`. `src/mining/sanitize_commits.py` checks that this
+  leaves every RQ2 intent label unchanged.
+
+## Full data rebuild
+
+`rebuild_data.sh` documents and runs the pipeline that produced `data/`, step by step. It needs network access, `git`,
+`cloc`, the `requests` package, an authenticated GitHub CLI (`gh`, for the search API) and a GitHub token for the
+metadata step, about 100 GB of disk and several days. It writes everything to `rebuild/` and never overwrites `data/`.
+
+| Step | Script | Output in `rebuild/` |
+|---|---|---|
+| download | `src/mining/download_data.py` | `aidev/*.parquet` (AIDev release, Hugging Face `hao-li/AIDev`) |
+| aidev_extract | `src/mining/aidev_extract.py` | `aidev_extract/` (same files as `data/aidev/`) |
+| filter | `src/mining/filter_repos.py` (with `code_ratio.py` for repositories that time out) | `repo_metadata_v1.csv`, `code_ratio_v1.csv`, `aidev_filtered_v1.csv` |
+| cohort_prs | `src/mining/cohort_prs.py` | `prs_cohort256.csv` |
+| clone | `git clone --bare` | `clones/<owner>__<name>.git` |
+| mine | `src/mining/mine_survival.py` (`git blame --reverse` from each merge commit to the last commit on or before December 31, 2025) | `mine/` |
+| tables | `src/mining/build_tables.py` | `tables/{lines,hunks,files,prs,commits}.parquet` |
+| sanitize | `src/mining/sanitize_commits.py` | `tables/commits.parquet` |
+| parents | `src/mining/commit_parents.py` | `commit_parents.csv` |
+| file_covariates | `src/mining/a9_extract.py` | `file_covariates/` |
+| rq3_git | `src/mining/extract_rq3_git.py` | `rq3_inputs/` (file content, tokens, git process features) |
+| rq3_pr_features | `src/mining/extract_rq3_pr_features.py`, `extract_rq3_pr_features_fixed.py` | `rq3_inputs/pr_features*.jsonl` |
+| rq3_inputs | `src/mining/build_rq3_inputs.py` | `rq3_256/` |
+| rq3_prep | `src/mining/d_prep.py`, `d_full_prep.py` | `rq3/`, `rq3full/` (vendored files removed, PR-history leakage fix) |
+| compare | (inline) | prints whether each rebuilt file equals the shipped one |
+
+Repositories change over time, so a rebuild will not give exactly the shipped data. Two cohort repositories already
+could not be mined: `dust-tt/dust` is no longer public, and `elizaos/eliza` rewrote its history after the observation
+window. The repository metadata in `data/cohort/repo_metadata_v1.csv` was collected in January 2026, and a later
+collection can change the filtering funnel (for example, a repository whose license or release status changed).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-To be added.
+The code is released under the MIT license (`LICENSE`). The data derived from AIDev keeps the license of the AIDev
+dataset.

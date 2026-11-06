@@ -1,0 +1,18 @@
+             model  rank     mean   median
+           XGBoost     1 0.315920 0.316184
+          CatBoost     1 0.313326 0.315401
+      RandomForest     1 0.312420 0.315594
+LogisticRegression     2 0.280677 0.281718
+               MLP     2 0.279470 0.284830
+               SVM     2 0.279044 0.279744
+        NaiveBayes     2 0.276139 0.279362
+               KNN     2 0.270663 0.268282
+             model  rank     mean   median
+          CatBoost     1 0.606323 0.611532
+           XGBoost     1 0.604940 0.606358
+      RandomForest     1 0.601019 0.601786
+LogisticRegression     2 0.581251 0.585110
+               MLP     2 0.581052 0.582479
+               SVM     2 0.577109 0.581913
+        NaiveBayes     3 0.561783 0.565677
+               KNN     4 0.534932 0.534813

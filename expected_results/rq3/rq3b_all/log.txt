@@ -1,0 +1,171 @@
+======================================================================
+RQ3.2 MODEL TOURNAMENT: Process Features
+Predicting Time-to-Modification (Khatoonabadi-grounded)
+======================================================================
+Timestamp: 2026-11-05T17:21:08.654847
+
+Loading data...
+  Total samples: 14,886
+
+Preparing data...
+  Features: 8
+  Samples: 14,886
+  Groups (repos): 203
+
+  Class distribution:
+    Class 0 (Within 1 day): 2,328 (15.6%)
+    Class 1 (1 day to 1 week): 3,646 (24.5%)
+    Class 2 (1 week to 1 month): 4,085 (27.4%)
+    Class 3 (More than 1 month): 4,827 (32.4%)
+
+Handling missing values...
+
+======================================================================
+AUTOSPEARMAN PREPROCESSING
+======================================================================
+  Spearman threshold: 0.7
+  VIF threshold: 5.0
+
+  Part 1: Spearman correlation analysis...
+
+  Part 2: VIF analysis...
+
+  Original features: 8
+  Selected features: 8
+  Selected: ['project_commit_velocity_3m', 'file_modification_frequency_3m', 'file_age_days', 'contributor_prior_prs', 'contributor_acceptance_rate', 'project_open_prs_at_birth', 'birth_day_of_week', 'birth_hour']
+
+======================================================================
+MODEL TOURNAMENT (Full Data, GroupKFold CV)
+======================================================================
+  Samples: 14,886
+  Repetitions: 30
+  Folds: 10
+  Total CV iterations per model: 300
+
+  Classes: 4
+  Class distribution: {np.int64(0): np.int64(2328), np.int64(1): np.int64(3646), np.int64(2): np.int64(4085), np.int64(3): np.int64(4827)}
+    Progress: 100/2400 (4.2%)
+    Progress: 200/2400 (8.3%)
+    Progress: 300/2400 (12.5%)
+    Progress: 400/2400 (16.7%)
+    Progress: 500/2400 (20.8%)
+    Progress: 600/2400 (25.0%)
+    Progress: 700/2400 (29.2%)
+    Progress: 800/2400 (33.3%)
+    Progress: 900/2400 (37.5%)
+    Progress: 1000/2400 (41.7%)
+    Progress: 1100/2400 (45.8%)
+    Progress: 1200/2400 (50.0%)
+    Progress: 1300/2400 (54.2%)
+    Progress: 1400/2400 (58.3%)
+    Progress: 1500/2400 (62.5%)
+    Progress: 1600/2400 (66.7%)
+    Progress: 1700/2400 (70.8%)
+    Progress: 1800/2400 (75.0%)
+    Progress: 1900/2400 (79.2%)
+    Progress: 2000/2400 (83.3%)
+    Progress: 2100/2400 (87.5%)
+    Progress: 2200/2400 (91.7%)
+    Progress: 2300/2400 (95.8%)
+    Progress: 2400/2400 (100.0%)
+
+======================================================================
+TOURNAMENT RESULTS
+======================================================================
+
+Primary Metric: Macro F1 (treats all classes equally)
+------------------------------------------------------------
+  CatBoost            : 0.3226 [0.3171 - 0.3280]
+  RandomForest        : 0.3117 [0.3062 - 0.3177]
+  SVM                 : 0.3014 [0.2965 - 0.3063]
+  LogisticRegression  : 0.3011 [0.2951 - 0.3073]
+  XGBoost             : 0.3009 [0.2952 - 0.3068]
+  MLP                 : 0.2921 [0.2863 - 0.2976]
+  NaiveBayes          : 0.2772 [0.2701 - 0.2842]
+  KNN                 : 0.2663 [0.2624 - 0.2706]
+
+Secondary Metric: AUC-ROC (One-vs-Rest, macro)
+------------------------------------------------------------
+  CatBoost            : 0.6153 [0.6102 - 0.6202]
+  XGBoost             : 0.6011 [0.5958 - 0.6057]
+  RandomForest        : 0.5983 [0.5935 - 0.6029]
+  SVM                 : 0.5874 [0.5832 - 0.5915]
+  MLP                 : 0.5871 [0.5821 - 0.5925]
+  LogisticRegression  : 0.5850 [0.5790 - 0.5906]
+  NaiveBayes          : 0.5791 [0.5731 - 0.5847]
+  KNN                 : 0.5367 [0.5332 - 0.5404]
+
+  Best model (Macro F1): CatBoost (0.3226)
+
+======================================================================
+TRAINING FINAL MODEL (Full Data)
+======================================================================
+  Training on: Full dataset (14,886 samples)
+  Note: CV metrics are primary; this model is for LIME explanations
+
+  Full data metrics (reference only - CV metrics are primary):
+    Macro F1:    0.5734
+    Weighted F1: 0.5824
+    MCC:         0.4409
+    AUC-ROC:     0.8240
+
+  Confusion Matrix:
+        Pred_0  Pred_1  Pred_2  Pred_3
+True_0    1477     316     221     314
+True_1     641    1931     482     592
+True_2     661     588    1874     962
+True_3     314     445     638    3430
+
+  Per-class performance (full data):
+    Class 0 (Within 1 day        ): P=0.478, R=0.634, F1=0.545
+    Class 1 (1 day to 1 week     ): P=0.589, R=0.530, F1=0.558
+    Class 2 (1 week to 1 month   ): P=0.583, R=0.459, F1=0.513
+    Class 3 (More than 1 month   ): P=0.647, R=0.711, F1=0.678
+
+======================================================================
+FILES GENERATED
+======================================================================
+  results/rq32_process_tournament_scores.csv
+  results/rq32_process_tournament_summary.csv
+  results/rq32_process_wide_macro_f1.csv
+  results/rq32_process_wide_auc_roc.csv
+  results/rq32_process_confusion_matrix.csv
+  results/rq32_process_selected_features.json
+  models/rq32_process_best_model.joblib
+
+======================================================================
+NEXT STEPS
+======================================================================
+  1. Run Scott-Knott ESD in R:
+     Rscript src/analyze_scott_knott.R results/rq32_process_wide_macro_f1.csv results/rq32_process_sk
+  2. Run LIME analysis for interpretability (separate script)
+  3. Compare with RQ3.1 (BOW textual features) results
+
+======================================================================
+BASELINE COMPARISON
+======================================================================
+
+  Class distribution:
+    Class 0 (Within 1 day        ): 2,328 (15.6%)
+    Class 1 (1 day to 1 week     ): 3,646 (24.5%)
+    Class 2 (1 week to 1 month   ): 4,085 (27.4%)
+    Class 3 (More than 1 month   ): 4,827 (32.4%) ← majority
+
+  Baselines:
+    Random baseline (4-class):   Macro F1 ≈ 0.2500
+    Majority baseline (class 3): Macro F1 ≈ 0.1224
+
+  Best model (CatBoost): Macro F1 = 0.3226
+
+  Improvement:
+    Over random baseline:   +29.1%
+    Over majority baseline: +163.5%
+
+  Khatoonabadi et al. TSE 2024 reference:
+    Their task: 3-class first response latency prediction
+    Their best model: CatBoost
+    Their AUC-ROC improvement: 29-39% over majority baseline
+
+======================================================================
+COMPLETE
+======================================================================

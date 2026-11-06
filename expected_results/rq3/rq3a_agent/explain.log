@@ -1,0 +1,239 @@
+
+======================================================================
+LOADING DATA
+======================================================================
+
+Code content: 7,954 rows
+Survival events: 7,954 rows
+Merged data: 7,954 rows
+
+Filtered to supported languages: ['cs', 'go', 'java', 'py', 'rs', 'ts', 'tsx']
+  Before: 7,954 rows
+  After: 6,744 rows
+  Removed: 1,210 rows from unsupported languages
+
+Language distribution:
+  .ts: 1,972 (29.2%)
+  .cs: 1,230 (18.2%)
+  .py: 1,103 (16.4%)
+  .tsx: 822 (12.2%)
+  .rs: 811 (12.0%)
+  .go: 691 (10.2%)
+  .java: 115 (1.7%)
+After removing empty tokens: 6,744 rows
+
+Removing comments...
+Filtering syntax tokens (keeping API/identifiers only)...
+  Original tokens: 13,184,262
+  After filtering: 4,406,149
+  Reduction: 66.6%
+  Rows with tokens after filtering: 6,661
+
+Target distribution:
+  Modified (event=1): 5,312 (79.7%)
+  Survived (event=0): 1,349 (20.3%)
+
+Repositories: 155
+PRs: 1220
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 5,816
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=2.812, modified=0.608
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.9436
+  AUC-PR: 0.9881
+  F1: 0.8296
+  Predicted: 3,393 modified, 2,423 survived
+
+======================================================================
+LIME EXPLANATIONS
+======================================================================
+
+Prediction breakdown:
+  True Positives (correctly predicted modified): 304
+  False Positives (incorrectly predicted modified): 92
+  True Negatives (correctly predicted survived): 223
+  False Negatives (incorrectly predicted survived): 226
+
+Generating LIME explanations for 20 files (stratified)...
+  Processed 10/20...
+  Processed 20/20...
+
+Generated 20 explanations
+
+Explanations by category:
+  TP: 5 samples, avg prob: 0.645, avg lines affected: 29.4
+  FP: 5 samples, avg prob: 0.599, avg lines affected: 23.8
+  TN: 5 samples, avg prob: 0.404, avg lines affected: 20.6
+  FN: 5 samples, avg prob: 0.421, avg lines affected: 16.8
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 5,297
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=2.530, modified=0.623
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.9402
+  AUC-PR: 0.9857
+  F1: 0.8408
+  Predicted: 3,098 modified, 2,199 survived
+
+======================================================================
+LIME EXPLANATIONS
+======================================================================
+
+Prediction breakdown:
+  True Positives (correctly predicted modified): 606
+  False Positives (incorrectly predicted modified): 103
+  True Negatives (correctly predicted survived): 199
+  False Negatives (incorrectly predicted survived): 456
+
+Generating LIME explanations for 20 files (stratified)...
+  Processed 10/20...
+  Processed 20/20...
+
+Generated 20 explanations
+
+Explanations by category:
+  TP: 5 samples, avg prob: 0.639, avg lines affected: 32.6
+  FP: 5 samples, avg prob: 0.562, avg lines affected: 41.6
+  TN: 5 samples, avg prob: 0.385, avg lines affected: 21.0
+  FN: 5 samples, avg prob: 0.392, avg lines affected: 13.8
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 4,755
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=2.175, modified=0.649
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.9330
+  AUC-PR: 0.9808
+  F1: 0.8224
+  Predicted: 2,578 modified, 2,177 survived
+
+======================================================================
+LIME EXPLANATIONS
+======================================================================
+
+Prediction breakdown:
+  True Positives (correctly predicted modified): 961
+  False Positives (incorrectly predicted modified): 65
+  True Negatives (correctly predicted survived): 191
+  False Negatives (incorrectly predicted survived): 689
+
+Generating LIME explanations for 20 files (stratified)...
+  Processed 10/20...
+  Processed 20/20...
+
+Generated 20 explanations
+
+Explanations by category:
+  TP: 5 samples, avg prob: 0.549, avg lines affected: 41.4
+  FP: 5 samples, avg prob: 0.564, avg lines affected: 58.4
+  TN: 5 samples, avg prob: 0.449, avg lines affected: 13.4
+  FN: 5 samples, avg prob: 0.433, avg lines affected: 14.6
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 5,363
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=2.520, modified=0.624
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.9439
+  AUC-PR: 0.9866
+  F1: 0.8338
+  Predicted: 3,091 modified, 2,272 survived
+
+======================================================================
+LIME EXPLANATIONS
+======================================================================
+
+Prediction breakdown:
+  True Positives (correctly predicted modified): 690
+  False Positives (incorrectly predicted modified): 110
+  True Negatives (correctly predicted survived): 175
+  False Negatives (incorrectly predicted survived): 323
+
+Generating LIME explanations for 20 files (stratified)...
+  Processed 10/20...
+  Processed 20/20...
+
+Generated 20 explanations
+
+Explanations by category:
+  TP: 5 samples, avg prob: 0.663, avg lines affected: 185.2
+  FP: 5 samples, avg prob: 0.574, avg lines affected: 21.0
+  TN: 5 samples, avg prob: 0.398, avg lines affected: 17.0
+  FN: 5 samples, avg prob: 0.417, avg lines affected: 36.6
+
+======================================================================
+TRAINING FINAL MODEL ON FULL DATA
+======================================================================
+
+Vectorizer: COUNT
+Vocabulary size: 1000
+Samples: 5,413
+NOTE: Using class weights (not smote) for final model to get realistic predictions
+Class weights: survived=2.337, modified=0.636
+
+Training RandomForest on full data (with class weights)...
+
+Full Data Metrics (for reference - CV metrics are primary):
+  AUC-ROC: 0.9412
+  AUC-PR: 0.9850
+  F1: 0.8374
+  Predicted: 3,075 modified, 2,338 survived
+
+======================================================================
+LIME EXPLANATIONS
+======================================================================
+
+Prediction breakdown:
+  True Positives (correctly predicted modified): 507
+  False Positives (incorrectly predicted modified): 39
+  True Negatives (correctly predicted survived): 152
+  False Negatives (incorrectly predicted survived): 550
+
+Generating LIME explanations for 20 files (stratified)...
+  Processed 10/20...
+  Processed 20/20...
+
+Generated 20 explanations
+
+Explanations by category:
+  TP: 5 samples, avg prob: 0.649, avg lines affected: 85.4
+  FP: 5 samples, avg prob: 0.574, avg lines affected: 33.0
+  TN: 5 samples, avg prob: 0.392, avg lines affected: 16.8
+  FN: 5 samples, avg prob: 0.389, avg lines affected: 11.8
+done
+LIME runtime 20.984408140182495 s for 100 explanations

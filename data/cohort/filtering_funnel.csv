@@ -1,0 +1,12 @@
+step,repos,agent_prs,human_prs,agent_merged,human_merged
+0 AIDev: all agent repos,116423,932791,6598,790139,5065
+1 Cohort: repos with agent and human PRs,816,9797,6598,5405,5065
+1b metadata available,813,9783,6584,5399,5054
+2 Stars >= 500,813,9783,6584,5399,5054
+3 Software license,666,7625,5054,4314,3865
+4a Not archived,660,7561,5013,4297,3834
+4b Has release/tag,601,7011,4621,3942,3548
+4c >= 2 contributors,566,6891,4559,3852,3495
+5 Q1 filter per language,266,4649,3196,2332,2433
+6a code ratio available,213,3102,2254,1529,1680
+6b Code ratio within 97% CI,206,3060,2224,1513,1658

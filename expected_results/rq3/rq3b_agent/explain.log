@@ -1,0 +1,87 @@
+
+Initializing LIME explainer...
+
+Stratified sampling...
+    Class 0 (Within 1 day        ): 5 correct, 5 incorrect
+    Class 1 (1 day to 1 week     ): 5 correct, 5 incorrect
+    Class 2 (1 week to 1 month   ): 5 correct, 5 incorrect
+    Class 3 (More than 1 month   ): 5 correct, 5 incorrect
+  Total samples to explain: 40
+
+Generating LIME explanations...
+  Progress: 20/40
+  Progress: 40/40
+
+Generated 40 explanations
+
+Aggregating feature importance...
+
+Initializing LIME explainer...
+
+Stratified sampling...
+    Class 0 (Within 1 day        ): 5 correct, 5 incorrect
+    Class 1 (1 day to 1 week     ): 5 correct, 5 incorrect
+    Class 2 (1 week to 1 month   ): 5 correct, 5 incorrect
+    Class 3 (More than 1 month   ): 5 correct, 5 incorrect
+  Total samples to explain: 40
+
+Generating LIME explanations...
+  Progress: 20/40
+  Progress: 40/40
+
+Generated 40 explanations
+
+Aggregating feature importance...
+
+Initializing LIME explainer...
+
+Stratified sampling...
+    Class 0 (Within 1 day        ): 5 correct, 5 incorrect
+    Class 1 (1 day to 1 week     ): 5 correct, 5 incorrect
+    Class 2 (1 week to 1 month   ): 5 correct, 5 incorrect
+    Class 3 (More than 1 month   ): 5 correct, 5 incorrect
+  Total samples to explain: 40
+
+Generating LIME explanations...
+  Progress: 20/40
+  Progress: 40/40
+
+Generated 40 explanations
+
+Aggregating feature importance...
+
+Initializing LIME explainer...
+
+Stratified sampling...
+    Class 0 (Within 1 day        ): 5 correct, 5 incorrect
+    Class 1 (1 day to 1 week     ): 5 correct, 5 incorrect
+    Class 2 (1 week to 1 month   ): 5 correct, 5 incorrect
+    Class 3 (More than 1 month   ): 5 correct, 5 incorrect
+  Total samples to explain: 40
+
+Generating LIME explanations...
+  Progress: 20/40
+  Progress: 40/40
+
+Generated 40 explanations
+
+Aggregating feature importance...
+
+Initializing LIME explainer...
+
+Stratified sampling...
+    Class 0 (Within 1 day        ): 5 correct, 5 incorrect
+    Class 1 (1 day to 1 week     ): 5 correct, 5 incorrect
+    Class 2 (1 week to 1 month   ): 5 correct, 5 incorrect
+    Class 3 (More than 1 month   ): 5 correct, 5 incorrect
+  Total samples to explain: 40
+
+Generating LIME explanations...
+  Progress: 20/40
+  Progress: 40/40
+
+Generated 40 explanations
+
+Aggregating feature importance...
+done
+LIME runtime 1.540480375289917 s for 200 explanations

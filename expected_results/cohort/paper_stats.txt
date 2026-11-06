@@ -1,0 +1,22 @@
+merged_in_256: {'repos': 246, 'agent': 2302, 'human': 2386}
+history_available: {'repos': 244, 'agent': 2266, 'human': 2351}
+history_unavailable_repos: ['dust-tt/dust', 'elizaos/eliza']
+not_in_both_tables: {'repos': 244, 'agent': 2261, 'human': 2346}
+ambiguous_prs: 5
+ambiguous_rows: 10
+prs_parquet: {'repos': 244, 'agent': 2261, 'human': 2346}
+merge_located: {'repos': 241, 'agent': 2092, 'human': 2156}
+merge_not_found: 359
+merge_not_found_by_status: {'merge_not_found': 359}
+merge_located_agent_prs: 2092
+mined_cohort: {'repos': 215, 'agent': 1470, 'human': 1332}
+mined_cohort_by_agent: {'Human': 1332, 'Copilot': 492, 'OpenAI_Codex': 491, 'Devin': 412, 'Cursor': 44, 'Claude_Code': 31}
+no_tracked_source_line: 1446
+primary_prs: {'repos': 215, 'agent': 1467, 'human': 1327}
+vendored_only_prs: 8
+line_kinds: {'censored': 498423, 'died': 355716, 'death_commit_not_found': 364}
+largest_pr_lines: {'Agent': 36538, 'Human': 170619}
+largest_pr_lines_non_vendored: {'Agent': 36538, 'Human': 34380}
+last_merge: 2025-07-30 19:06:58+00:00
+first_merge: 2024-12-27 21:16:02+00:00
+min_followup_days: 154.2034837962963

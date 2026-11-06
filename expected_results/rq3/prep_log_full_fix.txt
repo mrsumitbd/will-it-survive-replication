@@ -1,0 +1,5 @@
+fixed PR features: 2615 PRs
+rq3b_all: 14923 rows, dropped for missing PR features 37 (0.0025) of 14923 non-vendored modified files; repos dropped rows {'blaizzy/mlx-vlm': 22, 'odigos-io/odigos': 15}
+  bins {0: 2328, 1: 3646, 2: 4085, 3: 4827} share {0: 0.1564, 1: 0.2449, 2: 0.2744, 3: 0.3243}
+rq3b_agent: 6300 rows, dropped for missing PR features 22 (0.0035) of 6300 non-vendored modified files; repos dropped rows {'blaizzy/mlx-vlm': 16, 'odigos-io/odigos': 6}
+  bins {0: 949, 1: 1569, 2: 1683, 3: 2077} share {0: 0.1512, 1: 0.2499, 2: 0.2681, 3: 0.3308}

@@ -1,0 +1,14 @@
+[    2.0s] A11
+[    3.0s] A13
+[    3.1s] A8 counts
+[  178.2s] excl_human 0.835 [0.749, 0.931] p=0.00116
+[  388.6s] excl_human_unclear 0.831 [0.745, 0.927] p=0.000868
+[  507.6s] agent_label_only_vs_all_human 0.889 [0.640, 1.233] p=0.48
+[  677.3s] agent_or_mixed_label_vs_all_human 0.821 [0.636, 1.062] p=0.133
+[  681.1s] total_pr_count low 0.832 [0.440, 1.572] p=0.57
+[  686.8s] total_pr_count mid 0.634 [0.428, 0.939] p=0.0231
+[  878.9s] total_pr_count high 0.863 [0.770, 0.967] p=0.0113
+[  927.1s] open_issues low 0.782 [0.623, 0.982] p=0.0345
+[  961.7s] open_issues mid 0.879 [0.725, 1.064] p=0.185
+[  999.2s] open_issues high 0.836 [0.713, 0.981] p=0.0284
+[  999.2s] done
