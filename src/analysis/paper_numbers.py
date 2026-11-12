@@ -190,8 +190,8 @@ n('Sec. 1', 'mined cohort', '2,802 merged PRs, 1,470 agent-attributed and 1,332 
 n('Sec. 1 (RQ1)', 'supervised-assistant HR', 'HR = 0.76 [0.65, 0.87]', lambda: W('primary', 'supervised'))
 n('Sec. 1 (RQ1)', 'Devin HR', 'HR = 0.95', lambda: W('primary', 'devin')[:1])
 n('Sec. 1 (RQ2)', "Cramer's V", "V = 0.080", lambda: [rq2()['primary_word']['cramers_v']])
-n('Sec. 1 (RQ2)', 'corrective share agent vs. human', '35.6% vs. 32.5%',
-  lambda: [rq2()['primary_word']['pct']['Corrective']['Agent'], rq2()['primary_word']['pct']['Corrective']['Human']])
+n('Sec. 1 (RQ2)', 'perfective, corrective, adaptive, preventive, other shares (agent vs. human)', '38.3% vs. 35.4%; 35.6% vs. 32.5%; 11.7% vs. 12.7%; 3.9% vs. 3.5%; 10.6% vs. 15.9%',
+  lambda: sum([[rq2()['primary_word']['pct'][c]['Agent'], rq2()['primary_word']['pct'][c]['Human']] for c in ['Perfective', 'Corrective', 'Adaptive', 'Preventive', 'Other']], []))
 n('Sec. 1 (RQ3)', 'token model AUC-ROC', 'AUC-ROC 0.70', lambda: [tour_a('rq3a_agent').loc['RandomForest', 'auc_roc_mean']])
 n('Sec. 1 (RQ3)', 'baseline AUC-ROC', 'AUC-ROC 0.78', lambda: [lr('rq3a_agent')['auc_roc_mean']])
 n('Sec. 1 (RQ3)', 'Macro F1 vs. chance', 'Macro F1 0.31 against 0.25',
@@ -256,13 +256,8 @@ n('Sec. 2.1.5', 'agent label', '218 (67.1% [61.8, 72.0])', lambda: [aud()['all']
 n('Sec. 2.1.5', 'mixed, human, unclear labels', '71 (21.8%), 20 (6.2%), 16 (4.9%)',
   lambda: [aud()['all']['mixed'][0], 100 * aud()['all']['mixed'][1], aud()['all']['human'][0], 100 * aud()['all']['human'][1], aud()['all']['unclear'][0], 100 * aud()['all']['unclear'][1]])
 n('Sec. 2.1.5', 'agent made substantive changes (agent or mixed)', '88.9%', lambda: [100 * aud()['all']['agent_or_mixed'][1]])
-cond('Sec. 2.1.5', 'none of the 20 human PRs comes from Devin', 'Devin human labels = 0',
-     lambda: (aud()['human_labelled_by_agent'].get('Devin', 0) == 0, str(aud()['human_labelled_by_agent'])))
-n('Sec. 2.1.5', 'audited PRs in the mined cohort', '221 of the 325', lambda: [A8('in_mined'), A8('audited')])
 n('Sec. 2.1.5', 'agent made substantive changes, mined cohort', '87.3% [82.3, 91.1]', lambda: [100 * x for x in A8('mined|all')['agent_or_mixed'][1:]])
-n('Sec. 2.1.5', 'Devin', '98.4% of the 64 Devin PRs', lambda: [100 * A8('mined|Devin (autonomous)')['agent_or_mixed'][1], A8('mined|Devin (autonomous)')['n']])
-n('Sec. 2.1.5', 'supervised assistants', '82.8% [76.1, 87.9] of the 157', lambda: [100 * x for x in A8('mined|Supervised assistants')['agent_or_mixed'][1:]] + [A8('mined|Supervised assistants')['n']])
-n('Sec. 2.1.5', 'labeled human, mined cohort', '16 PRs (7.2% [4.5, 11.4])', lambda: [A8('mined|all')['human'][0]] + [100 * x for x in A8('mined|all')['human'][1:]])
+n('Sec. 2.1.5', 'labeled human, mined cohort', '16 PRs', lambda: [A8('mined|all')['human'][0]])
 
 sec('2.2 Measuring survival')
 ext('Sec. 2.2.1', 'end of the observation window', 'December 31, 2025', 'design choice')
@@ -519,7 +514,7 @@ n('Sec. 7', "second rater, Cohen's kappa", '100 PRs, kappa = 0.85', lambda: [J('
 n('Sec. 7', 'merge commit not located', '359 merged PRs', lambda: [cs()['merge_not_found']])
 cond('Sec. 7', 'Cursor and Claude Code contribute fewer than 50 PRs each', '< 50', lambda: (A5('Cursor')['prs'] < 50 and A5('Claude_Code')['prs'] < 50, f"{A5('Cursor')['prs']}, {A5('Claude_Code')['prs']}"))
 n('Sec. 7', 'repositories', '215 repositories', lambda: [A1('primary')['repos']])
-ext('Sec. 8', 'related work', 'Xia and Miller: 182 repositories, HR = 1.11; Takerngsaksiri et al.: 3.68% vs. 2.34% within 30 days; '
+ext('Sec. 8', 'related work', 'Xia and Miller: 182 repositories, HR = 1.11; Takerngsaksiri et al.: 30 days; '
     'Popescu et al.: three days, one week, three weeks; Kraishan: 90 days', 'literature')
 n('Sec. 9', 'lines, PRs, repositories', '648,959 lines, 2,794 PRs, 215 repositories', lambda: [A1('primary')['n'], A1('primary')['prs'], A1('primary')['repos']])
 

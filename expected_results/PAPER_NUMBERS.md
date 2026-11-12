@@ -2,7 +2,7 @@
 
 Results directory: `expected_results/` (mode: expected (shipped outputs of the paper run)).
 
-**535 of 538 reproducible numbers match**, grouped in 188 statements: **187 of 188 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
+**531 of 534 reproducible numbers match**, grouped in 184 statements: **183 of 184 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
 
 An entry groups the numbers of one statement; it matches when every number matches after rounding to the precision printed in the paper. Status: match, mismatch, missing (output absent), partial (agrees, but not independently reproducible from the shipped data), external (AIDev release, literature or a design choice), pending (second rater).
 
@@ -32,7 +32,7 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 1 (RQ1) | supervised-assistant HR | HR = 0.76 [0.65, 0.87] | 0.7566; 0.6546; 0.8746 | match |  |
 | Sec. 1 (RQ1) | Devin HR | HR = 0.95 | 0.9533 | match |  |
 | Sec. 1 (RQ2) | Cramer's V | V = 0.080 | 0.07999 | match |  |
-| Sec. 1 (RQ2) | corrective share agent vs. human | 35.6% vs. 32.5% | 35.577; 32.483 | match |  |
+| Sec. 1 (RQ2) | perfective, corrective, adaptive, preventive, other shares (agent vs. human) | 38.3% vs. 35.4%; 35.6% vs. 32.5%; 11.7% vs. 12.7%; 3.9% vs. 3.5%; 10.6% vs. 15.9% | 38.304; 35.352; 35.577; 32.483; 11.674; 12.722; 3.877; 3.533; 10.567; 15.910 | match |  |
 | Sec. 1 (RQ3) | token model AUC-ROC | AUC-ROC 0.70 | 0.6984 | match |  |
 | Sec. 1 (RQ3) | baseline AUC-ROC | AUC-ROC 0.78 | 0.7848 | match |  |
 | Sec. 1 (RQ3) | Macro F1 vs. chance | Macro F1 0.31 against 0.25 | 0.3124; 0.2455 | match |  |
@@ -89,12 +89,8 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 2.1.5 | agent label | 218 (67.1% [61.8, 72.0]) | 218; 67.077; 61.794; 71.961 | match |  |
 | Sec. 2.1.5 | mixed, human, unclear labels | 71 (21.8%), 20 (6.2%), 16 (4.9%) | 71; 21.846; 20; 6.154; 16; 4.923 | match |  |
 | Sec. 2.1.5 | agent made substantive changes (agent or mixed) | 88.9% | 88.923 | match |  |
-| Sec. 2.1.5 | none of the 20 human PRs comes from Devin | Devin human labels = 0 | {'OpenAI_Codex': 11, 'Claude_Code': 6, 'Copilot': 3} | match |  |
-| Sec. 2.1.5 | audited PRs in the mined cohort | 221 of the 325 | 221; 325 | match |  |
 | Sec. 2.1.5 | agent made substantive changes, mined cohort | 87.3% [82.3, 91.1] | 87.330; 82.298; 91.087 | match |  |
-| Sec. 2.1.5 | Devin | 98.4% of the 64 Devin PRs | 98.438; 64 | match |  |
-| Sec. 2.1.5 | supervised assistants | 82.8% [76.1, 87.9] of the 157 | 82.803; 76.135; 87.903; 157 | match |  |
-| Sec. 2.1.5 | labeled human, mined cohort | 16 PRs (7.2% [4.5, 11.4]) | 16; 7.240; 4.505; 11.436 | match |  |
+| Sec. 2.1.5 | labeled human, mined cohort | 16 PRs | 16 | match |  |
 
 ## 2.2 Measuring survival
 
@@ -339,5 +335,5 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 7 | merge commit not located | 359 merged PRs | 359 | match |  |
 | Sec. 7 | Cursor and Claude Code contribute fewer than 50 PRs each | < 50 | 44, 31 | match |  |
 | Sec. 7 | repositories | 215 repositories | 215 | match |  |
-| Sec. 8 | related work | Xia and Miller: 182 repositories, HR = 1.11; Takerngsaksiri et al.: 3.68% vs. 2.34% within 30 days; Popescu et al.: three days, one week, three weeks; Kraishan: 90 days |  | external | literature |
+| Sec. 8 | related work | Xia and Miller: 182 repositories, HR = 1.11; Takerngsaksiri et al.: 30 days; Popescu et al.: three days, one week, three weeks; Kraishan: 90 days |  | external | literature |
 | Sec. 9 | lines, PRs, repositories | 648,959 lines, 2,794 PRs, 215 repositories | 648,959; 2,794; 215 | match |  |

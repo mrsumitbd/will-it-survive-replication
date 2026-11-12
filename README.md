@@ -105,7 +105,7 @@ the paper's value, the reproduced value, and the status. The main sources are:
 | Section 5.3 (RQ3a) | `rq3/rq3a_{agent,all}/results/` (`rq31_bow_tournament_summary_combined_count.csv`, `rq3a_sk_*.csv`, `d1_lr_size_history.json`, `rq3a_explain_summary.json`, `rq3a_line_localization_summary.json`, `lime_runtime.json`) |
 | Section 5.3 (RQ3b) | `rq3/rq3b_{agent,all}/results/` (`rq32_process_tournament_summary.csv`, `rq3b_sk_*.csv`, `rq32_process_selected_features.json`, `rq3b_explain_summary.json`) |
 
-On the shipped `expected_results/`, the report gives 535 of 538 numbers matched (187 of 188 statements):
+On the shipped `expected_results/`, the report gives 531 of 534 numbers matched (183 of 184 statements):
 
 * One statement is partial. Step (5) of Table 1 (code ratio) is reproduced from the cohort list, because the
   per-repository code ratios of the final filtering run are not part of the package (see `data/README.md`).
