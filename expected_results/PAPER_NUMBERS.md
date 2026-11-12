@@ -2,7 +2,7 @@
 
 Results directory: `expected_results/` (mode: expected (shipped outputs of the paper run)).
 
-**531 of 534 reproducible numbers match**, grouped in 184 statements: **183 of 184 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
+**606 of 609 reproducible numbers match**, grouped in 196 statements: **195 of 196 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
 
 An entry groups the numbers of one statement; it matches when every number matches after rounding to the precision printed in the paper. Status: match, mismatch, missing (output absent), partial (agrees, but not independently reproducible from the shipped data), external (AIDev release, literature or a design choice), pending (second rater).
 
@@ -90,6 +90,8 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 2.1.5 | mixed, human, unclear labels | 71 (21.8%), 20 (6.2%), 16 (4.9%) | 71; 21.846; 20; 6.154; 16; 4.923 | match |  |
 | Sec. 2.1.5 | agent made substantive changes (agent or mixed) | 88.9% | 88.923 | match |  |
 | Sec. 2.1.5 | agent made substantive changes, mined cohort | 87.3% [82.3, 91.1] | 87.330; 82.298; 91.087 | match |  |
+| Sec. 2.1.5 | Devin | 98.4% of the 64 Devin PRs | 98.438; 64 | match |  |
+| Sec. 2.1.5 | supervised assistants | 82.8% [76.1, 87.9] of the 157 | 82.803; 76.135; 87.903; 157 | match |  |
 | Sec. 2.1.5 | labeled human, mined cohort | 16 PRs | 16 | match |  |
 
 ## 2.2 Measuring survival
@@ -278,6 +280,21 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 5.2 (RQ3b) | files dropped for missing author history | 22 of the 6,300 modified agent files, 0.3% | 22; 6,300; 0.350 | match |  |
 | Sec. 5.2 (RQ3b) | chance level of Macro F1 with four bins | 0.25 | 0.2455 | match |  |
 
+## Table 6 (RQ3 models)
+
+| Where | What | Paper | Reproduced | Status | Note |
+|---|---|---|---|---|---|
+| Table 6 | Random forest | 0.70 (1) \| 0.89 (1) \| 0.31 (1) \| 0.60 (1) | 0.6984; 1; 0.8895; 1; 0.3124; 1; 0.6010; 1 | match |  |
+| Table 6 | CatBoost | 0.70 (1) \| 0.89 (1) \| 0.31 (1) \| 0.61 (1) | 0.6955; 1; 0.8883; 1; 0.3133; 1; 0.6063; 1 | match |  |
+| Table 6 | XGBoost | 0.69 (1) \| 0.89 (1) \| 0.32 (1) \| 0.60 (1) | 0.6936; 1; 0.8860; 1; 0.3159; 1; 0.6049; 1 | match |  |
+| Table 6 | MLP | 0.66 (2) \| 0.87 (2) \| 0.28 (2) \| 0.58 (2) | 0.6624; 2; 0.8748; 2; 0.2795; 2; 0.5811; 2 | match |  |
+| Table 6 | SVM | 0.64 (3) \| 0.87 (2) \| 0.28 (2) \| 0.58 (2) | 0.6405; 3; 0.8741; 2; 0.2790; 2; 0.5771; 2 | match |  |
+| Table 6 | Logistic regression | 0.63 (3) \| 0.87 (2) \| 0.28 (2) \| 0.58 (2) | 0.6333; 3; 0.8699; 2; 0.2807; 2; 0.5813; 2 | match |  |
+| Table 6 | KNN | 0.64 (3) \| 0.85 (3) \| 0.27 (2) \| 0.53 (4) | 0.6361; 3; 0.8497; 3; 0.2707; 2; 0.5349; 4 | match |  |
+| Table 6 | Naive Bayes | 0.51 (4) \| 0.82 (4) \| 0.28 (2) \| 0.56 (3) | 0.5144; 4; 0.8206; 4; 0.2761; 2; 0.5618; 3 | match |  |
+| Table 6 | size and history baseline (LR) | 0.78 \| 0.93 | 0.7848; 0.9292 | match |  |
+| Table 6 | random guess | 0.80 (AUC-PR, share of modified files 79.7%) \| 0.25 (Macro F1) | 0.7975; 79.748; 0.2455 | match |  |
+
 ## 5.3 RQ3a results
 
 | Where | What | Paper | Reproduced | Status | Note |
@@ -335,5 +352,5 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 7 | merge commit not located | 359 merged PRs | 359 | match |  |
 | Sec. 7 | Cursor and Claude Code contribute fewer than 50 PRs each | < 50 | 44, 31 | match |  |
 | Sec. 7 | repositories | 215 repositories | 215 | match |  |
-| Sec. 8 | related work | Xia and Miller: 182 repositories, HR = 1.11; Takerngsaksiri et al.: 30 days; Popescu et al.: three days, one week, three weeks; Kraishan: 90 days |  | external | literature |
+| Sec. 8 | related work | Xia and Miller: 182 repositories, HR = 1.11; Takerngsaksiri et al.: 3.68% vs. 2.34% within 30 days; Popescu et al.: three days, one week, three weeks; Kraishan: 90 days |  | external | literature |
 | Sec. 9 | lines, PRs, repositories | 648,959 lines, 2,794 PRs, 215 repositories | 648,959; 2,794; 215 | match |  |

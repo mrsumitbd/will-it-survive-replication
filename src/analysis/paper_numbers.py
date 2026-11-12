@@ -257,6 +257,8 @@ n('Sec. 2.1.5', 'mixed, human, unclear labels', '71 (21.8%), 20 (6.2%), 16 (4.9%
   lambda: [aud()['all']['mixed'][0], 100 * aud()['all']['mixed'][1], aud()['all']['human'][0], 100 * aud()['all']['human'][1], aud()['all']['unclear'][0], 100 * aud()['all']['unclear'][1]])
 n('Sec. 2.1.5', 'agent made substantive changes (agent or mixed)', '88.9%', lambda: [100 * aud()['all']['agent_or_mixed'][1]])
 n('Sec. 2.1.5', 'agent made substantive changes, mined cohort', '87.3% [82.3, 91.1]', lambda: [100 * x for x in A8('mined|all')['agent_or_mixed'][1:]])
+n('Sec. 2.1.5', 'Devin', '98.4% of the 64 Devin PRs', lambda: [100 * A8('mined|Devin (autonomous)')['agent_or_mixed'][1], A8('mined|Devin (autonomous)')['n']])
+n('Sec. 2.1.5', 'supervised assistants', '82.8% [76.1, 87.9] of the 157', lambda: [100 * x for x in A8('mined|Supervised assistants')['agent_or_mixed'][1:]] + [A8('mined|Supervised assistants')['n']])
 n('Sec. 2.1.5', 'labeled human, mined cohort', '16 PRs', lambda: [A8('mined|all')['human'][0]])
 
 sec('2.2 Measuring survival')
@@ -448,6 +450,19 @@ ext('Sec. 5.2', 'explanation folds; vocabulary', 'five repository folds; at most
 n('Sec. 5.2 (RQ3b)', 'smallest bin', 'the smallest bin holds 15% of the files', lambda: [min(rq3b_bins())])
 n('Sec. 5.2 (RQ3b)', 'files dropped for missing author history', '22 of the 6,300 modified agent files, 0.3%', lambda: full_fix_log('rq3b_agent'))
 cond('Sec. 5.2 (RQ3b)', 'chance level of Macro F1 with four bins', '0.25', lambda: (round(random_macro_f1(), 2) == 0.25, f'{random_macro_f1():.4f}'))
+sec('Table 6 (RQ3 models)')
+def _sk_rank(sub, f, m):
+    t = CSV(r3(sub, f)).set_index('model'); return int(t.loc[m, 'rank'])
+for _lab, _m, _pv in [('Random forest', 'RandomForest', '0.70 (1) | 0.89 (1) | 0.31 (1) | 0.60 (1)'), ('CatBoost', 'CatBoost', '0.70 (1) | 0.89 (1) | 0.31 (1) | 0.61 (1)'),
+                      ('XGBoost', 'XGBoost', '0.69 (1) | 0.89 (1) | 0.32 (1) | 0.60 (1)'), ('MLP', 'MLP', '0.66 (2) | 0.87 (2) | 0.28 (2) | 0.58 (2)'),
+                      ('SVM', 'SVM', '0.64 (3) | 0.87 (2) | 0.28 (2) | 0.58 (2)'), ('Logistic regression', 'LogisticRegression', '0.63 (3) | 0.87 (2) | 0.28 (2) | 0.58 (2)'),
+                      ('KNN', 'KNN', '0.64 (3) | 0.85 (3) | 0.27 (2) | 0.53 (4)'), ('Naive Bayes', 'NaiveBayes', '0.51 (4) | 0.82 (4) | 0.28 (2) | 0.56 (3)')]:
+    n('Table 6', _lab, _pv, (lambda m=_m: [tour_a('rq3a_agent').loc[m, 'auc_roc_mean'], _sk_rank('rq3a_agent', 'rq3a_sk_auc_roc.csv', m),
+                                           tour_a('rq3a_agent').loc[m, 'auc_pr_mean'], _sk_rank('rq3a_agent', 'rq3a_sk_auc_pr.csv', m),
+                                           tour_b('rq3b_agent').loc[m, 'macro_f1'], _sk_rank('rq3b_agent', 'rq3b_sk_macro_f1.csv', m),
+                                           tour_b('rq3b_agent').loc[m, 'auc_roc'], _sk_rank('rq3b_agent', 'rq3b_sk_auc_roc.csv', m)]))
+n('Table 6', 'size and history baseline (LR)', '0.78 | 0.93', lambda: [lr('rq3a_agent')['auc_roc_mean'], lr('rq3a_agent')['auc_pr_mean']])
+n('Table 6', 'random guess', '0.80 (AUC-PR, share of modified files 79.7%) | 0.25 (Macro F1)', lambda: [lr('rq3a_agent')['pos_rate'], 100 * lr('rq3a_agent')['pos_rate'], random_macro_f1()])
 sec('5.3 RQ3a results')
 n('Sec. 5.3', 'agent dataset', '6,661 files from 155 repositories, 79.7% modified',
   lambda: [lr('rq3a_agent')['n'], ex('rq3a_agent')['repos'], 100 * lr('rq3a_agent')['pos_rate']])
@@ -514,7 +529,7 @@ n('Sec. 7', "second rater, Cohen's kappa", '100 PRs, kappa = 0.85', lambda: [J('
 n('Sec. 7', 'merge commit not located', '359 merged PRs', lambda: [cs()['merge_not_found']])
 cond('Sec. 7', 'Cursor and Claude Code contribute fewer than 50 PRs each', '< 50', lambda: (A5('Cursor')['prs'] < 50 and A5('Claude_Code')['prs'] < 50, f"{A5('Cursor')['prs']}, {A5('Claude_Code')['prs']}"))
 n('Sec. 7', 'repositories', '215 repositories', lambda: [A1('primary')['repos']])
-ext('Sec. 8', 'related work', 'Xia and Miller: 182 repositories, HR = 1.11; Takerngsaksiri et al.: 30 days; '
+ext('Sec. 8', 'related work', 'Xia and Miller: 182 repositories, HR = 1.11; Takerngsaksiri et al.: 3.68% vs. 2.34% within 30 days; '
     'Popescu et al.: three days, one week, three weeks; Kraishan: 90 days', 'literature')
 n('Sec. 9', 'lines, PRs, repositories', '648,959 lines, 2,794 PRs, 215 repositories', lambda: [A1('primary')['n'], A1('primary')['prs'], A1('primary')['repos']])
 
