@@ -88,8 +88,8 @@ One parquet file per repository (`<owner>__<name>.parquet`), one row per file un
 
 | File | Content |
 |---|---|
-| `attribution_audit_sheet_rater1.xlsx` | The first rater's labels of the 325 audited agent PRs (sheet `audit`) and the labeling guide (sheet `guide`) |
-| `audit_rater1.csv` | The `audit` sheet as CSV (`sample_id`, `agent_name`, `group`, `slug`, `pr_number`, PR details, `label`, `evidence`, `notes`). Labels: agent, mixed, human, unclear. E-mail addresses in the PR descriptions are replaced by `<email>` |
+| `attribution_audit_sheet_rater1.xlsx` | The first rater's labels of the 325 audited agent PRs (sheet `audit`) and the labeling guide (sheet `guide`). The package keeps only the labels; the optional evidence and notes columns are omitted |
+| `audit_rater1.csv` | The `audit` sheet as CSV (`sample_id`, `agent_name`, `group`, `slug`, `pr_number`, PR details, `label`). Labels: agent, mixed, human, unclear. E-mail addresses in the PR descriptions are replaced by `<email>` |
 | `attribution_audit_labelling_instructions.md` | The written labeling guide |
 | `exclude_human.csv`, `exclude_human_unclear.csv`, `human_labelled_prs.csv` | PRs labeled human (or unclear) for the RQ1 sensitivity analysis |
-| `second_rater/second_rater_annotation_sheet.xlsx` | The 100 PRs for the second rater (sheet `annotate`; the `label` column is still empty). `src/analysis/kappa.py` computes the agreement once it is filled in |
+| `second_rater/second_rater_annotation_sheet.xlsx` | The second rater's labels of 100 of the 325 PRs (sheet `annotate`, column `label`; the optional evidence and notes columns are omitted). The rater worked independently with the same guide; disagreements were resolved by discussion. `src/analysis/kappa.py` computes the agreement |

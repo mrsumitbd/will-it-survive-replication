@@ -251,7 +251,7 @@ cond('Sec. 2.1.5', 'sample size for a proportion, 95% confidence, +-5% margin, f
 n('Sec. 2.1.5', 'PRs in the second-rater sheet', '100 of the 325 PRs (31%)',
   lambda: [J('audit/kappa.json')['second_rater_rows'], aud()['all']['n'], 100 * J('audit/kappa.json')['second_rater_rows'] / aud()['all']['n']])
 ext('Sec. 2.1.5', 'typical share for agreement; PRs needed', '10 to 25%; 62 PRs; kappa = 0.8 vs. 0.5', 'literature')
-pend('Sec. 2.1.5', "Cohen's kappa", "kappa = 0.80", 'pending second rater, not reproduced (src/analysis/kappa.py computes it once the labels exist)')
+n('Sec. 2.1.5', "Cohen's kappa between the two raters", "kappa = 0.85", lambda: [J('audit/kappa.json')['cohen_kappa']])
 n('Sec. 2.1.5', 'agent label', '218 (67.1% [61.8, 72.0])', lambda: [aud()['all']['agent'][0]] + [100 * x for x in aud()['all']['agent'][1:]])
 n('Sec. 2.1.5', 'mixed, human, unclear labels', '71 (21.8%), 20 (6.2%), 16 (4.9%)',
   lambda: [aud()['all']['mixed'][0], 100 * aud()['all']['mixed'][1], aud()['all']['human'][0], 100 * aud()['all']['human'][1], aud()['all']['unclear'][0], 100 * aud()['all']['unclear'][1]])
@@ -515,7 +515,7 @@ n('Sec. 6.2', 'supervised-assistant vs. human lines in test files (PR-weighted)'
   lambda: [P(a9()['line']['desc']['Supervised assistants']['test']), P(a9()['line']['desc']['Human']['test'])])
 n('Sec. 6.5', 'Devin vs. human lines modified within two weeks', '12.0% vs. 9.6%', lambda: [P(rq1()['A6'][g]['prw']) for g in ['Devin (autonomous)', 'Human']])
 n('Sec. 7', 'agent made substantive changes in the mined cohort', '87.3%', lambda: [100 * A8('mined|all')['agent_or_mixed'][1]])
-pend('Sec. 7', "second rater, Cohen's kappa", '100 PRs, kappa = 0.80', 'pending second rater, not reproduced')
+n('Sec. 7', "second rater, Cohen's kappa", '100 PRs, kappa = 0.85', lambda: [J('audit/kappa.json')['joined'], J('audit/kappa.json')['cohen_kappa']])
 n('Sec. 7', 'merge commit not located', '359 merged PRs', lambda: [cs()['merge_not_found']])
 cond('Sec. 7', 'Cursor and Claude Code contribute fewer than 50 PRs each', '< 50', lambda: (A5('Cursor')['prs'] < 50 and A5('Claude_Code')['prs'] < 50, f"{A5('Cursor')['prs']}, {A5('Claude_Code')['prs']}"))
 n('Sec. 7', 'repositories', '215 repositories', lambda: [A1('primary')['repos']])

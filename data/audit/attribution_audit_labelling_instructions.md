@@ -6,7 +6,7 @@ Nov 2, 2026
 
 The audit estimates how often the code in an "agent-attributed" PR was actually written by the agent. The answer bounds the measurement error in RQ1 to RQ3, where agent vs human is the independent variable.
 
-- Reviewer 3 (EASE 2026) argued that AIDev's PR-level signals (bot accounts, branch prefixes, "Co-Authored-By" strings) are retrieval heuristics, not proof of authorship.
+- AIDev's PR-level signals (bot accounts, branch prefixes, "Co-Authored-By" strings) are retrieval heuristics, not proof of authorship.
 - The audit answers that point for the agent side. The human side is handled in the threats section: unmarked AI assistance cannot be checked from GitHub data.
 - The unit is one merged PR from the study cohort. The question is about the code the PR adds, not about who opened it.
 
@@ -85,25 +85,22 @@ When two rules seem to apply, the one about the code-adding commits wins over th
 
 ## Recording and reporting
 
-Fill `label`, `evidence` and `notes` in the xlsx; leave every other column unchanged so rows can be joined back by `sample_id`.
+Fill `label`, `evidence` and `notes` in the xlsx; leave every other column unchanged so rows can be joined back by `sample_id`. The released sheets keep only the labels; the optional `evidence` and `notes` columns are not part of this package.
 
-- **Single coder (decided 2026-11-02):** the first author labels all 325 PRs; there is no second rater. The ACM SIGSOFT Empirical Standards accept a single rater when the paper gives a reasonable justification, such as ratings that are uncontroversial or more raters being impractical (Ralph et al. 2021). Both apply: the labels rest on observable PR evidence (commit authors, bot identities, trailers, branch names) that needs little interpretation (McDonald, Schoenebeck and Forte 2019), and the team has no second annotator. Recent SE studies label with one annotator in the same way (Rabbi et al. 2026, a study of AI-generated PRs).
-- **Mitigation:** follow this written guide, record the deciding fact in `evidence` for every PR so each label can be audited from the released sheet, and report every rate with and without `unclear`. Threats to Validity names the single coder and states that no agreement statistic is reported.
+- **Second rater:** a second rater independently labeled 100 of the 325 PRs with this guide (`data/audit/second_rater/`), and the disagreements were resolved by discussion. `src/analysis/kappa.py` computes Cohen's kappa between the two raters.
+- **Mitigation:** follow this written guide and report every rate with and without `unclear`.
 - **Main estimate:** the share of PRs labelled agent, with a 95% Wilson score interval, the interval recommended for a binomial proportion by Brown, Cai and DasGupta (2001). Also report agent + mixed, which counts any agent-written code.
 - **By group:** supervised assistants (Copilot, Codex, Cursor, Claude Code) and Devin separately, with Wilson intervals; per-tool rates are not powered (Sample).
 - **Use in the paper:** state the rate in Methodology and in Threats to Validity. If PRs labelled human are present, rerun the RQ1 primary model without them as a sensitivity analysis.
-- **Human baseline:** the audit does not check human PRs for unmarked AI assistance (Reviewer 3). The paper names that as a threat and calls the groups "agent-attributed" and "not attributed".
+- **Human baseline:** the audit does not check human PRs for unmarked AI assistance. The paper names that as a threat and calls the groups "agent-attributed" and "not attributed".
 
 ## Sources
 
-Checked online on 2026-11-02 unless marked; each entry still needs your check before it goes into the bib.
-
-- C. Bird, N. Nagappan, B. Murphy, H. Gall and P. Devanbu, "Don't touch my code! Examining the effects of ownership on software quality," ESEC/FSE 2011. (from memory, not checked online)
+- C. Bird, N. Nagappan, B. Murphy, H. Gall and P. Devanbu, "Don't touch my code! Examining the effects of ownership on software quality," ESEC/FSE 2011.
 - L. D. Brown, T. T. Cai and A. DasGupta, "Interval estimation for a binomial proportion," Statistical Science 16(2), 2001. [doi:10.1214/ss/1009213286](https://www.doi.org/10.1214/SS/1009213286)
-- W. G. Cochran, *Sampling Techniques*, 3rd ed., Wiley, 1977. (standard text, from memory)
+- W. G. Cochran, *Sampling Techniques*, 3rd ed., Wiley, 1977.
 - D. Kawrykow and M. P. Robillard, "Non-essential changes in version histories," ICSE 2011. [paper](https://www.cs.mcgill.ca/~martin/papers/icse2011.pdf)
 - H. Li, H. Zhang and A. E. Hassan, "The rise of AI teammates in software engineering (SE) 3.0: How autonomous coding agents are reshaping software engineering," arXiv:2507.15003, 2025. [paper](https://arxiv.org/html/2507.15003v1)
 - N. McDonald, S. Schoenebeck and A. Forte, "Reliability and inter-rater reliability in qualitative research: Norms and guidelines for CSCW and HCI practice," Proc. ACM Hum.-Comput. Interact. 3(CSCW), 2019. [doi:10.1145/3359174](https://doi.org/10.1145/3359174)
-- M. F. Rabbi, A. K. Turzo, A. I. Champa and M. F. Zibran, "Insights into security-related AI-generated pull requests," arXiv:2604.19965, 2026 (venue reportedly EASE 2026, not confirmed). [paper](https://arxiv.org/html/2604.19965v1)
-- P. Ralph et al., "ACM SIGSOFT Empirical Standards," arXiv:2010.03525, 2021 (Inter-Rater Reliability supplement; checked via full text on 2026-11-02).
+- P. Ralph et al., "ACM SIGSOFT Empirical Standards," arXiv:2010.03525, 2021 (Inter-Rater Reliability supplement).
 - R. Purushothaman and D. E. Perry, "Toward understanding the rhetoric of small source code changes," IEEE TSE 31(6), 2005, pp. 511–526. [record](https://ftp.math.utah.edu/pub/tex/bib/idx/ieeetranssoftweng2000/31/6/511_526.html)

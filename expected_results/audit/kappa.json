@@ -1,5 +1,36 @@
 {
  "second_rater_rows": 100,
- "second_rater_labelled": 0,
- "status": "second-rater labels not available yet"
+ "second_rater_labelled": 100,
+ "joined": 100,
+ "unlabelled_rows": 0,
+ "status": "computed",
+ "percent_agreement": 0.91,
+ "cohen_kappa": 0.8503740648379055,
+ "gwet_ac1": 0.8875304605002812,
+ "confusion": {
+  "agent": {
+   "agent": 55,
+   "mixed": 0,
+   "human": 0,
+   "unclear": 0
+  },
+  "mixed": {
+   "agent": 1,
+   "mixed": 22,
+   "human": 2,
+   "unclear": 0
+  },
+  "human": {
+   "agent": 0,
+   "mixed": 0,
+   "human": 10,
+   "unclear": 0
+  },
+  "unclear": {
+   "agent": 3,
+   "mixed": 0,
+   "human": 3,
+   "unclear": 4
+  }
+ }
 }

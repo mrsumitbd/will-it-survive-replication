@@ -14,7 +14,7 @@ Package paths (`data/`, `results/`; `RESULTS_DIR` and `TABLES_DIR` override them
 | `funnel.py` | Repository filtering funnel, steps (1) to (5) | `data/aidev/`, `data/cohort/repo_metadata_v1.csv`, `prs_cohort256.csv` | `cohort/filtering_funnel.csv`, `cohort/funnel.json` | Table 1 |
 | `paper_stats.py` | Merged-PR attrition, mined cohort per agent, largest PRs, follow-up | `data/cohort/prs_cohort256.csv`, `data/tables/` | `cohort/cohort_stats.json` | Table 1, Sections 2.1.3, 2.2.5 |
 | `audit_summary.py` | Audit label counts with Wilson intervals (325 PRs) | `data/audit/audit_rater1.csv` | `audit/audit_summary.json` | Section 2.1.5 |
-| `kappa.py` | Cohen's kappa and Gwet's AC1 between the two raters, joined on the PR; prints "second-rater labels not available yet" while the labels are missing | `data/audit/audit_rater1.csv`, `data/audit/second_rater/second_rater_annotation_sheet.xlsx` | `audit/kappa.json` | Section 2.1.5 (pending) |
+| `kappa.py` | Cohen's kappa and Gwet's AC1 between the two raters, joined on the PR | `data/audit/audit_rater1.csv`, `data/audit/second_rater/second_rater_annotation_sheet.xlsx` | `audit/kappa.json` | Section 2.1.5 |
 | `xlsx_read.py` | Reads an .xlsx sheet with the standard library (used by `kappa.py`) | | | |
 | `fbc.py` | Shared RQ1 helpers: loading, primary design (no vendored paths, PR weights), Cox models stratified by repository with PR-clustered SEs, pooled model, repository bootstrap, RMST | | | |
 | `rq1_fb.py <unit> [B]` | Primary design and variants (with vendored paths, unweighted, sampled), log-rank, pooled Cox, RMST and modification-rate bootstrap (B = 1,000), per-agent HRs, 14-day rates, unit statistics | `data/tables/` | `rq1/rq1_<unit>.json` | Tables 2, 3, 4; Section 3.3 |

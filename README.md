@@ -63,7 +63,7 @@ the script is run again, unless `--force` is given or the step last ran in the o
 | cohort_funnel | `src/analysis/funnel.py` | `cohort/filtering_funnel.csv`, `cohort/funnel.json` | Table 1, steps (1) to (5) |
 | cohort_stats | `src/analysis/paper_stats.py` | `cohort/cohort_stats.json` | Table 1 (merged PRs), Sections 2.1.3 and 2.2 |
 | audit_summary | `src/analysis/audit_summary.py` | `audit/audit_summary.json` | Section 2.1.5 |
-| audit_kappa | `src/analysis/kappa.py` | `audit/kappa.json` | Section 2.1.5 (Cohen's kappa, pending) |
+| audit_kappa | `src/analysis/kappa.py` | `audit/kappa.json` | Section 2.1.5 (Cohen's kappa) |
 | rq1_line, rq1_hunk, rq1_file | `src/analysis/rq1_fb.py` | `rq1/rq1_{line,hunk,file}.json` | Tables 2, 3 and 4; Section 3.3 |
 | rq1_ph | `src/analysis/a4_ph.py` | `rq1/a4_ph_line.json` | Section 3.3 (proportional hazards, time split) |
 | rq1_substantial | `src/analysis/a7_sub.py` | `rq1/a7_sub.json` | Section 3.3 (substantial modification) |
@@ -105,20 +105,15 @@ the paper's value, the reproduced value, and the status. The main sources are:
 | Section 5.3 (RQ3a) | `rq3/rq3a_{agent,all}/results/` (`rq31_bow_tournament_summary_combined_count.csv`, `rq3a_sk_*.csv`, `d1_lr_size_history.json`, `rq3a_explain_summary.json`, `rq3a_line_localization_summary.json`, `lime_runtime.json`) |
 | Section 5.3 (RQ3b) | `rq3/rq3b_{agent,all}/results/` (`rq32_process_tournament_summary.csv`, `rq3b_sk_*.csv`, `rq32_process_selected_features.json`, `rq3b_explain_summary.json`) |
 
-On the shipped `expected_results/`, the report gives 529 of 534 numbers matched (183 of 186 statements):
+On the shipped `expected_results/`, the report gives 535 of 538 numbers matched (187 of 188 statements):
 
-* Two statements do not match. In Section 3.3, the supervised-assistant HR for substantial modification ranges from
-  0.72 to 0.77, not 0.76 (file unit, 50%: HR 0.7651). In Section 4.3, the adaptive share without merge commits is
-  8.3% for agent-attributed and 8.4% for human code, not 8.3% for both.
 * One statement is partial. Step (5) of Table 1 (code ratio) is reproduced from the cohort list, because the
   per-repository code ratios of the final filtering run are not part of the package (see `data/README.md`).
-* Thirteen statements match only when the reproduced value is first rounded to three decimals and then to two (for
-  example, the agent HR 0.8347 is printed as 0.84). The report lists them.
 * Numbers from the AIDev release, the literature and the design (for example the observation window) are listed as
   external. The AIDev numbers are checked against the shipped AIDev summary.
-* Cohen's kappa of the attribution audit is listed as pending. The second rater's labels are not available yet.
-  `src/analysis/kappa.py` computes the kappa from `data/audit/second_rater/second_rater_annotation_sheet.xlsx` once
-  the `label` column is filled in. Until then it prints "second-rater labels not available yet".
+* Cohen's kappa of the attribution audit (0.85) is computed by `src/analysis/kappa.py` from the first rater's labels
+  (`data/audit/audit_rater1.csv`) and the second rater's labels
+  (`data/audit/second_rater/second_rater_annotation_sheet.xlsx`), joined on the PR.
 
 ## Runtimes
 

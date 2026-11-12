@@ -1,1 +1,7 @@
-second-rater labels not available yet
+n = 100 (unlabelled rows: 0): agreement 0.910, Cohen's kappa 0.850, Gwet's AC1 0.888
+rater 2  agent  human  mixed  unclear
+rater 1                              
+agent       55      0      0        0
+human        0     10      0        0
+mixed        1      2     22        0
+unclear      3      3      0        4

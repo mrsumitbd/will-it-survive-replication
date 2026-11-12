@@ -2,36 +2,9 @@
 
 Results directory: `expected_results/` (mode: expected (shipped outputs of the paper run)).
 
-**529 of 534 reproducible numbers match**, grouped in 186 statements: **183 of 186 statements match** (mismatch: 2, missing: 0, partial: 1; 13 of the matches need double rounding, see below). Not counted: 17 external, 2 pending.
+**535 of 538 reproducible numbers match**, grouped in 188 statements: **187 of 188 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
 
 An entry groups the numbers of one statement; it matches when every number matches after rounding to the precision printed in the paper. Status: match, mismatch, missing (output absent), partial (agrees, but not independently reproducible from the shipped data), external (AIDev release, literature or a design choice), pending (second rater).
-
-## Mismatches and missing values
-
-| Where | What | Paper | Reproduced | Note |
-|---|---|---|---|---|
-| Sec. 3.3 | substantial modification: supervised HR range | 0.72 to 0.76 | 0.7194; 0.7651 (0.76 vs 0.7651) | the maximum is the file unit at theta = 50% (HR 0.7651), which rounds to 0.77 |
-| Sec. 4.3 | without merge commits: adaptive share (agent, human) | 8.3% (agent) and 8.3% (human), "for both groups" | 8.296; 8.406 (8.3 vs 8.406) | the human share is 8.41%, which rounds to 8.4% |
-
-## Matches after double rounding
-
-These values match only when the reproduced value is first rounded to one more decimal and then rounded half-up to the printed precision (the paper rounds from 3-decimal summaries). Strict rounding gives the next lower value.
-
-| Where | What | Paper | Values |
-|---|---|---|---|
-| Abstract | agent HR, primary, with 95% CI | HR = 0.84 [0.75, 0.93] | 0.84 from 0.8347 |
-| Sec. 1 (RQ1) | supervised-assistant HR | HR = 0.76 [0.66, 0.88] | 0.66 from 0.6546, 0.88 from 0.8746 |
-| Sec. 3.3 | agent HR, primary | HR = 0.84 [0.75, 0.93], p = 0.001 | 0.84 from 0.8347 |
-| Sec. 3.3 | supervised-assistant HR | HR = 0.76 [0.66, 0.88] | 0.66 from 0.6546, 0.88 from 0.8746 |
-| Table 3 | Line, primary | 648,959 \| 28.0 / 34.5 \| 0.84 [0.75, 0.93] \| 0.76 [0.66, 0.88] \| 0.95 [0.82, 1.11] | 0.84 from 0.8347, 0.66 from 0.6546, 0.88 from 0.8746 |
-| Table 3 | Line, with vendored paths | 854,139 \| 28.1 / 34.8 \| 0.83 [0.75, 0.93] \| 0.76 [0.66, 0.88] \| 0.95 [0.82, 1.10] | 0.88 from 0.8747 |
-| Table 3 | Line, unweighted | 648,959 \| 23.4 / 30.1 \| 0.91 [0.69, 1.20] \| 0.80 [0.60, 1.07] \| 1.06 [0.66, 1.71] | 0.66 from 0.6546 |
-| Table 3 | Line, sampled | 277,283 \| 28.1 / 34.7 \| 0.83 [0.75, 0.93] \| 0.76 [0.66, 0.88] \| 0.95 [0.82, 1.10] | 0.82 from 0.8146 |
-| Table 3 | Hunk, primary | 60,095 \| 39.5 / 44.8 \| 0.93 [0.85, 1.02] \| 0.82 [0.73, 0.92] \| 1.11 [0.98, 1.26] | 0.73 from 0.7245 |
-| Table 4 | GitHub Copilot | 489 \| 0.75 [0.60, 0.94] \| 22.5 [19.6, 25.3] \| 9.7% | 0.6 from 0.5948 |
-| Sec. 4.3 | file-commit unit | chi2 = 7.0, p = 0.14, V = 0.035 | 0.14 from 0.1350 |
-| Sec. 5.3 | agent dataset | 6,661 files from 155 repositories, 79.8% modified | 79.8 from 79.7478 |
-| Sec. 5.3 | SHAP ranking AUC-ROC (pooled, per-file mean); line length | AUC-ROC 0.547, per-file mean 0.576; length 0.552 | 0.547 from 0.5465 |
 
 
 ## Abstract
@@ -39,7 +12,7 @@ These values match only when the reproduced value is first rounded to one more d
 | Where | What | Paper | Reproduced | Status | Note |
 |---|---|---|---|---|---|
 | Abstract | lines, PRs, repositories of the primary design | 648,959 lines, 2,794 PRs, 215 repositories | 648,959; 2,794; 215 | match |  |
-| Abstract | agent HR, primary, with 95% CI | HR = 0.84 [0.75, 0.93] | 0.8347; 0.7490; 0.9301 | match (double rounding) |  |
+| Abstract | agent HR, primary, with 95% CI | HR = 0.83 [0.75, 0.93] | 0.8347; 0.7490; 0.9301 | match |  |
 | Abstract | supervised-assistant HR | HR = 0.76 | 0.7566 | match |  |
 | Abstract | Devin HR | HR = 0.95 | 0.9533 | match |  |
 | Abstract | after mid-May 2025, supervised and Devin code modified later | both upper CI < 1 | sup 0.731 [0.582, 0.918], Devin 0.608 [0.441, 0.838] | match |  |
@@ -56,7 +29,7 @@ These values match only when the reproduced value is first rounded to one more d
 | Sec. 1 | Stack Overflow survey 2024 | 76% of respondents |  | external | literature |
 | Sec. 1 | GitClear changed lines | about 153 million changed lines from 2020 to 2023; less than two weeks |  | external | literature |
 | Sec. 1 | mined cohort | 2,802 merged PRs, 1,470 agent-attributed and 1,332 human, in 215 repositories | 2,802; 1,470; 1,332; 215 | match |  |
-| Sec. 1 (RQ1) | supervised-assistant HR | HR = 0.76 [0.66, 0.88] | 0.7566; 0.6546; 0.8746 | match (double rounding) |  |
+| Sec. 1 (RQ1) | supervised-assistant HR | HR = 0.76 [0.65, 0.87] | 0.7566; 0.6546; 0.8746 | match |  |
 | Sec. 1 (RQ1) | Devin HR | HR = 0.95 | 0.9533 | match |  |
 | Sec. 1 (RQ2) | Cramer's V | V = 0.080 | 0.07999 | match |  |
 | Sec. 1 (RQ2) | corrective share agent vs. human | 35.6% vs. 32.5% | 35.577; 32.483 | match |  |
@@ -112,7 +85,7 @@ These values match only when the reproduced value is first rounded to one more d
 | Sec. 2.1.5 | sample size for a proportion, 95% confidence, +-5% margin, finite-population correction (N = 2,092) | 325 | 324.68, rounded up 325 | match |  |
 | Sec. 2.1.5 | PRs in the second-rater sheet | 100 of the 325 PRs (31%) | 100; 325; 30.769 | match |  |
 | Sec. 2.1.5 | typical share for agreement; PRs needed | 10 to 25%; 62 PRs; kappa = 0.8 vs. 0.5 |  | external | literature |
-| Sec. 2.1.5 | Cohen's kappa | kappa = 0.80 |  | pending | pending second rater, not reproduced (src/analysis/kappa.py computes it once the labels exist) |
+| Sec. 2.1.5 | Cohen's kappa between the two raters | kappa = 0.85 | 0.8504 | match |  |
 | Sec. 2.1.5 | agent label | 218 (67.1% [61.8, 72.0]) | 218; 67.077; 61.794; 71.961 | match |  |
 | Sec. 2.1.5 | mixed, human, unclear labels | 71 (21.8%), 20 (6.2%), 16 (4.9%) | 71; 21.846; 20; 6.154; 16; 4.923 | match |  |
 | Sec. 2.1.5 | agent made substantive changes (agent or mixed) | 88.9% | 88.923 | match |  |
@@ -130,7 +103,7 @@ These values match only when the reproduced value is first rounded to one more d
 | Sec. 2.2.1 | end of the observation window | December 31, 2025 |  | external | design choice |
 | Sec. 2.2.1 | every unit is observed for at least five months | minimum follow-up >= 150 days | last merge 2025-07-30, minimum follow-up 154.2 days | match |  |
 | Sec. 2.2.3 | substantial modification thresholds | theta in {25%, 50%, 75%, 100%} |  | external | design choice |
-| Sec. 2.2.5 | largest human PR | adds more than 170,000 lines | 170,619 lines (all tracked lines; 34,380 outside vendored paths) | match | the count includes vendored and generated paths; in the primary design (no vendored paths) the largest human PR adds 34,380 lines |
+| Sec. 2.2.5 | largest human PR | adds more than 34,000 lines outside vendored and generated paths | 34,380 lines outside vendored paths | match |  |
 | Sec. 2.2.5 | illustrative example (not data) | 10,000 of the 10,990 human lines (91%); one of the 100 PRs (1%) | 10,000; 10,990; 90.992; 100; 1 | match | arithmetic of a hypothetical example |
 
 ## Table 2 (units and events)
@@ -152,8 +125,8 @@ These values match only when the reproduced value is first rounded to one more d
 |---|---|---|---|---|---|
 | Sec. 3.2 | RMST horizons and bootstrap | tau = 90 and 150 days; 1,000 repository bootstrap replicates | 90; 150; 1,000 | external | design choice; replicates read from results/rq1/rq1_line.json (consistent) |
 | Sec. 3.2 | sampled design | at most 20 source files per PR and 100 random lines per file |  | external | design choice |
-| Sec. 3.3 | agent HR, primary | HR = 0.84 [0.75, 0.93], p = 0.001 | 0.8347; 0.7490; 0.9301; 0.00107 | match (double rounding) |  |
-| Sec. 3.3 | supervised-assistant HR | HR = 0.76 [0.66, 0.88] | 0.7566; 0.6546; 0.8746 | match (double rounding) |  |
+| Sec. 3.3 | agent HR, primary | HR = 0.83 [0.75, 0.93], p = 0.001 | 0.8347; 0.7490; 0.9301; 0.00107 | match |  |
+| Sec. 3.3 | supervised-assistant HR | HR = 0.76 [0.65, 0.87] | 0.7566; 0.6546; 0.8746 | match |  |
 | Sec. 3.3 | supervised-assistant p | p < 0.001 | 0.00016 | match |  |
 | Sec. 3.3 | Devin HR | HR = 0.95 [0.82, 1.11], p = 0.53 | 0.9533; 0.8205; 1.1075; 0.5318 | match |  |
 | Sec. 3.3 | hazard of supervised-assistant lines lower by | 24% lower | 24.335 | match |  |
@@ -164,12 +137,12 @@ These values match only when the reproduced value is first rounded to one more d
 
 | Where | What | Paper | Reproduced | Status | Note |
 |---|---|---|---|---|---|
-| Table 3 | Line, primary | 648,959 \| 28.0 / 34.5 \| 0.84 [0.75, 0.93] \| 0.76 [0.66, 0.88] \| 0.95 [0.82, 1.11] | 648,959; 28.009; 34.512; 0.8347; 0.7490; 0.9301; 0.7566; 0.6546; 0.8746; 0.9533; 0.8205; 1.1075 | match (double rounding) |  |
-| Table 3 | Line, with vendored paths | 854,139 \| 28.1 / 34.8 \| 0.83 [0.75, 0.93] \| 0.76 [0.66, 0.88] \| 0.95 [0.82, 1.10] | 854,139; 28.127; 34.756; 0.8332; 0.7484; 0.9276; 0.7580; 0.6569; 0.8747; 0.9482; 0.8166; 1.1010 | match (double rounding) |  |
-| Table 3 | Line, unweighted | 648,959 \| 23.4 / 30.1 \| 0.91 [0.69, 1.20] \| 0.80 [0.60, 1.07] \| 1.06 [0.66, 1.71] | 648,959; 23.436; 30.100; 0.9076; 0.6870; 1.1990; 0.7991; 0.5955; 1.0722; 1.0590; 0.6546; 1.7133 | match (double rounding) |  |
+| Table 3 | Line, primary | 648,959 \| 28.0 / 34.5 \| 0.83 [0.75, 0.93] \| 0.76 [0.65, 0.87] \| 0.95 [0.82, 1.11] | 648,959; 28.009; 34.512; 0.8347; 0.7490; 0.9301; 0.7566; 0.6546; 0.8746; 0.9533; 0.8205; 1.1075 | match |  |
+| Table 3 | Line, with vendored paths | 854,139 \| 28.1 / 34.8 \| 0.83 [0.75, 0.93] \| 0.76 [0.66, 0.87] \| 0.95 [0.82, 1.10] | 854,139; 28.127; 34.756; 0.8332; 0.7484; 0.9276; 0.7580; 0.6569; 0.8747; 0.9482; 0.8166; 1.1010 | match |  |
+| Table 3 | Line, unweighted | 648,959 \| 23.4 / 30.1 \| 0.91 [0.69, 1.20] \| 0.80 [0.60, 1.07] \| 1.06 [0.65, 1.71] | 648,959; 23.436; 30.100; 0.9076; 0.6870; 1.1990; 0.7991; 0.5955; 1.0722; 1.0590; 0.6546; 1.7133 | match |  |
 | Table 3 | Line, unweighted, with vendored | 854,139 \| 23.3 / 50.3 \| 0.92 [0.68, 1.25] \| 0.86 [0.58, 1.29] \| 1.00 [0.68, 1.48] | 854,139; 23.281; 50.333; 0.9230; 0.6836; 1.2461; 0.8633; 0.5780; 1.2894; 0.9995; 0.6770; 1.4755 | match |  |
-| Table 3 | Line, sampled | 277,283 \| 28.1 / 34.7 \| 0.83 [0.75, 0.93] \| 0.76 [0.66, 0.88] \| 0.95 [0.82, 1.10] | 277,283; 28.140; 34.718; 0.8338; 0.7489; 0.9285; 0.7600; 0.6580; 0.8778; 0.9452; 0.8146; 1.0968 | match (double rounding) |  |
-| Table 3 | Hunk, primary | 60,095 \| 39.5 / 44.8 \| 0.93 [0.85, 1.02] \| 0.82 [0.73, 0.92] \| 1.11 [0.98, 1.26] | 60,095; 39.523; 44.771; 0.9304; 0.8493; 1.0193; 0.8176; 0.7245; 0.9227; 1.1134; 0.9824; 1.2617 | match (double rounding) |  |
+| Table 3 | Line, sampled | 277,283 \| 28.1 / 34.7 \| 0.83 [0.75, 0.93] \| 0.76 [0.66, 0.88] \| 0.95 [0.81, 1.10] | 277,283; 28.140; 34.718; 0.8338; 0.7489; 0.9285; 0.7600; 0.6580; 0.8778; 0.9452; 0.8146; 1.0968 | match |  |
+| Table 3 | Hunk, primary | 60,095 \| 39.5 / 44.8 \| 0.93 [0.85, 1.02] \| 0.82 [0.72, 0.92] \| 1.11 [0.98, 1.26] | 60,095; 39.523; 44.771; 0.9304; 0.8493; 1.0193; 0.8176; 0.7245; 0.9227; 1.1134; 0.9824; 1.2617 | match |  |
 | Table 3 | File, primary | 18,120 \| 84.2 / 88.2 \| 0.97 [0.90, 1.04] \| 0.95 [0.86, 1.04] \| 1.01 [0.90, 1.13] | 18,120; 84.177; 88.183; 0.9701; 0.9024; 1.0430; 0.9473; 0.8637; 1.0389; 1.0083; 0.9034; 1.1253 | match |  |
 | Table 3 | bold cells | bold exactly where p < 0.05 | same cells | match |  |
 
@@ -224,7 +197,7 @@ These values match only when the reproduced value is first rounded to one more d
 | Sec. 3.3 | at the file level, no group differs | all file HRs p >= 0.05 | 0.41, 0.25, 0.88 | match |  |
 | Sec. 3.3 | substantial modification: agent HR range | HR 0.80 to 0.86 | 0.8037; 0.8598 | match |  |
 | Sec. 3.3 | substantial modification: agent p | all p < 0.02 | max p 0.0177 | match |  |
-| Sec. 3.3 | substantial modification: supervised HR range | 0.72 to 0.76 | 0.7194; 0.7651 | mismatch | the maximum is the file unit at theta = 50% (HR 0.7651), which rounds to 0.77 |
+| Sec. 3.3 | substantial modification: supervised HR range | 0.72 to 0.77 | 0.7194; 0.7651 | match |  |
 | Sec. 3.3 | substantial modification: Devin HR range | 0.93 to 1.01 | 0.9276; 1.0094 | match |  |
 | Sec. 3.3 | Devin does not differ at any theta | Devin p >= 0.05 | min p 0.351 | match |  |
 
@@ -248,13 +221,13 @@ These values match only when the reproduced value is first rounded to one more d
 | Sec. 3.3 | Copilot and Codex HR | HR = 0.75; HR = 0.69 | 0.7462; 0.6933 | match |  |
 | Sec. 3.3 | PRs of Copilot and Codex | 980 of their 1,055 PRs | 980; 1,055 | match |  |
 | Sec. 3.3 | PRs of Cursor and Claude Code | 44 and 31 PRs | 44; 31 | match |  |
-| Sec. 3.3 | a single PR adds about a third of their lines | about 1/3 | Cursor 26.4%, Claude Code 32.9% | match | Cursor 26.4% is closer to a quarter than a third |
+| Sec. 3.3 | share of lines added by the largest PR, Cursor and Claude Code | 26% and 33% | 26.403; 32.870 | match |  |
 
 ## Table 4 (per agent)
 
 | Where | What | Paper | Reproduced | Status | Note |
 |---|---|---|---|---|---|
-| Table 4 | GitHub Copilot | 489 \| 0.75 [0.60, 0.94] \| 22.5 [19.6, 25.3] \| 9.7% | 489; 0.7462; 0.5948; 0.9361; 22.453; 19.616; 25.281; 9.686 | match (double rounding) |  |
+| Table 4 | GitHub Copilot | 489 \| 0.75 [0.59, 0.94] \| 22.5 [19.6, 25.3] \| 9.7% | 489; 0.7462; 0.5948; 0.9361; 22.453; 19.616; 25.281; 9.686 | match |  |
 | Table 4 | OpenAI Codex | 491 \| 0.69 [0.57, 0.84] \| 24.4 [21.4, 27.8] \| 5.7% | 491; 0.6933; 0.5701; 0.8432; 24.412; 21.419; 27.823; 5.659 | match |  |
 | Table 4 | Cursor | 44 \| 1.81 [0.91, 3.60] \| 35.0 [24.6, 46.7] \| 26.4% | 44; 1.8073; 0.9069; 3.6018; 35.044; 24.598; 46.653; 26.403 | match |  |
 | Table 4 | Claude Code | 31 \| 1.66 [0.81, 3.41] \| 30.5 [18.0, 43.5] \| 32.9% | 31; 1.6641; 0.8128; 3.4071; 30.478; 18.004; 43.533; 32.870 | match |  |
@@ -292,9 +265,9 @@ These values match only when the reproduced value is first rounded to one more d
 | Where | What | Paper | Reproduced | Status | Note |
 |---|---|---|---|---|---|
 | Sec. 4.3 | without merge commits | V = 0.081 | 0.08100 | match |  |
-| Sec. 4.3 | without merge commits: adaptive share (agent, human) | 8.3% (agent) and 8.3% (human), "for both groups" | 8.296; 8.406 | mismatch | the human share is 8.41%, which rounds to 8.4% |
+| Sec. 4.3 | without merge commits: adaptive share (agent, human) | 8.3% (agent) and 8.4% (human) | 8.296; 8.406 | match |  |
 | Sec. 4.3 | single-group commits | V = 0.084, Corrective 36.2% vs. 32.4% | 0.08392; 36.240; 32.370 | match |  |
-| Sec. 4.3 | file-commit unit | chi2 = 7.0, p = 0.14, V = 0.035 | 7.017; 0.1350; 0.03469 | match (double rounding) |  |
+| Sec. 4.3 | file-commit unit | chi2 = 7.0, p = 0.13, V = 0.035 | 7.017; 0.1350; 0.03469 | match |  |
 | Sec. 4.3 | substring matching: effect size | V = 0.155 | 0.15466 | match |  |
 | Sec. 4.3 | substring matching: preventive share agent, human | 29.7% and 18.8% | 29.740; 18.805 | match |  |
 | Sec. 4.3 | whole-word matching: preventive share agent, human | 3.9% and 3.5% | 3.877; 3.533 | match |  |
@@ -313,7 +286,7 @@ These values match only when the reproduced value is first rounded to one more d
 
 | Where | What | Paper | Reproduced | Status | Note |
 |---|---|---|---|---|---|
-| Sec. 5.3 | agent dataset | 6,661 files from 155 repositories, 79.8% modified | 6,661; 155; 79.748 | match (double rounding) |  |
+| Sec. 5.3 | agent dataset | 6,661 files from 155 repositories, 79.7% modified | 6,661; 155; 79.748 | match |  |
 | Sec. 5.3 | first Scott-Knott rank (AUC-PR) | random forest, CatBoost and XGBoost | CatBoost, RandomForest, XGBoost | match |  |
 | Sec. 5.3 | first-rank AUC-ROC | about 0.70 | 0.6984, 0.6955, 0.6936 | match |  |
 | Sec. 5.3 | first-rank AUC-PR | about 0.89 | 0.8895, 0.8883, 0.886 | match |  |
@@ -331,7 +304,7 @@ These values match only when the reproduced value is first rounded to one more d
 | Where | What | Paper | Reproduced | Status | Note |
 |---|---|---|---|---|---|
 | Sec. 5.3 | localization data | 1,941 files from 109 repositories; 163,409 lines, 22.8% modified | 1,941; 109; 163,409; 22.783 | match |  |
-| Sec. 5.3 | SHAP ranking AUC-ROC (pooled, per-file mean); line length | AUC-ROC 0.547, per-file mean 0.576; length 0.552 | 0.54649; 0.57583; 0.55232 | match (double rounding) |  |
+| Sec. 5.3 | SHAP ranking AUC-ROC (pooled, per-file mean); line length | AUC-ROC 0.546, per-file mean 0.576; length 0.552 | 0.54649; 0.57583; 0.55232 | match |  |
 | Sec. 5.3 | precision in the top 10% of lines: SHAP, random, longest lines | 36.7%, 30.1%, 39.7% | 36.657; 30.062; 39.729 | match |  |
 
 ## 5.3 RQ3b results
@@ -362,7 +335,7 @@ These values match only when the reproduced value is first rounded to one more d
 | Sec. 6.2 | supervised-assistant vs. human lines in test files (PR-weighted) | 35.6% vs. 24.1% | 35.618; 24.144 | match |  |
 | Sec. 6.5 | Devin vs. human lines modified within two weeks | 12.0% vs. 9.6% | 11.952; 9.556 | match |  |
 | Sec. 7 | agent made substantive changes in the mined cohort | 87.3% | 87.330 | match |  |
-| Sec. 7 | second rater, Cohen's kappa | 100 PRs, kappa = 0.80 |  | pending | pending second rater, not reproduced |
+| Sec. 7 | second rater, Cohen's kappa | 100 PRs, kappa = 0.85 | 100; 0.8504 | match |  |
 | Sec. 7 | merge commit not located | 359 merged PRs | 359 | match |  |
 | Sec. 7 | Cursor and Claude Code contribute fewer than 50 PRs each | < 50 | 44, 31 | match |  |
 | Sec. 7 | repositories | 215 repositories | 215 | match |  |
