@@ -24,7 +24,10 @@ Package paths (`data/`, `results/`; `RESULTS_DIR` and `TABLES_DIR` override them
 | `a_misc.py` | Audit vs. cohort and RQ1 without audited PRs (A8), activity terciles (A10), descriptives (A11), Kaplan-Meier figure (A13) | `data/tables/`, `data/audit/audit_rater1.csv`, `data/cohort/repo_meta_v6.csv` | `rq1/a_misc.json`, `figures/rq1_km_line_primary.{pdf,png}` | Figure 1; Sections 2.1.5, 3.3 |
 | `c1_calendar.py` | Calendar-time checks: PRs merged on or after 2025-05-16, strata repository x merge month, time split | `data/tables/` | `rq1/c1_calendar_line.json` | Section 3.3 |
 | `rate_14d.py` | 14-day modification rates in further variants | `data/tables/` | `rq1/rate_14d.txt` | (supplementary) |
+| `a14_tasktype.py` | RQ1 with the AIDev task type of each PR: task-type mix, strata repository x task type (PR-weighted and unweighted), task-type covariates, feat and fix PRs only | `data/tables/`, `data/aidev/pr_task_type_816.csv.gz` | `rq1/a14_tasktype.json` | Table 3, Section 3.3 |
+| `plot_hr_forest.py [<dir>]` | Forest plot of the HRs across the RQ1 design choices | `results/rq1/` | `figures/rq1_hr_forest.{pdf,png}` | Figure 2 |
 | `rq2_fb.py [--from-clones <dir>]` | Intent of the modifying commits (whole-word and substring classifiers), chi-square, Cramer's V, residuals, sensitivity analyses | `data/tables/`, `data/rq2/commit_parents.csv` | `rq2/rq2_fb.json` | Table 5, Section 4.3 |
+| `a15_rq2_aidev_coverage.py` | Share of the RQ2 modifying commits that belong to an AIDev PR (PR commit or merge commit of a cohort PR) | `data/tables/`, `data/aidev/pr_commit_shas_816.csv.gz` | `rq2/a15_rq2_aidev_coverage.json` | Section 3.2 |
 | `ease_src/mine_death_details.py` | Keyword rules of the intent classifier (`CLASSIFICATION_RULES`) and the substring classifier | | | Section 4.2 |
 | `ease_src/extract_features.py` | Mapping of the eight fine-grained categories to the five classes (`REASON_MAPPING`) | | | Section 4.2 |
 | `make_summary.py [<dir>]` | Long-form summary of every output | `results/` | `SUMMARY.md` | (all) |
@@ -52,6 +55,7 @@ Package paths (`data/`, `results/`; `RESULTS_DIR` and `TABLES_DIR` override them
 |---|---|---|
 | `download_data.py` | Downloads the AIDev release | `rebuild/aidev/` |
 | `aidev_extract.py` | AIDev totals and the PRs of the 816 repositories with agent and human PRs | `data/aidev/` |
+| `aidev_task_types.py` | AIDev task types and PR commits of the 816 repositories | `data/aidev/pr_task_type_816.csv.gz`, `data/aidev/pr_commit_shas_816.csv.gz` |
 | `filter_repos.py` | Filtering of Xiao et al.: metadata from the GitHub API, license, archived, release, contributors, bottom quartile, code ratio | repository metadata, code ratios, filtered list |
 | `code_ratio.py` | Code ratio of one repository with cloc, without timeouts | one JSON line |
 | `cohort_prs.py` | Merged PRs of the filtered repositories | `data/cohort/prs_cohort256.csv` |

@@ -53,7 +53,10 @@ add rq1_file_history   ""  "python src/analysis/a9_model.py"
 add rq1_misc_figure    "results/rq1/a_misc.json"  "python src/analysis/a_misc.py"
 add rq1_calendar       ""  "python src/analysis/c1_calendar.py line"
 add rq1_rate_14d       ""  "python src/analysis/rate_14d.py"
+add rq1_task_type      "results/rq1/a14_tasktype.json"  "python src/analysis/a14_tasktype.py"
+add rq1_hr_figure      ""  "python src/analysis/plot_hr_forest.py"
 add rq2                ""  "python src/analysis/rq2_fb.py"
+add rq2_aidev_coverage ""  "python src/analysis/a15_rq2_aidev_coverage.py"
 add rq3_unpack         ""  "unpack_rq3"
 # RQ3a, agent files: 8-model tournament, Scott-Knott ESD, size/history baseline, out-of-sample SHAP/LIME, line localization
 add rq3a_agent_tournament "results/rq3/rq3a_agent/results results/rq3/rq3a_agent/models" \
@@ -156,6 +159,6 @@ if [ -z "$ONLY" ] || [ "$ONLY" = paper_numbers ]; then
 fi
 echo "================================================================"
 echo " $N step(s) run, $SKIP skipped, total $(fmt $(( $(date +%s) - T0 ))) ($MODE mode)."
-echo " Report: results/PAPER_NUMBERS.md   Figure 1: results/figures/rq1_km_line_primary.pdf"
+echo " Report: results/PAPER_NUMBERS.md   Figures 1 and 2: results/figures/rq1_km_line_primary.pdf, rq1_hr_forest.pdf"
 [ "$MODE" = quick ] && echo " QUICK MODE: the reproduced values are not expected to match the paper."
 echo "================================================================"

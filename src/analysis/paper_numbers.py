@@ -72,6 +72,8 @@ def a7(): return J('rq1/a7_sub.json')
 def a9(): return J('rq1/a9.json')['A9']
 def c1(): return J('rq1/c1_calendar_line.json')
 def rq2(): return J('rq2/rq2_fb.json')
+def tk(): return J('rq1/a14_tasktype.json')
+def a15(): return J('rq2/a15_rq2_aidev_coverage.json')
 def cs(): return J('cohort/cohort_stats.json')
 def fun(i): return J('cohort/funnel.json')['rows'][i]
 def aud(): return J('audit/audit_summary.json')
@@ -287,6 +289,8 @@ sec('3 RQ1')
 ext('Sec. 3.2', 'RMST horizons and bootstrap', 'tau = 90 and 150 days; 1,000 repository bootstrap replicates', 'design choice; replicates read from results/rq1/rq1_line.json',
     lambda: [90, 150, rq1()['A3']['B']])
 ext('Sec. 3.2', 'sampled design', 'at most 20 source files per PR and 100 random lines per file', 'design choice')
+n('Sec. 3.2', 'PRs with an AIDev task type', '2,781 of our 2,794 PRs', lambda: [tk()['prs'] - tk()['prs_without_type'], tk()['prs']])
+n('Sec. 3.2', 'modifying commits that belong to an AIDev PR', 'only 8.5% of the 5,600 commits', lambda: [a15()['covered_any_pct'], a15()['modifying_commits']])
 n('Sec. 3.3', 'agent HR, primary', 'HR = 0.83 [0.75, 0.93], p = 0.001', lambda: W('primary', 'agent') + [A1('primary')['within']['agent']['p']])
 n('Sec. 3.3', 'supervised-assistant HR', 'HR = 0.76 [0.65, 0.87]', lambda: W('primary', 'supervised'))
 cond('Sec. 3.3', 'supervised-assistant p', 'p < 0.001', lambda: (A1('primary')['within']['supervised']['p'] < 0.001, f"{A1('primary')['within']['supervised']['p']:.2g}"))
@@ -316,6 +320,12 @@ def bold_check():
 
 
 cond('Table 3', 'bold cells', 'bold exactly where p < 0.05', bold_check)
+n('Table 3', 'Line, repository x task type', '648,959 | 28.0 / 34.5 | 0.87 [0.78, 0.99] | 0.77 [0.65, 0.91] | 1.03 [0.87, 1.21]',
+  lambda: [tk()['primary_slug_x_task']['lines'], grp('primary', 'line', 'Agent (all)'), grp('primary', 'line', 'Human')]
+  + H(tk()['primary_slug_x_task']['agent']) + H(tk()['primary_slug_x_task']['supervised']) + H(tk()['primary_slug_x_task']['devin']))
+cond('Table 3', 'bold cells, repository x task type row', 'agent and supervised bold, Devin not',
+     lambda: ([sig(tk()['primary_slug_x_task'][k]) for k in ['agent', 'supervised', 'devin']] == [True, True, False],
+              ', '.join(f"{tk()['primary_slug_x_task'][k]['p']:.3f}" for k in ['agent', 'supervised', 'devin'])))
 sec('Figure 1 (KM curves)')
 cond('Figure 1', 'figure file', 'results/figures/rq1_km_line_primary.pdf',
      lambda: (os.path.exists(os.path.join(BASE, 'figures', 'rq1_km_line_primary.pdf')), 'present' if os.path.exists(os.path.join(BASE, 'figures', 'rq1_km_line_primary.pdf')) else 'absent'))
@@ -325,6 +335,9 @@ n('Figure 1 caption', 'largest steps (supervised assistants, Devin)', 'day 223 a
 cond('Figure 1 caption', 'each step comes from a single PR', 'share of the step from its top PR = 1',
      lambda: (all(abs(misc()['A13']['info'][g]['largest_step_top_pr_share'] - 1) < 1e-9 for g in ['Supervised assistants', 'Devin (autonomous)']),
               ', '.join(f"{misc()['A13']['info'][g]['largest_step_top_pr_share']:.3f}" for g in ['Supervised assistants', 'Devin (autonomous)'])))
+sec('Figure 2 (HR across design choices)')
+cond('Figure 2', 'figure file', 'results/figures/rq1_hr_forest.pdf',
+     lambda: (os.path.exists(os.path.join(BASE, 'figures', 'rq1_hr_forest.pdf')), 'present' if os.path.exists(os.path.join(BASE, 'figures', 'rq1_hr_forest.pdf')) else 'absent'))
 sec('3.3 Weighting, vendored code and pooling')
 n('Sec. 3.3', 'share of lines in vendored paths: human, supervised, Devin', '34.1%, 3.8%, 0.3%',
   lambda: [P(misc()['A11'][g]['share_vendored_all_lines']) for g in ['Human', 'Supervised assistants', 'Devin (autonomous)']])
@@ -392,6 +405,17 @@ n('Sec. 3.3', 'covariate HRs: recent changes, test file', 'HR = 1.26 per log uni
 n('Sec. 3.3', 'activity terciles (AIDev PR count): agent HR', '0.83 [0.44, 1.57], 0.63 [0.43, 0.94], 0.86 [0.77, 0.97]',
   lambda: sum([H(misc()['A10'][f'total_pr_count|{t}']['within']['agent']) for t in ['low', 'mid', 'high']], []))
 cond('Sec. 3.3', 'same direction in every tercile', 'all HR < 1', lambda: (all(misc()['A10'][f'total_pr_count|{t}']['within']['agent']['hr'] < 1 for t in ['low', 'mid', 'high']), 'yes'))
+sec('3.3 Task type')
+n('Sec. 3.3', "task-type mix, Cramer's V", "Cramer's V = 0.12", lambda: [tk()['mix_test']['cramers_v']])
+n('Sec. 3.3', 'fixes: supervised vs. human PRs; features: Devin vs. human PRs', '41.3%, 35.0%; 47.3%, 39.5%',
+  lambda: [tk()['mix_pct']['Supervised assistants']['fix'], tk()['mix_pct']['Human']['fix'], tk()['mix_pct']['Devin (autonomous)']['feat'], tk()['mix_pct']['Human']['feat']])
+n('Sec. 3.3', 'repository x task type: supervised, agent, Devin HR', '0.77 [0.65, 0.91]; 0.87 [0.78, 0.99]; 1.03 [0.87, 1.21]',
+  lambda: H(tk()['primary_slug_x_task']['supervised']) + H(tk()['primary_slug_x_task']['agent']) + H(tk()['primary_slug_x_task']['devin']))
+n('Sec. 3.3', 'repository x task type, unweighted: supervised HR', '0.77 [0.61, 0.96]', lambda: H(tk()['unweighted_slug_x_task']['supervised']))
+cond('Sec. 3.3', 'unweighted supervised difference significant within repository x task type', 'p < 0.05',
+     lambda: (sig(tk()['unweighted_slug_x_task']['supervised']), f"{tk()['unweighted_slug_x_task']['supervised']['p']:.3f}"))
+n('Sec. 3.3', 'supervised HR within fixes; within features', '0.75 [0.57, 0.98]; 0.82 [0.63, 1.06]',
+  lambda: H(tk()['within_task_fix']['supervised']) + H(tk()['within_task_feat']['supervised']))
 sec('3.3 Individual agents')
 n('Sec. 3.3', 'Copilot and Codex HR', 'HR = 0.75; HR = 0.69', lambda: [A5('Copilot')['hr']['hr'], A5('OpenAI_Codex')['hr']['hr']])
 n('Sec. 3.3', 'PRs of Copilot and Codex', '980 of their 1,055 PRs', lambda: [A5('Copilot')['prs'] + A5('OpenAI_Codex')['prs'], A1('primary')['groups']['Supervised assistants']['prs']])

@@ -2,7 +2,7 @@
 
 Results directory: `expected_results/` (mode: expected (shipped outputs of the paper run)).
 
-**606 of 609 reproducible numbers match**, grouped in 196 statements: **195 of 196 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
+**648 of 651 reproducible numbers match**, grouped in 207 statements: **206 of 207 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
 
 An entry groups the numbers of one statement; it matches when every number matches after rounding to the precision printed in the paper. Status: match, mismatch, missing (output absent), partial (agrees, but not independently reproducible from the shipped data), external (AIDev release, literature or a design choice), pending (second rater).
 
@@ -123,6 +123,8 @@ An entry groups the numbers of one statement; it matches when every number match
 |---|---|---|---|---|---|
 | Sec. 3.2 | RMST horizons and bootstrap | tau = 90 and 150 days; 1,000 repository bootstrap replicates | 90; 150; 1,000 | external | design choice; replicates read from results/rq1/rq1_line.json (consistent) |
 | Sec. 3.2 | sampled design | at most 20 source files per PR and 100 random lines per file |  | external | design choice |
+| Sec. 3.2 | PRs with an AIDev task type | 2,781 of our 2,794 PRs | 2,781; 2,794 | match |  |
+| Sec. 3.2 | modifying commits that belong to an AIDev PR | only 8.5% of the 5,600 commits | 8.464; 5,600 | match |  |
 | Sec. 3.3 | agent HR, primary | HR = 0.83 [0.75, 0.93], p = 0.001 | 0.8347; 0.7490; 0.9301; 0.00107 | match |  |
 | Sec. 3.3 | supervised-assistant HR | HR = 0.76 [0.65, 0.87] | 0.7566; 0.6546; 0.8746 | match |  |
 | Sec. 3.3 | supervised-assistant p | p < 0.001 | 0.00016 | match |  |
@@ -143,6 +145,8 @@ An entry groups the numbers of one statement; it matches when every number match
 | Table 3 | Hunk, primary | 60,095 \| 39.5 / 44.8 \| 0.93 [0.85, 1.02] \| 0.82 [0.72, 0.92] \| 1.11 [0.98, 1.26] | 60,095; 39.523; 44.771; 0.9304; 0.8493; 1.0193; 0.8176; 0.7245; 0.9227; 1.1134; 0.9824; 1.2617 | match |  |
 | Table 3 | File, primary | 18,120 \| 84.2 / 88.2 \| 0.97 [0.90, 1.04] \| 0.95 [0.86, 1.04] \| 1.01 [0.90, 1.13] | 18,120; 84.177; 88.183; 0.9701; 0.9024; 1.0430; 0.9473; 0.8637; 1.0389; 1.0083; 0.9034; 1.1253 | match |  |
 | Table 3 | bold cells | bold exactly where p < 0.05 | same cells | match |  |
+| Table 3 | Line, repository x task type | 648,959 \| 28.0 / 34.5 \| 0.87 [0.78, 0.99] \| 0.77 [0.65, 0.91] \| 1.03 [0.87, 1.21] | 648,959; 28.009; 34.512; 0.8746; 0.7750; 0.9869; 0.7676; 0.6504; 0.9058; 1.0266; 0.8717; 1.2090 | match |  |
+| Table 3 | bold cells, repository x task type row | agent and supervised bold, Devin not | 0.030, 0.002, 0.753 | match |  |
 
 ## Figure 1 (KM curves)
 
@@ -152,6 +156,12 @@ An entry groups the numbers of one statement; it matches when every number match
 | Figure 1 caption | no supervised-assistant line at risk after | day 281 | 280.711 | match |  |
 | Figure 1 caption | largest steps (supervised assistants, Devin) | day 223 and day 313 | 223.376; 313.070 | match |  |
 | Figure 1 caption | each step comes from a single PR | share of the step from its top PR = 1 | 1.000, 1.000 | match |  |
+
+## Figure 2 (HR across design choices)
+
+| Where | What | Paper | Reproduced | Status | Note |
+|---|---|---|---|---|---|
+| Figure 2 | figure file | results/figures/rq1_hr_forest.pdf | present | match |  |
 
 ## 3.3 Weighting, vendored code and pooling
 
@@ -211,6 +221,17 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 3.3 | covariate HRs: recent changes, test file | HR = 1.26 per log unit; HR = 0.73 | 1.2610; 0.7286 | match |  |
 | Sec. 3.3 | activity terciles (AIDev PR count): agent HR | 0.83 [0.44, 1.57], 0.63 [0.43, 0.94], 0.86 [0.77, 0.97] | 0.8318; 0.4402; 1.5716; 0.6338; 0.4276; 0.9394; 0.8632; 0.7703; 0.9673 | match |  |
 | Sec. 3.3 | same direction in every tercile | all HR < 1 | yes | match |  |
+
+## 3.3 Task type
+
+| Where | What | Paper | Reproduced | Status | Note |
+|---|---|---|---|---|---|
+| Sec. 3.3 | task-type mix, Cramer's V | Cramer's V = 0.12 | 0.1171 | match |  |
+| Sec. 3.3 | fixes: supervised vs. human PRs; features: Devin vs. human PRs | 41.3%, 35.0%; 47.3%, 39.5% | 41.327; 34.966; 47.330; 39.488 | match |  |
+| Sec. 3.3 | repository x task type: supervised, agent, Devin HR | 0.77 [0.65, 0.91]; 0.87 [0.78, 0.99]; 1.03 [0.87, 1.21] | 0.7676; 0.6504; 0.9058; 0.8746; 0.7750; 0.9869; 1.0266; 0.8717; 1.2090 | match |  |
+| Sec. 3.3 | repository x task type, unweighted: supervised HR | 0.77 [0.61, 0.96] | 0.7670; 0.6107; 0.9633 | match |  |
+| Sec. 3.3 | unweighted supervised difference significant within repository x task type | p < 0.05 | 0.023 | match |  |
+| Sec. 3.3 | supervised HR within fixes; within features | 0.75 [0.57, 0.98]; 0.82 [0.63, 1.06] | 0.7476; 0.5697; 0.9810; 0.8184; 0.6329; 1.0583 | match |  |
 
 ## 3.3 Individual agents
 

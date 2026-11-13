@@ -41,7 +41,7 @@ bash reproduce.sh --quick      # smoke test of every script (see "Runtimes")
 bash reproduce.sh              # the paper's settings
 ```
 
-Open `results/PAPER_NUMBERS.md` for the comparison with the paper and `results/figures/rq1_km_line_primary.pdf` for Figure 1.
+Open `results/PAPER_NUMBERS.md` for the comparison with the paper and `results/figures/rq1_km_line_primary.pdf` for Figure 1 (`rq1_hr_forest.pdf` for Figure 2).
 
 To compare the shipped outputs of the paper run with the paper without running anything:
 
@@ -71,7 +71,10 @@ the script is run again, unless `--force` is given or the step last ran in the o
 | rq1_misc_figure | `src/analysis/a_misc.py` | `rq1/a_misc.json`, `figures/rq1_km_line_primary.pdf` | Figure 1; Section 2.1.5 (cohort audit); Section 3.3 |
 | rq1_calendar | `src/analysis/c1_calendar.py` | `rq1/c1_calendar_line.json` | Section 3.3 (calendar time) |
 | rq1_rate_14d | `src/analysis/rate_14d.py` | `rq1/rate_14d.txt` | 14-day rates (additional variants) |
+| rq1_task_type | `src/analysis/a14_tasktype.py` | `rq1/a14_tasktype.json` | Table 3 (repository x task type), Section 3.3 (task type) |
+| rq1_hr_figure | `src/analysis/plot_hr_forest.py` | `figures/rq1_hr_forest.pdf` | Figure 2 |
 | rq2 | `src/analysis/rq2_fb.py` | `rq2/rq2_fb.json` | Table 5, Section 4.3 |
+| rq2_aidev_coverage | `src/analysis/a15_rq2_aidev_coverage.py` | `rq2/a15_rq2_aidev_coverage.json` | Section 3.2 (share of modifying commits in AIDev PRs) |
 | rq3_unpack | (shell) | `rq3/*/data/` | inputs of RQ3 |
 | rq3a_agent_* | `src/rq3/rq3a_tournament.py`, `rq3a_wide.py`, `sk_esd.py`, `d1_lr.py`, `lime_timed.py`, `rq3a_localize.py` | `rq3/rq3a_agent/results/` | Section 5.3 (RQ3a, line localization) |
 | rq3b_agent_* | `src/rq3/rq3b_tournament.py`, `sk_esd.py`, `lime_timed.py` | `rq3/rq3b_agent/results/` | Section 5.3 (RQ3b) |
@@ -99,13 +102,14 @@ the paper's value, the reproduced value, and the status. The main sources are:
 | Table 2 (units and events) | `rq1/rq1_{line,hunk,file}.json` key `A12` |
 | Table 3 (designs) | `rq1/rq1_{line,hunk,file}.json` keys `A1_*` |
 | Figure 1 | `figures/rq1_km_line_primary.pdf`, `rq1/a_misc.json` key `A13` |
-| Section 3.3 (RQ1 text) | `rq1/rq1_line.json` (`A2` pooled, `A3` RMST and bootstrap, `A6` 14-day rates), `rq1/a4_ph_line.json`, `rq1/c1_calendar_line.json`, `rq1/a7_sub.json`, `rq1/a9.json`, `rq1/a_misc.json` (`A8`, `A10`, `A11`) |
+| Figure 2 | `figures/rq1_hr_forest.pdf` (from `rq1/rq1_line.json`, `rq1/a4_ph_line.json`, `rq1/c1_calendar_line.json`, `rq1/a14_tasktype.json`) |
+| Section 3.3 (RQ1 text) | `rq1/rq1_line.json` (`A2` pooled, `A3` RMST and bootstrap, `A6` 14-day rates), `rq1/a4_ph_line.json`, `rq1/c1_calendar_line.json`, `rq1/a7_sub.json`, `rq1/a9.json`, `rq1/a_misc.json` (`A8`, `A10`, `A11`), `rq1/a14_tasktype.json` (task type), `rq2/a15_rq2_aidev_coverage.json` |
 | Table 4 (per agent) | `rq1/rq1_line.json` key `A5` |
 | Table 5 and Section 4.3 (RQ2) | `rq2/rq2_fb.json` |
 | Table 6 and Section 5.3 (RQ3a) | `rq3/rq3a_{agent,all}/results/` (`rq31_bow_tournament_summary_combined_count.csv`, `rq3a_sk_*.csv`, `d1_lr_size_history.json`, `rq3a_explain_summary.json`, `rq3a_line_localization_summary.json`, `lime_runtime.json`) |
 | Table 6 and Section 5.3 (RQ3b) | `rq3/rq3b_{agent,all}/results/` (`rq32_process_tournament_summary.csv`, `rq3b_sk_*.csv`, `rq32_process_selected_features.json`, `rq3b_explain_summary.json`) |
 
-On the shipped `expected_results/`, the report gives 606 of 609 numbers matched (195 of 196 statements):
+On the shipped `expected_results/`, the report gives 648 of 651 numbers matched (206 of 207 statements):
 
 * One statement is partial. Step (5) of Table 1 (code ratio) is reproduced from the cohort list, because the
   per-repository code ratios of the final filtering run are not part of the package (see `data/README.md`).
@@ -149,6 +153,7 @@ metadata step, about 100 GB of disk and several days. It writes everything to `r
 |---|---|---|
 | download | `src/mining/download_data.py` | `aidev/*.parquet` (AIDev release, Hugging Face `hao-li/AIDev`) |
 | aidev_extract | `src/mining/aidev_extract.py` | `aidev_extract/` (same files as `data/aidev/`) |
+| aidev_task_types | `src/mining/aidev_task_types.py` | `aidev_extract/pr_task_type_816.csv.gz`, `aidev_extract/pr_commit_shas_816.csv.gz` |
 | filter | `src/mining/filter_repos.py` (with `code_ratio.py` for repositories that time out) | `repo_metadata_v1.csv`, `code_ratio_v1.csv`, `aidev_filtered_v1.csv` |
 | cohort_prs | `src/mining/cohort_prs.py` | `prs_cohort256.csv` |
 | clone | `git clone --bare` | `clones/<owner>__<name>.git` |

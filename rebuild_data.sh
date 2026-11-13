@@ -18,13 +18,16 @@ export REBUILD_DIR="${REBUILD_DIR:-rebuild}"; RB="$REBUILD_DIR"
 WORKERS="${WORKERS:-4}"
 mkdir -p "$RB"
 
-STEPS=(download aidev_extract filter cohort_prs clone mine tables sanitize parents file_covariates rq3_git rq3_pr_features rq3_inputs rq3_prep compare)
+STEPS=(download aidev_extract aidev_task_types filter cohort_prs clone mine tables sanitize parents file_covariates rq3_git rq3_pr_features rq3_inputs rq3_prep compare)
 
 step_download() {          # 1. AIDev release from Hugging Face -> rebuild/aidev/*.parquet (needs: pip install requests)
   python src/mining/download_data.py
 }
 step_aidev_extract() {     # 2. Table 1 inputs: AIDev totals and the PRs of the 816 repositories with agent and human PRs
   python src/mining/aidev_extract.py "$RB/aidev" "$RB/aidev_extract"
+}
+step_aidev_task_types() {  # 2b. AIDev task types and PR commits of the 816 repositories (RQ1 task type, RQ2 coverage)
+  python src/mining/aidev_task_types.py "$RB/aidev" "$RB/aidev_extract"
 }
 step_filter() {            # 3. Xiao et al. filters: GitHub metadata (GITHUB_TOKEN in .env or the environment), Q1 filter,
                            #    code ratio with cloc -> rebuild/{repo_metadata_v1,code_ratio_v1,aidev_filtered_v1}.csv
@@ -103,6 +106,8 @@ def cmp(name, a, b, keys):
 for t, k in [('lines', ['slug', 'pr_number', 'file', 'line']), ('hunks', ['slug', 'pr_number', 'file', 'hunk']), ('files', ['slug', 'pr_number', 'unit_id']),
              ('prs', ['slug', 'pr_number']), ('commits', ['sha'])]:
     cmp(f'tables/{t}', f'{rb}/tables/{t}.parquet', f'data/tables/{t}.parquet', k)
+cmp('aidev/pr_task_type_816', f'{rb}/aidev_extract/pr_task_type_816.csv.gz', 'data/aidev/pr_task_type_816.csv.gz', ['id'])
+cmp('aidev/pr_commit_shas_816', f'{rb}/aidev_extract/pr_commit_shas_816.csv.gz', 'data/aidev/pr_commit_shas_816.csv.gz', ['pr_id', 'sha'])
 cmp('cohort/prs_cohort256', f'{rb}/prs_cohort256.csv', 'data/cohort/prs_cohort256.csv', ['slug', 'number', 'pr_id'])
 cmp('rq2/commit_parents', f'{rb}/commit_parents.csv', 'data/rq2/commit_parents.csv', ['slug', 'sha'])
 for s in ['agent', 'all']:

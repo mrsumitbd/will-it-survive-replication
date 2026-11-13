@@ -3,12 +3,14 @@
 Every input of `reproduce.sh`. `rebuild_data.sh` rebuilds these files from the AIDev release and GitHub
 (see the main README, section "Full data rebuild"). Slugs are `owner/name` in lower case. Times are UTC.
 
-## aidev/ (Table 1, steps up to (4))
+## aidev/ (Table 1, steps up to (4); RQ1 task type)
 
 | File | Content | Produced by |
 |---|---|---|
 | `aidev_summary.json` | Totals of the full AIDev release: agent PRs (932,791) per agent, repositories by `repo_id` (116,211) and by URL (116,423), human PRs (6,618) and their repositories (818), the 816 repositories with agent and human PRs | `src/mining/aidev_extract.py` |
 | `aidev_prs_816.csv.gz` | All 16,395 PRs (agent and human table, merged or not) of the 816 repositories with agent and human PRs. Columns: `table` (agent or human), `id`, `slug`, `number`, `agent` (agent name, or Human), `user_hash` (SHA-1 prefix of the GitHub login, used only to count distinct authors), `created_at`, `merged_at` | `src/mining/aidev_extract.py` |
+| `pr_task_type_816.csv.gz` | The conventional-commit task type that AIDev assigns to each PR from its title and description (AIDev files `pr_task_type.parquet` and `human_pr_task_type.parquet`), for the PRs of `aidev_prs_816.csv.gz`. Columns: `id`, `type`. Used by the RQ1 task-type analysis | `src/mining/aidev_task_types.py` |
+| `pr_commit_shas_816.csv.gz` | The commits of the AIDev agent PRs of the 816 repositories (AIDev file `pr_commits.parquet`, without messages and authors). Columns: `pr_id`, `sha`. Used to count the RQ2 modifying commits that belong to an AIDev PR | `src/mining/aidev_task_types.py` |
 
 ## cohort/
 

@@ -1,0 +1,10 @@
+{
+ "modifying_commits": 5600,
+ "death_date_min": "2024-12-29 20:58:28+00:00",
+ "death_date_max": "2025-12-31 22:18:24+00:00",
+ "in_aidev_pr_commits": 27,
+ "is_merge_commit_of_cohort_pr": 451,
+ "covered_any": 474,
+ "covered_any_pct": 8.464285714285715,
+ "after_2025_08_01": 2033
+}
