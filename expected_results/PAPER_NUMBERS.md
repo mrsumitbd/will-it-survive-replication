@@ -2,7 +2,7 @@
 
 Results directory: `expected_results/` (mode: expected (shipped outputs of the paper run)).
 
-**648 of 651 reproducible numbers match**, grouped in 207 statements: **206 of 207 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
+**571 of 574 reproducible numbers match**, grouped in 197 statements: **196 of 197 statements match** (mismatch: 0, missing: 0, partial: 1; 0 of the matches need double rounding, see below). Not counted: 17 external, 0 pending.
 
 An entry groups the numbers of one statement; it matches when every number matches after rounding to the precision printed in the paper. Status: match, mismatch, missing (output absent), partial (agrees, but not independently reproducible from the shipped data), external (AIDev release, literature or a design choice), pending (second rater).
 
@@ -145,8 +145,6 @@ An entry groups the numbers of one statement; it matches when every number match
 | Table 3 | Hunk, primary | 60,095 \| 39.5 / 44.8 \| 0.93 [0.85, 1.02] \| 0.82 [0.72, 0.92] \| 1.11 [0.98, 1.26] | 60,095; 39.523; 44.771; 0.9304; 0.8493; 1.0193; 0.8176; 0.7245; 0.9227; 1.1134; 0.9824; 1.2617 | match |  |
 | Table 3 | File, primary | 18,120 \| 84.2 / 88.2 \| 0.97 [0.90, 1.04] \| 0.95 [0.86, 1.04] \| 1.01 [0.90, 1.13] | 18,120; 84.177; 88.183; 0.9701; 0.9024; 1.0430; 0.9473; 0.8637; 1.0389; 1.0083; 0.9034; 1.1253 | match |  |
 | Table 3 | bold cells | bold exactly where p < 0.05 | same cells | match |  |
-| Table 3 | Line, repository x task type | 648,959 \| 28.0 / 34.5 \| 0.87 [0.78, 0.99] \| 0.77 [0.65, 0.91] \| 1.03 [0.87, 1.21] | 648,959; 28.009; 34.512; 0.8746; 0.7750; 0.9869; 0.7676; 0.6504; 0.9058; 1.0266; 0.8717; 1.2090 | match |  |
-| Table 3 | bold cells, repository x task type row | agent and supervised bold, Devin not | 0.030, 0.002, 0.753 | match |  |
 
 ## Figure 1 (KM curves)
 
@@ -180,8 +178,8 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 3.3 | agent HR in days 0-14, 14-90, >90 | 1.01 [0.83, 1.23], 0.85 [0.72, 1.01], 0.65 [0.53, 0.80] | 1.0088; 0.8300; 1.2263; 0.8526; 0.7202; 1.0093; 0.6518; 0.5318; 0.7989 | match |  |
 | Sec. 3.3 | supervised HR in days 0-14, 14-90, >90 | 1.10 [0.84, 1.44], 0.79 [0.64, 0.99], 0.47 [0.36, 0.61] | 1.1005; 0.8404; 1.4411; 0.7938; 0.6383; 0.9872; 0.4713; 0.3634; 0.6113 | match |  |
 | Sec. 3.3 | Devin does not differ in any period | Devin p >= 0.05 in every period | 0.47, 0.63, 0.85 | match |  |
-| Sec. 3.3 | RMST difference at 90 days | +0.8 days [-2.3, 3.8] | 0.777; -2.311; 3.826 | match |  |
-| Sec. 3.3 | RMST difference at 150 days | +2.2 days [-3.4, 7.9] | 2.194; -3.443; 7.872 | match |  |
+| Sec. 3.3 | RMST difference within 90 days | 0.8 days longer [-2.3, 3.8] | 0.777; -2.311; 3.826 | match |  |
+| Sec. 3.3 | RMST difference within 150 days | 2.2 days longer [-3.4, 7.9] | 2.194; -3.443; 7.872 | match |  |
 | Sec. 3.3 | modified within 14 days (PR-weighted): supervised, Devin, human | 8.3%, 12.0%, 9.6% | 8.298; 11.952; 9.556 | match |  |
 
 ## 3.3 Calendar time
@@ -214,12 +212,12 @@ An entry groups the numbers of one statement; it matches when every number match
 | Where | What | Paper | Reproduced | Status | Note |
 |---|---|---|---|---|---|
 | Sec. 3.3 | cohort PRs labeled human; human or unclear | 16; 28 | 16; 28 | match |  |
-| Sec. 3.3 | agent HR without them | 0.84 and 0.83 | 0.8352; 0.8309 | match |  |
+| Sec. 3.3 | agent HR without them, against the primary estimate | 0.84 and 0.83, against 0.83 | 0.8352; 0.8309; 0.8347 | match |  |
 | Sec. 3.3 | PRs labeled agent; HR | 136 audited PRs; 0.89 [0.64, 1.23] | 136; 0.8886; 0.6402; 1.2335 | match |  |
 | Sec. 3.3 | with file-history covariates: agent, supervised HR | 0.88 [0.79, 0.98]; 0.81 [0.70, 0.93] | 0.8787; 0.7889; 0.9788; 0.8066; 0.6987; 0.9312 | match |  |
 | Sec. 3.3 and 5.1 | share of the difference explained by the files | about a quarter | 27%, 29% (1 - HR scale, log scale) | match |  |
 | Sec. 3.3 | covariate HRs: recent changes, test file | HR = 1.26 per log unit; HR = 0.73 | 1.2610; 0.7286 | match |  |
-| Sec. 3.3 | activity terciles (AIDev PR count): agent HR | 0.83 [0.44, 1.57], 0.63 [0.43, 0.94], 0.86 [0.77, 0.97] | 0.8318; 0.4402; 1.5716; 0.6338; 0.4276; 0.9394; 0.8632; 0.7703; 0.9673 | match |  |
+| Sec. 3.3 | activity terciles (number of PRs of the repository in AIDev): agent HR | 0.83 [0.44, 1.57], 0.63 [0.43, 0.94], 0.86 [0.77, 0.97] | 0.8318; 0.4402; 1.5716; 0.6338; 0.4276; 0.9394; 0.8632; 0.7703; 0.9673 | match |  |
 | Sec. 3.3 | same direction in every tercile | all HR < 1 | yes | match |  |
 
 ## 3.3 Task type
@@ -301,21 +299,6 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 5.2 (RQ3b) | files dropped for missing author history | 22 of the 6,300 modified agent files, 0.3% | 22; 6,300; 0.350 | match |  |
 | Sec. 5.2 (RQ3b) | chance level of Macro F1 with four bins | 0.25 | 0.2455 | match |  |
 
-## Table 6 (RQ3 models)
-
-| Where | What | Paper | Reproduced | Status | Note |
-|---|---|---|---|---|---|
-| Table 6 | Random forest | 0.70 (1) \| 0.89 (1) \| 0.31 (1) \| 0.60 (1) | 0.6984; 1; 0.8895; 1; 0.3124; 1; 0.6010; 1 | match |  |
-| Table 6 | CatBoost | 0.70 (1) \| 0.89 (1) \| 0.31 (1) \| 0.61 (1) | 0.6955; 1; 0.8883; 1; 0.3133; 1; 0.6063; 1 | match |  |
-| Table 6 | XGBoost | 0.69 (1) \| 0.89 (1) \| 0.32 (1) \| 0.60 (1) | 0.6936; 1; 0.8860; 1; 0.3159; 1; 0.6049; 1 | match |  |
-| Table 6 | MLP | 0.66 (2) \| 0.87 (2) \| 0.28 (2) \| 0.58 (2) | 0.6624; 2; 0.8748; 2; 0.2795; 2; 0.5811; 2 | match |  |
-| Table 6 | SVM | 0.64 (3) \| 0.87 (2) \| 0.28 (2) \| 0.58 (2) | 0.6405; 3; 0.8741; 2; 0.2790; 2; 0.5771; 2 | match |  |
-| Table 6 | Logistic regression | 0.63 (3) \| 0.87 (2) \| 0.28 (2) \| 0.58 (2) | 0.6333; 3; 0.8699; 2; 0.2807; 2; 0.5813; 2 | match |  |
-| Table 6 | KNN | 0.64 (3) \| 0.85 (3) \| 0.27 (2) \| 0.53 (4) | 0.6361; 3; 0.8497; 3; 0.2707; 2; 0.5349; 4 | match |  |
-| Table 6 | Naive Bayes | 0.51 (4) \| 0.82 (4) \| 0.28 (2) \| 0.56 (3) | 0.5144; 4; 0.8206; 4; 0.2761; 2; 0.5618; 3 | match |  |
-| Table 6 | size and history baseline (LR) | 0.78 \| 0.93 | 0.7848; 0.9292 | match |  |
-| Table 6 | random guess | 0.80 (AUC-PR, share of modified files 79.7%) \| 0.25 (Macro F1) | 0.7975; 79.748; 0.2455 | match |  |
-
 ## 5.3 RQ3a results
 
 | Where | What | Paper | Reproduced | Status | Note |
@@ -324,6 +307,7 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 5.3 | first Scott-Knott rank (AUC-PR) | random forest, CatBoost and XGBoost | CatBoost, RandomForest, XGBoost | match |  |
 | Sec. 5.3 | first-rank AUC-ROC | about 0.70 | 0.6984, 0.6955, 0.6936 | match |  |
 | Sec. 5.3 | first-rank AUC-PR | about 0.89 | 0.8895, 0.8883, 0.886 | match |  |
+| Sec. 5.3 | AUC-ROC of the other five models (MLP, SVM, logistic regression, KNN, naive Bayes) | 0.51 to 0.66 | 0.5100; 0.6600 | match | min and max of the mean AUC-ROC, rounded half-up from the raw values |
 | Sec. 5.3 | AUC-PR of a random classifier | about 80% of the files are modified | 79.748 | match |  |
 | Sec. 5.3 | logistic regression baseline | AUC-ROC 0.78, AUC-PR 0.93 | 0.7848; 0.9292 | match |  |
 | Sec. 5.3 | all files | 15,946 files (83.8% modified) | 15,946; 83.802 | match |  |
@@ -351,6 +335,7 @@ An entry groups the numbers of one statement; it matches when every number match
 | Sec. 5.3 | first Scott-Knott rank (Macro F1) | XGBoost, CatBoost and random forest | CatBoost, RandomForest, XGBoost | match |  |
 | Sec. 5.3 | first-rank Macro F1 | about 0.31 | 0.3159, 0.3133, 0.3124 | match |  |
 | Sec. 5.3 | first-rank macro AUC-ROC | about 0.60 | 0.6049, 0.6063, 0.601 | match |  |
+| Sec. 5.3 | Macro F1 of the models outside the first Scott-Knott rank | 0.27 to 0.28 | 0.2700; 0.2800 | match | min and max of the mean Macro F1, rounded half-up from the raw values |
 | Sec. 5.3 | out of sample, XGBoost | 0.32 and 0.61 | 0.3204; 0.6050 | match |  |
 | Sec. 5.3 | all files: first Scott-Knott rank (Macro F1) | CatBoost alone | CatBoost | match |  |
 | Sec. 5.3 | all files: CatBoost | Macro F1 0.32, AUC-ROC 0.62 | 0.3226; 0.6153 | match |  |

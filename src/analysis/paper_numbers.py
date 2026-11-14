@@ -320,12 +320,6 @@ def bold_check():
 
 
 cond('Table 3', 'bold cells', 'bold exactly where p < 0.05', bold_check)
-n('Table 3', 'Line, repository x task type', '648,959 | 28.0 / 34.5 | 0.87 [0.78, 0.99] | 0.77 [0.65, 0.91] | 1.03 [0.87, 1.21]',
-  lambda: [tk()['primary_slug_x_task']['lines'], grp('primary', 'line', 'Agent (all)'), grp('primary', 'line', 'Human')]
-  + H(tk()['primary_slug_x_task']['agent']) + H(tk()['primary_slug_x_task']['supervised']) + H(tk()['primary_slug_x_task']['devin']))
-cond('Table 3', 'bold cells, repository x task type row', 'agent and supervised bold, Devin not',
-     lambda: ([sig(tk()['primary_slug_x_task'][k]) for k in ['agent', 'supervised', 'devin']] == [True, True, False],
-              ', '.join(f"{tk()['primary_slug_x_task'][k]['p']:.3f}" for k in ['agent', 'supervised', 'devin'])))
 sec('Figure 1 (KM curves)')
 cond('Figure 1', 'figure file', 'results/figures/rq1_km_line_primary.pdf',
      lambda: (os.path.exists(os.path.join(BASE, 'figures', 'rq1_km_line_primary.pdf')), 'present' if os.path.exists(os.path.join(BASE, 'figures', 'rq1_km_line_primary.pdf')) else 'absent'))
@@ -356,8 +350,8 @@ n('Sec. 3.3', 'supervised HR in days 0-14, 14-90, >90', '1.10 [0.84, 1.44], 0.79
 cond('Sec. 3.3', 'Devin does not differ in any period', 'Devin p >= 0.05 in every period',
      lambda: (all(not sig(a4()['time_split'][f'tier_{p}']['devin']) for p in ['0_14', '14_90', '90_9999']),
               ', '.join(f"{a4()['time_split'][f'tier_{p}']['devin']['p']:.2f}" for p in ['0_14', '14_90', '90_9999'])))
-n('Sec. 3.3', 'RMST difference at 90 days', '+0.8 days [-2.3, 3.8]', lambda: [rq1()['A3']['rmst90_diff'][k] for k in ['est', 'lo', 'hi']])
-n('Sec. 3.3', 'RMST difference at 150 days', '+2.2 days [-3.4, 7.9]', lambda: [rq1()['A3']['rmst150_diff'][k] for k in ['est', 'lo', 'hi']])
+n('Sec. 3.3', 'RMST difference within 90 days', '0.8 days longer [-2.3, 3.8]', lambda: [rq1()['A3']['rmst90_diff'][k] for k in ['est', 'lo', 'hi']])
+n('Sec. 3.3', 'RMST difference within 150 days', '2.2 days longer [-3.4, 7.9]', lambda: [rq1()['A3']['rmst150_diff'][k] for k in ['est', 'lo', 'hi']])
 n('Sec. 3.3', 'modified within 14 days (PR-weighted): supervised, Devin, human', '8.3%, 12.0%, 9.6%',
   lambda: [P(rq1()['A6'][g]['prw']) for g in ['Supervised assistants', 'Devin (autonomous)', 'Human']])
 sec('3.3 Calendar time')
@@ -386,7 +380,8 @@ n('Sec. 3.3', 'substantial modification: Devin HR range', '0.93 to 1.01', lambda
 cond('Sec. 3.3', 'Devin does not differ at any theta', 'Devin p >= 0.05', lambda: (all(not sig(a7()[s]['within']['devin']) for s in SUB), f"min p {min(a7()[s]['within']['devin']['p'] for s in SUB):.3f}"))
 sec('3.3 Attribution, file history and repository activity')
 n('Sec. 3.3', 'cohort PRs labeled human; human or unclear', '16; 28', lambda: [A8('mined|all')['human'][0], A8('mined|all')['human'][0] + A8('mined|all')['unclear'][0]])
-n('Sec. 3.3', 'agent HR without them', '0.84 and 0.83', lambda: [A8('rq1_excl_human')['within']['agent']['hr'], A8('rq1_excl_human_unclear')['within']['agent']['hr']])
+n('Sec. 3.3', 'agent HR without them, against the primary estimate', '0.84 and 0.83, against 0.83',
+  lambda: [A8('rq1_excl_human')['within']['agent']['hr'], A8('rq1_excl_human_unclear')['within']['agent']['hr'], A1('primary')['within']['agent']['hr']])
 n('Sec. 3.3', 'PRs labeled agent; HR', '136 audited PRs; 0.89 [0.64, 1.23]',
   lambda: [A8('rq1_agent_label_only_vs_all_human')['groups']['Agent (all)']['prs']] + H(A8('rq1_agent_label_only_vs_all_human')['within']['agent']))
 n('Sec. 3.3', 'with file-history covariates: agent, supervised HR', '0.88 [0.79, 0.98]; 0.81 [0.70, 0.93]',
@@ -402,7 +397,7 @@ cond('Sec. 3.3 and 5.1', 'share of the difference explained by the files', 'abou
      lambda: (all(0.2 <= x <= 0.33 for x in quarter()), ', '.join(f'{100 * x:.0f}%' for x in quarter()) + ' (1 - HR scale, log scale)'))
 n('Sec. 3.3', 'covariate HRs: recent changes, test file', 'HR = 1.26 per log unit; HR = 0.73',
   lambda: [a9()['line']['covariate_hrs']['prior_mod_3m']['hr'], a9()['line']['covariate_hrs']['test']['hr']])
-n('Sec. 3.3', 'activity terciles (AIDev PR count): agent HR', '0.83 [0.44, 1.57], 0.63 [0.43, 0.94], 0.86 [0.77, 0.97]',
+n('Sec. 3.3', 'activity terciles (number of PRs of the repository in AIDev): agent HR', '0.83 [0.44, 1.57], 0.63 [0.43, 0.94], 0.86 [0.77, 0.97]',
   lambda: sum([H(misc()['A10'][f'total_pr_count|{t}']['within']['agent']) for t in ['low', 'mid', 'high']], []))
 cond('Sec. 3.3', 'same direction in every tercile', 'all HR < 1', lambda: (all(misc()['A10'][f'total_pr_count|{t}']['within']['agent']['hr'] < 1 for t in ['low', 'mid', 'high']), 'yes'))
 sec('3.3 Task type')
@@ -474,19 +469,6 @@ ext('Sec. 5.2', 'explanation folds; vocabulary', 'five repository folds; at most
 n('Sec. 5.2 (RQ3b)', 'smallest bin', 'the smallest bin holds 15% of the files', lambda: [min(rq3b_bins())])
 n('Sec. 5.2 (RQ3b)', 'files dropped for missing author history', '22 of the 6,300 modified agent files, 0.3%', lambda: full_fix_log('rq3b_agent'))
 cond('Sec. 5.2 (RQ3b)', 'chance level of Macro F1 with four bins', '0.25', lambda: (round(random_macro_f1(), 2) == 0.25, f'{random_macro_f1():.4f}'))
-sec('Table 6 (RQ3 models)')
-def _sk_rank(sub, f, m):
-    t = CSV(r3(sub, f)).set_index('model'); return int(t.loc[m, 'rank'])
-for _lab, _m, _pv in [('Random forest', 'RandomForest', '0.70 (1) | 0.89 (1) | 0.31 (1) | 0.60 (1)'), ('CatBoost', 'CatBoost', '0.70 (1) | 0.89 (1) | 0.31 (1) | 0.61 (1)'),
-                      ('XGBoost', 'XGBoost', '0.69 (1) | 0.89 (1) | 0.32 (1) | 0.60 (1)'), ('MLP', 'MLP', '0.66 (2) | 0.87 (2) | 0.28 (2) | 0.58 (2)'),
-                      ('SVM', 'SVM', '0.64 (3) | 0.87 (2) | 0.28 (2) | 0.58 (2)'), ('Logistic regression', 'LogisticRegression', '0.63 (3) | 0.87 (2) | 0.28 (2) | 0.58 (2)'),
-                      ('KNN', 'KNN', '0.64 (3) | 0.85 (3) | 0.27 (2) | 0.53 (4)'), ('Naive Bayes', 'NaiveBayes', '0.51 (4) | 0.82 (4) | 0.28 (2) | 0.56 (3)')]:
-    n('Table 6', _lab, _pv, (lambda m=_m: [tour_a('rq3a_agent').loc[m, 'auc_roc_mean'], _sk_rank('rq3a_agent', 'rq3a_sk_auc_roc.csv', m),
-                                           tour_a('rq3a_agent').loc[m, 'auc_pr_mean'], _sk_rank('rq3a_agent', 'rq3a_sk_auc_pr.csv', m),
-                                           tour_b('rq3b_agent').loc[m, 'macro_f1'], _sk_rank('rq3b_agent', 'rq3b_sk_macro_f1.csv', m),
-                                           tour_b('rq3b_agent').loc[m, 'auc_roc'], _sk_rank('rq3b_agent', 'rq3b_sk_auc_roc.csv', m)]))
-n('Table 6', 'size and history baseline (LR)', '0.78 | 0.93', lambda: [lr('rq3a_agent')['auc_roc_mean'], lr('rq3a_agent')['auc_pr_mean']])
-n('Table 6', 'random guess', '0.80 (AUC-PR, share of modified files 79.7%) | 0.25 (Macro F1)', lambda: [lr('rq3a_agent')['pos_rate'], 100 * lr('rq3a_agent')['pos_rate'], random_macro_f1()])
 sec('5.3 RQ3a results')
 n('Sec. 5.3', 'agent dataset', '6,661 files from 155 repositories, 79.7% modified',
   lambda: [lr('rq3a_agent')['n'], ex('rq3a_agent')['repos'], 100 * lr('rq3a_agent')['pos_rate']])
@@ -494,6 +476,10 @@ cond('Sec. 5.3', 'first Scott-Knott rank (AUC-PR)', 'random forest, CatBoost and
      lambda: (sk('rq3a_agent', 'rq3a_sk_auc_pr.csv') == {'RandomForest', 'CatBoost', 'XGBoost'}, ', '.join(sorted(sk('rq3a_agent', 'rq3a_sk_auc_pr.csv')))))
 cond('Sec. 5.3', 'first-rank AUC-ROC', 'about 0.70', lambda: approx(0.685, 0.715)([tour_a('rq3a_agent').loc[m, 'auc_roc_mean'] for m in ['RandomForest', 'CatBoost', 'XGBoost']]))
 cond('Sec. 5.3', 'first-rank AUC-PR', 'about 0.89', lambda: approx(0.875, 0.905)([tour_a('rq3a_agent').loc[m, 'auc_pr_mean'] for m in ['RandomForest', 'CatBoost', 'XGBoost']]))
+OTHER5 = ['MLP', 'SVM', 'LogisticRegression', 'KNN', 'NaiveBayes']
+n('Sec. 5.3', 'AUC-ROC of the other five models (MLP, SVM, logistic regression, KNN, naive Bayes)', '0.51 to 0.66',
+  lambda: [half_up(min(tour_a('rq3a_agent').loc[OTHER5, 'auc_roc_mean']), 2), half_up(max(tour_a('rq3a_agent').loc[OTHER5, 'auc_roc_mean']), 2)],
+  'min and max of the mean AUC-ROC, rounded half-up from the raw values')
 n('Sec. 5.3', 'AUC-PR of a random classifier', 'about 80% of the files are modified', lambda: [100 * lr('rq3a_agent')['pos_rate']])
 n('Sec. 5.3', 'logistic regression baseline', 'AUC-ROC 0.78, AUC-PR 0.93', lambda: [lr('rq3a_agent')['auc_roc_mean'], lr('rq3a_agent')['auc_pr_mean']])
 n('Sec. 5.3', 'all files', '15,946 files (83.8% modified)', lambda: [lr('rq3a_all')['n'], 100 * lr('rq3a_all')['pos_rate']])
@@ -518,6 +504,9 @@ cond('Sec. 5.3', 'first Scott-Knott rank (Macro F1)', 'XGBoost, CatBoost and ran
      lambda: (sk('rq3b_agent', 'rq3b_sk_macro_f1.csv') == {'XGBoost', 'CatBoost', 'RandomForest'}, ', '.join(sorted(sk('rq3b_agent', 'rq3b_sk_macro_f1.csv')))))
 cond('Sec. 5.3', 'first-rank Macro F1', 'about 0.31', lambda: approx(0.30, 0.32)([tour_b('rq3b_agent').loc[m, 'macro_f1'] for m in ['XGBoost', 'CatBoost', 'RandomForest']]))
 cond('Sec. 5.3', 'first-rank macro AUC-ROC', 'about 0.60', lambda: approx(0.59, 0.61)([tour_b('rq3b_agent').loc[m, 'auc_roc'] for m in ['XGBoost', 'CatBoost', 'RandomForest']]))
+n('Sec. 5.3', 'Macro F1 of the models outside the first Scott-Knott rank', '0.27 to 0.28',
+  lambda: [half_up(v, 2) for v in (lambda o: [min(o), max(o)])(tour_b('rq3b_agent').loc[sorted(set(tour_b('rq3b_agent').index) - sk('rq3b_agent', 'rq3b_sk_macro_f1.csv')), 'macro_f1'])],
+  'min and max of the mean Macro F1, rounded half-up from the raw values')
 n('Sec. 5.3', 'out of sample, XGBoost', '0.32 and 0.61', lambda: [ex('rq3b_agent')['oos']['macro_f1'], ex('rq3b_agent')['oos']['auc_roc']])
 cond('Sec. 5.3', 'all files: first Scott-Knott rank (Macro F1)', 'CatBoost alone',
      lambda: (sk('rq3b_all', 'rq3b_sk_macro_f1.csv') == {'CatBoost'}, ', '.join(sorted(sk('rq3b_all', 'rq3b_sk_macro_f1.csv')))))
